@@ -1,4 +1,52 @@
-// Nav logo width
+/* Navbar logo width */
+
 .nav-logo {
   max-width: 180px;
+}
+
+/* Navbar over carousel */
+
+.custom-navbar {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  background: transparent;
+
+  .navbar-brand,
+  .nav-link {
+    color: #fff;
+  }
+
+  .nav-link {
+    &:hover {
+      color: #f8d28b;
+    }
+  }
+}
+
+/* Home Carousel  */
+
+#homeCarousel {
+
+
+
+  .carousel-caption {
+    top: 50%;
+    bottom: auto;
+    transform: translateY(-50%);
+    text-align: center;
+
+    h1 {
+      font-size: 55px;
+    }
+
+    p {
+      font-size: 20px;
+    }
+
+    a {
+      margin-top: 20px;
+    }
+  }
 }
