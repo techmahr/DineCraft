@@ -1,0 +1,10 @@
+// to increase the word breaking while auto formatting
+
+{
+  "html.format.wrapLineLength": 300,
+  "css.format.lineWidth": 300,
+  "scss.format.lineWidth": 300,
+
+  "editor.wordWrap": "on",
+  "editor.wordWrapColumn": 300
+}
