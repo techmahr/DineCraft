@@ -20,6 +20,23 @@
 }
 
 /* Home Carousel  */
+#homeCarousel {
+  max-height: 100vh;
+  overflow: hidden;
+}
+#homeCarousel .carousel-inner,
+#homeCarousel .carousel-item {
+  height: 100%;
+}
+#homeCarousel .carousel-item {
+  position: relative;
+}
+#homeCarousel img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 #homeCarousel .carousel-caption {
   top: 50%;
   bottom: auto;

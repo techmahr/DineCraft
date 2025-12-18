@@ -29,13 +29,31 @@
 
 #homeCarousel {
 
+  max-height: 100vh;
+  overflow: hidden;
 
+  .carousel-inner,
+  .carousel-item {
+    height: 100%;
+  }
+
+  .carousel-item {
+    position: relative;
+  }
+
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; // key line
+  }
 
   .carousel-caption {
     top: 50%;
     bottom: auto;
     transform: translateY(-50%);
     text-align: center;
+
+
 
     h1 {
       font-size: 55px;
