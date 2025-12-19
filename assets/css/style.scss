@@ -1,9 +1,6 @@
 @import 'variables';
-
 @import 'navbar';
-
-
-
+@import 'footer';
 
 
 /* Buttons  */
@@ -151,31 +148,4 @@ a {
     }
   }
 
-}
-
-/* Footer Styles  */
-
-.footer-one {
-  background-color: #1b1b1b;
-  padding: 60px 0;
-  color: #fff;
-
-  ul {
-    list-style: none;
-    padding: 0;
-
-    li {
-      display: flex;
-      justify-content: space-between;
-      margin-bottom: 10px;
-      color: rgba(255, 255, 255, 0.7);
-      border-bottom: 1px dotted rgba(255, 255, 255, 0.2);
-      padding-bottom: 5px;
-
-      span {
-        color: $clr-white;
-        font-weight: 600;
-      }
-    }
-  }
 }

@@ -1,0 +1,45 @@
+/* Footer Styles  */
+
+.footer-one {
+    background-color: #1b1b1b;
+    padding: 60px 0;
+    color: #fff;
+
+    ul {
+        list-style: none;
+        padding: 0;
+
+        // Regular link styles
+        li a {
+            color: rgba(255, 255, 255, 0.7);
+            transition: 0.3s;
+
+            &:hover {
+                color: $clr-primary;
+            }
+        }
+
+        // Specific style for the Opening Hours list
+        &.timing-list {
+            li {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 10px;
+                color: rgba(255, 255, 255, 0.7);
+                border-bottom: 1px dotted rgba(255, 255, 255, 0.2);
+                padding-bottom: 5px;
+
+                span {
+                    color: $clr-white;
+                    font-weight: 600;
+                }
+
+                // Remove border from the last day (Sunday)
+                &:last-child {
+                    border-bottom: none;
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}

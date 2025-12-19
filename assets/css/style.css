@@ -40,6 +40,40 @@ Red #ff3600
   filter: invert(1);
 }
 
+/* Footer Styles  */
+.footer-one {
+  background-color: #1b1b1b;
+  padding: 60px 0;
+  color: #fff;
+}
+.footer-one ul {
+  list-style: none;
+  padding: 0;
+}
+.footer-one ul li a {
+  color: rgba(255, 255, 255, 0.7);
+  transition: 0.3s;
+}
+.footer-one ul li a:hover {
+  color: #D32F2F;
+}
+.footer-one ul.timing-list li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  color: rgba(255, 255, 255, 0.7);
+  border-bottom: 1px dotted rgba(255, 255, 255, 0.2);
+  padding-bottom: 5px;
+}
+.footer-one ul.timing-list li span {
+  color: #FFFFFF;
+  font-weight: 600;
+}
+.footer-one ul.timing-list li:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
 /* Buttons  */
 .btn-primary {
   background-color: #D32F2F;
@@ -158,27 +192,4 @@ a {
 .col-md-6:last-child .menu-item-one:last-child {
   border-bottom: none;
   margin-bottom: 0;
-}
-
-/* Footer Styles  */
-.footer-one {
-  background-color: #1b1b1b;
-  padding: 60px 0;
-  color: #fff;
-}
-.footer-one ul {
-  list-style: none;
-  padding: 0;
-}
-.footer-one ul li {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 10px;
-  color: rgba(255, 255, 255, 0.7);
-  border-bottom: 1px dotted rgba(255, 255, 255, 0.2);
-  padding-bottom: 5px;
-}
-.footer-one ul li span {
-  color: #FFFFFF;
-  font-weight: 600;
 }/*# sourceMappingURL=style.css.map */
