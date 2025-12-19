@@ -4,6 +4,41 @@ Red #ff3600
 #ff553e 
 
 */
+/* Buttons  */
+.btn-primary {
+  background-color: #D32F2F;
+  border-color: #D32F2F;
+  color: #FFFFFF;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+  background-color: #B71C1C !important;
+  border-color: #B71C1C !important;
+  color: #FFFFFF !important;
+  box-shadow: 0 4px 12px rgba(211, 47, 47, 0.2);
+}
+
+.btn-outline-primary {
+  color: #D32F2F;
+  border-color: #D32F2F;
+  background-color: transparent;
+}
+.btn-outline-primary:hover {
+  background-color: #D32F2F;
+  border-color: #D32F2F;
+  color: #FFFFFF;
+}
+
+a {
+  color: #D32F2F;
+  text-decoration: none;
+}
+
+.text-primary {
+  color: #D32F2F !important;
+}
+
 /* Navbar logo width */
 .nav-logo {
   max-width: 180px;
@@ -15,7 +50,7 @@ Red #ff3600
   color: #fff;
 }
 .custom-navbar .nav-link:hover {
-  color: #f8d28b;
+  color: #D32F2F;
 }
 
 /* Home Carousel  */
@@ -69,7 +104,7 @@ Red #ff3600
 .menu-item-one {
   margin-bottom: 25px;
   padding-bottom: 10px;
-  border-bottom: 1px dashed #ddd;
+  border-bottom: 1px dashed #6C757D;
 }
 .menu-item-one .title-wrap {
   display: flex;
@@ -79,11 +114,11 @@ Red #ff3600
 .menu-item-one .title-wrap h5 {
   margin-bottom: 0;
   font-weight: 700;
-  color: #333;
+  color: #1A1A1A;
 }
 .menu-item-one .title-wrap .price {
   font-weight: 700;
-  color: #0d6efd;
+  color: #D32F2F;
   font-size: 1.1rem;
 }
 .menu-item-one p {

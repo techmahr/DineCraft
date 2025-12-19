@@ -5,6 +5,62 @@ Red #ff3600
 
 */
 
+// Brand Colors
+$clr-primary: #D32F2F; // Main brand color (Classic Restaurant Red)
+$clr-primary-dark: #B71C1C; // For hover states and buttons
+$clr-white: #FFFFFF;
+$clr-off-white: #F8F9FA; // For section backgrounds to provide contrast
+$clr-black: #000000;
+
+// Text & Neutral Colors
+$text-main: #1A1A1A; // Near black for high readability
+$text-muted: #6C757D; // Grey for descriptions/paragraphs
+$border-color: #E0E0E0; // For dashed lines and separators
+
+
+/* Buttons  */
+
+// Primary Solid Button (Red)
+.btn-primary {
+  background-color: $clr-primary;
+  border-color: $clr-primary;
+  color: $clr-white;
+  font-weight: 600;
+  transition: all 0.3s ease;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $clr-primary-dark !important;
+    border-color: $clr-primary-dark !important;
+    color: $clr-white !important;
+    box-shadow: 0 4px 12px rgba($clr-primary, 0.2);
+  }
+}
+
+// Outline Button (Red Border, White Background)
+.btn-outline-primary {
+  color: $clr-primary;
+  border-color: $clr-primary;
+  background-color: transparent;
+
+  &:hover {
+    background-color: $clr-primary;
+    border-color: $clr-primary;
+    color: $clr-white;
+  }
+}
+
+a {
+  color: $clr-primary;
+  text-decoration: none;
+}
+
+.text-primary {
+  color: $clr-primary !important;
+}
+
+
 /* Navbar logo width */
 
 .nav-logo {
@@ -22,7 +78,7 @@ Red #ff3600
 
   .nav-link {
     &:hover {
-      color: #f8d28b;
+      color: $clr-primary;
     }
   }
 }
@@ -91,7 +147,7 @@ Red #ff3600
 .menu-item-one {
   margin-bottom: 25px;
   padding-bottom: 10px;
-  border-bottom: 1px dashed #ddd;
+  border-bottom: 1px dashed $text-muted;
 
   .title-wrap {
     display: flex;
@@ -101,12 +157,12 @@ Red #ff3600
     h5 {
       margin-bottom: 0;
       font-weight: 700;
-      color: #333;
+      color: $text-main;
     }
 
     .price {
       font-weight: 700;
-      color: #0d6efd;
+      color: $clr-primary;
       font-size: 1.1rem;
     }
   }
