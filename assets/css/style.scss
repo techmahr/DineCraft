@@ -1,3 +1,10 @@
+/*
+
+Red #ff3600
+#ff553e 
+
+*/
+
 /* Navbar logo width */
 
 .nav-logo {
@@ -77,6 +84,52 @@
   .form-control {
     margin-bottom: 32px;
   }
+}
+
+/* Our menu  */
+
+.menu-item-one {
+  margin-bottom: 25px;
+  padding-bottom: 10px;
+  border-bottom: 1px dashed #ddd;
+
+  .title-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    h5 {
+      margin-bottom: 0;
+      font-weight: 700;
+      color: #333;
+    }
+
+    .price {
+      font-weight: 700;
+      color: #0d6efd;
+      font-size: 1.1rem;
+    }
+  }
+
+  p {
+    margin-top: 5px;
+    margin-bottom: 0;
+    color: #6c757d;
+    font-size: 0.95rem;
+  }
+
+  &:last-child {
+    @media (min-width: 768px) {
+      border-bottom: none;
+      margin-bottom: 0;
+    }
+
+    .col-md-6:last-child & {
+      border-bottom: none;
+      margin-bottom: 0;
+    }
+  }
+
 }
 
 /* Footer Styles  */
