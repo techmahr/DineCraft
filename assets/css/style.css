@@ -46,6 +46,19 @@
   margin-top: 20px;
 }
 
+/* Home About */
+.home-about {
+  padding: 80px 0;
+}
+
+/* Book Table */
+.book-a-table {
+  padding: 80px 0;
+}
+.book-a-table .form-control {
+  margin-bottom: 32px;
+}
+
 /* Footer Styles  */
 .footer-one {
   background-color: #1b1b1b;
