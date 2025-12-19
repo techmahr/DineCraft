@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Display:ital@0;1&display=swap');
+
 @import 'variables';
 @import 'navbar';
 @import 'footer';
@@ -7,6 +9,19 @@
 body {
   font-family: 'DM Sans', sans-serif;
   color: $text-primary;
+}
+
+.text-special {
+  font-family: "DM Serif Display", serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "DM Serif Display", serif;
 }
 
 
@@ -62,8 +77,6 @@ a {
 .text-primary {
   color: $clr-primary !important;
 }
-
-
 
 /* Margins  */
 
@@ -123,7 +136,7 @@ a {
   }
 
   h1 {
-    font-size: 55px;
+    font-size: 75px;
   }
 
   p {
