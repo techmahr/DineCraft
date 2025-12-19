@@ -18,7 +18,7 @@ Red #ff3600
   transition: color 0.3s ease;
 }
 .custom-navbar .nav-link:hover {
-  color: #D32F2F !important;
+  color: #D14A00 !important;
 }
 .custom-navbar.navbar-scrolled {
   background-color: #FFFFFF;
@@ -30,7 +30,7 @@ Red #ff3600
   color: #1A1A1A !important;
 }
 .custom-navbar.navbar-scrolled .nav-link:hover {
-  color: #D32F2F !important;
+  color: #D14A00 !important;
 }
 .custom-navbar.navbar-scrolled .navbar-toggler {
   border-color: rgba(0, 0, 0, 0.1);
@@ -55,7 +55,7 @@ Red #ff3600
   transition: 0.3s;
 }
 .footer-one ul li a:hover {
-  color: #D32F2F;
+  color: #D14A00;
 }
 .footer-one ul.timing-list li {
   display: flex;
@@ -76,8 +76,8 @@ Red #ff3600
 
 /* Buttons  */
 .btn-primary {
-  background-color: #D32F2F;
-  border-color: #D32F2F;
+  background-color: #D14A00;
+  border-color: #D14A00;
   color: #FFFFFF;
   font-weight: 600;
   transition: all 0.3s ease;
@@ -86,27 +86,39 @@ Red #ff3600
   background-color: #B71C1C !important;
   border-color: #B71C1C !important;
   color: #FFFFFF !important;
-  box-shadow: 0 4px 12px rgba(211, 47, 47, 0.2);
+  box-shadow: 0 4px 12px rgba(209, 74, 0, 0.2);
 }
 
 .btn-outline-primary {
-  color: #D32F2F;
-  border-color: #D32F2F;
+  color: #D14A00;
+  border-color: #D14A00;
   background-color: transparent;
 }
 .btn-outline-primary:hover {
-  background-color: #D32F2F;
-  border-color: #D32F2F;
+  background-color: #D14A00;
+  border-color: #D14A00;
   color: #FFFFFF;
 }
 
 a {
-  color: #D32F2F;
+  color: #D14A00;
   text-decoration: none;
 }
 
 .text-primary {
-  color: #D32F2F !important;
+  color: #D14A00 !important;
+}
+
+/* Margins  */
+.sec-pad {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+@media (min-width: 992px) {
+  .sec-pad {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
 }
 
 /* Home Carousel  */
@@ -149,11 +161,41 @@ a {
 }
 
 /* Book Table */
-.book-a-table {
+.book-a-table-two {
   padding: 80px 0;
 }
-.book-a-table .form-control {
+.book-a-table-two .form-control {
   margin-bottom: 32px;
+}
+
+.book-a-table-one .book-table-img-section {
+  background-image: url(../images/bnr1.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  min-height: 400px;
+}
+.book-a-table-one .booking-form-wrap {
+  background-color: #D14A00;
+  padding: 50px;
+  height: 100%;
+}
+.book-a-table-one .booking-form-wrap h2 {
+  color: #FFFFFF;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+.book-a-table-one .booking-form-wrap .form-control {
+  margin-bottom: 20px;
+  border: none;
+  padding: 12px;
+}
+.book-a-table-one .booking-form-wrap .form-control::-moz-placeholder {
+  color: #999;
+}
+.book-a-table-one .booking-form-wrap .form-control::placeholder {
+  color: #999;
 }
 
 /* Our menu  */
@@ -174,7 +216,7 @@ a {
 }
 .menu-item-one .title-wrap .price {
   font-weight: 700;
-  color: #D32F2F;
+  color: #D14A00;
   font-size: 1.1rem;
 }
 .menu-item-one p {

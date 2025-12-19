@@ -45,6 +45,20 @@ a {
   color: $clr-primary !important;
 }
 
+/* Margins  */
+
+.sec-pad {
+  padding-top: $section-spacing;
+  padding-bottom: $section-spacing;
+
+  @media (min-width: 992px) {
+    padding-top: $section-spacing * 2;
+    padding-bottom: $section-spacing * 2;
+  }
+}
+
+
+
 /* Home Carousel  */
 
 #homeCarousel {
@@ -96,12 +110,49 @@ a {
 
 /* Book Table */
 
-.book-a-table {
+.book-a-table-two {
   padding: 80px 0;
 
   .form-control {
     margin-bottom: 32px;
   }
+}
+
+.book-a-table-one {
+
+  .book-table-img-section {
+    background-image: url(../images/bnr1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    min-height: 400px;
+  }
+
+  .booking-form-wrap {
+    background-color: $clr-primary;
+    padding: 50px;
+    height: 100%;
+
+    h2 {
+      color: $clr-white;
+      margin-bottom: 30px;
+      font-weight: 700;
+    }
+
+    .form-control {
+      margin-bottom: 20px;
+      border: none;
+      padding: 12px;
+
+      &::placeholder {
+        color: #999;
+      }
+    }
+
+  }
+
+
 }
 
 /* Our menu  */
