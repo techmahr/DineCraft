@@ -5,6 +5,17 @@
 
 /* Buttons  */
 
+.btn {
+  border-radius: 4px;
+}
+
+.btn-primary,
+.btn-outline-primary,
+.btn-dark,
+.btn-light {
+  padding: 10px 25px;
+}
+
 // Primary Solid Button (Red)
 .btn-primary {
   background-color: $clr-primary;
@@ -57,15 +68,13 @@ a {
   }
 }
 
-
-
 /* Home Carousel  */
 
 #homeCarousel {
 
   .carousel-item {
     height: 100vh;
-    max-height: 1080px;
+    max-height: 900px;
     min-height: 400px;
     background-size: cover;
     background-position: center;
@@ -115,6 +124,7 @@ a {
 
   .form-control {
     margin-bottom: 32px;
+    border-radius: 4px;
   }
 }
 
@@ -144,6 +154,7 @@ a {
       margin-bottom: 20px;
       border: none;
       padding: 12px;
+      border-radius: 4px;
 
       &::placeholder {
         color: #999;

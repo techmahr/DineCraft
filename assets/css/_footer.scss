@@ -2,20 +2,24 @@
 
 .footer-one {
     background-color: #1b1b1b;
-    padding: 60px 0;
+    padding: 60px 0 30px 0;
     color: #fff;
 
     ul {
         list-style: none;
         padding: 0;
 
-        // Regular link styles
-        li a {
-            color: rgba(255, 255, 255, 0.7);
-            transition: 0.3s;
+        li {
+            margin-bottom: 10px;
 
-            &:hover {
-                color: $clr-primary;
+            a {
+                color: rgba(255, 255, 255, 0.7);
+                transition: 0.3s;
+                margin-bottom: 10px;
+
+                &:hover {
+                    color: $clr-primary;
+                }
             }
         }
 

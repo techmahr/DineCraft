@@ -43,16 +43,20 @@ Red #ff3600
 /* Footer Styles  */
 .footer-one {
   background-color: #1b1b1b;
-  padding: 60px 0;
+  padding: 60px 0 30px 0;
   color: #fff;
 }
 .footer-one ul {
   list-style: none;
   padding: 0;
 }
+.footer-one ul li {
+  margin-bottom: 10px;
+}
 .footer-one ul li a {
   color: rgba(255, 255, 255, 0.7);
   transition: 0.3s;
+  margin-bottom: 10px;
 }
 .footer-one ul li a:hover {
   color: #D14A00;
@@ -75,6 +79,17 @@ Red #ff3600
 }
 
 /* Buttons  */
+.btn {
+  border-radius: 4px;
+}
+
+.btn-primary,
+.btn-outline-primary,
+.btn-dark,
+.btn-light {
+  padding: 10px 25px;
+}
+
 .btn-primary {
   background-color: #D14A00;
   border-color: #D14A00;
@@ -124,7 +139,7 @@ a {
 /* Home Carousel  */
 #homeCarousel .carousel-item {
   height: 100vh;
-  max-height: 1080px;
+  max-height: 900px;
   min-height: 400px;
   background-size: cover;
   background-position: center;
@@ -166,6 +181,7 @@ a {
 }
 .book-a-table-two .form-control {
   margin-bottom: 32px;
+  border-radius: 4px;
 }
 
 .book-a-table-one .book-table-img-section {
@@ -190,6 +206,7 @@ a {
   margin-bottom: 20px;
   border: none;
   padding: 12px;
+  border-radius: 4px;
 }
 .book-a-table-one .booking-form-wrap .form-control::-moz-placeholder {
   color: #999;
