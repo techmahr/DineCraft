@@ -4,6 +4,42 @@ Red #ff3600
 #ff553e 
 
 */
+/* Navbar Component */
+.custom-navbar {
+  transition: all 0.4s ease-in-out;
+  padding: 20px 0;
+}
+.custom-navbar .nav-logo {
+  max-width: 180px;
+}
+.custom-navbar .navbar-brand,
+.custom-navbar .nav-link {
+  color: #FFFFFF !important;
+  transition: color 0.3s ease;
+}
+.custom-navbar .nav-link:hover {
+  color: #D32F2F !important;
+}
+.custom-navbar.navbar-scrolled {
+  background-color: #FFFFFF;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 10px 0;
+}
+.custom-navbar.navbar-scrolled .navbar-brand,
+.custom-navbar.navbar-scrolled .nav-link {
+  color: #1A1A1A !important;
+}
+.custom-navbar.navbar-scrolled .nav-link:hover {
+  color: #D32F2F !important;
+}
+.custom-navbar.navbar-scrolled .navbar-toggler {
+  border-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.05);
+}
+.custom-navbar.navbar-scrolled .navbar-toggler .navbar-toggler-icon {
+  filter: invert(1);
+}
+
 /* Buttons  */
 .btn-primary {
   background-color: #D32F2F;
@@ -37,20 +73,6 @@ a {
 
 .text-primary {
   color: #D32F2F !important;
-}
-
-/* Navbar logo width */
-.nav-logo {
-  max-width: 180px;
-}
-
-/* Navbar carousel */
-.custom-navbar .navbar-brand,
-.custom-navbar .nav-link {
-  color: #fff;
-}
-.custom-navbar .nav-link:hover {
-  color: #D32F2F;
 }
 
 /* Home Carousel  */
@@ -143,4 +165,20 @@ a {
   background-color: #1b1b1b;
   padding: 60px 0;
   color: #fff;
+}
+.footer-one ul {
+  list-style: none;
+  padding: 0;
+}
+.footer-one ul li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  color: rgba(255, 255, 255, 0.7);
+  border-bottom: 1px dotted rgba(255, 255, 255, 0.2);
+  padding-bottom: 5px;
+}
+.footer-one ul li span {
+  color: #FFFFFF;
+  font-weight: 600;
 }/*# sourceMappingURL=style.css.map */

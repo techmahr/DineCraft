@@ -1,21 +1,9 @@
-/*
+@import 'variables';
 
-Red #ff3600
-#ff553e 
+@import 'navbar';
 
-*/
 
-// Brand Colors
-$clr-primary: #D32F2F; // Main brand color (Classic Restaurant Red)
-$clr-primary-dark: #B71C1C; // For hover states and buttons
-$clr-white: #FFFFFF;
-$clr-off-white: #F8F9FA; // For section backgrounds to provide contrast
-$clr-black: #000000;
 
-// Text & Neutral Colors
-$text-main: #1A1A1A; // Near black for high readability
-$text-muted: #6C757D; // Grey for descriptions/paragraphs
-$border-color: #E0E0E0; // For dashed lines and separators
 
 
 /* Buttons  */
@@ -58,29 +46,6 @@ a {
 
 .text-primary {
   color: $clr-primary !important;
-}
-
-
-/* Navbar logo width */
-
-.nav-logo {
-  max-width: 180px;
-}
-
-/* Navbar carousel */
-
-.custom-navbar {
-
-  .navbar-brand,
-  .nav-link {
-    color: #fff;
-  }
-
-  .nav-link {
-    &:hover {
-      color: $clr-primary;
-    }
-  }
 }
 
 /* Home Carousel  */
@@ -194,4 +159,23 @@ a {
   background-color: #1b1b1b;
   padding: 60px 0;
   color: #fff;
+
+  ul {
+    list-style: none;
+    padding: 0;
+
+    li {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+      color: rgba(255, 255, 255, 0.7);
+      border-bottom: 1px dotted rgba(255, 255, 255, 0.2);
+      padding-bottom: 5px;
+
+      span {
+        color: $clr-white;
+        font-weight: 600;
+      }
+    }
+  }
 }
