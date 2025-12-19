@@ -14,7 +14,7 @@
 
   <!-- Navbar -->
 
-  <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
+  <nav class="navbar navbar-expand-lg fixed-top navbar-dark custom-navbar">
     <div class="container-fluid">
 
       <!-- Logo -->
@@ -55,23 +55,16 @@
   <!-- Home Carousel -->
 
   <div id="homeCarousel" class="carousel slide">
+
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
       <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
       <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
     </div>
+
     <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="./assets/images/bnr1.jpg" class="d-block w-100" alt="...">
-        <div class="carousel-caption">
-          <h1>DineCraft Restaurant</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedolorm reminusto doeiusmod tempor incidition ulla mco laboris nisi ut aliquip ex ea commo condorico..</p>
-          <a href="menu.html" class="btn btn-primary">View our menu</a>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="./assets/images/bnr2.jpg" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
+      <div class="carousel-item active" style="background-image: url(./assets/images/bnr1.jpg);">
+        <div class="carousel-caption-wrap">
           <div class="carousel-caption">
             <h1>DineCraft Restaurant</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedolorm reminusto doeiusmod tempor incidition ulla mco laboris nisi ut aliquip ex ea commo condorico..</p>
@@ -79,9 +72,8 @@
           </div>
         </div>
       </div>
-      <div class="carousel-item">
-        <img src="./assets/images/bnr3.jpg" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
+      <div class="carousel-item" style="background-image: url(./assets/images/bnr2.jpg);">
+        <div class="carousel-caption-wrap">
           <div class="carousel-caption">
             <h1>DineCraft Restaurant</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedolorm reminusto doeiusmod tempor incidition ulla mco laboris nisi ut aliquip ex ea commo condorico..</p>
@@ -89,6 +81,16 @@
           </div>
         </div>
       </div>
+      <div class="carousel-item" style="background-image: url(./assets/images/bnr3.jpg);">
+        <div class="carousel-caption-wrap">
+          <div class="carousel-caption">
+            <h1>DineCraft Restaurant</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedolorm reminusto doeiusmod tempor incidition ulla mco laboris nisi ut aliquip ex ea commo condorico..</p>
+            <a href="menu.html" class="btn btn-primary">View our menu</a>
+          </div>
+        </div>
+      </div>
+
 
       <button class="carousel-control-prev" type="button" data-bs-target="#homeCarousel" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -99,119 +101,120 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
+  </div>
 
-    <!-- Home Carousel End -->
+  <!-- Home Carousel End -->
 
-    <!-- Home About -->
-    <section class="home-about">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <h3 class="lead text-md-right text-sm-left"> Hello. Our hotel has been present for over 20 years.
-              We make the best for all our customers.</h3>
-          </div>
-          <div class="col-md-6">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit, assumenda
-              consequuntur non cumque ipsam incidunt laboriosam, facilis aliquam saepe fugit repellendus
-              porro iusto eos ab veniam? Doloremque obcaecati aspernatur
-              praesentium ab nesciunt ea optio ipsam beatae eligendi magnam.</p>
-            <p>soluta aut quibusdam eum nostrum quos fugiat odit minima possimus est, molestias, in modi
-              voluptatibus delectus provident? Id, numquam? Amet deleniti qui, illum veniam quibusdam
-              reprehenderit.
-            </p>
-          </div>
+  <!-- Home About -->
+  <section class="home-about">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h3 class="lead text-md-right text-sm-left"> Hello. Our hotel has been present for over 20 years.
+            We make the best for all our customers.</h3>
+        </div>
+        <div class="col-md-6">
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit, assumenda
+            consequuntur non cumque ipsam incidunt laboriosam, facilis aliquam saepe fugit repellendus
+            porro iusto eos ab veniam? Doloremque obcaecati aspernatur
+            praesentium ab nesciunt ea optio ipsam beatae eligendi magnam.</p>
+          <p>soluta aut quibusdam eum nostrum quos fugiat odit minima possimus est, molestias, in modi
+            voluptatibus delectus provident? Id, numquam? Amet deleniti qui, illum veniam quibusdam
+            reprehenderit.
+          </p>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="home-about">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <h3 class="lead text-md-right text-sm-left"> Hello. Our hotel has been present for over 20 years.
-              We make the best for all our customers.</h3>
-          </div>
-          <div class="col-md-6">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit, assumenda
-              consequuntur non cumque ipsam incidunt laboriosam, facilis aliquam saepe fugit repellendus
-              porro iusto eos ab veniam? Doloremque obcaecati aspernatur
-              praesentium ab nesciunt ea optio ipsam beatae eligendi magnam.</p>
-            <p>soluta aut quibusdam eum nostrum quos fugiat odit minima possimus est, molestias, in modi
-              voluptatibus delectus provident? Id, numquam? Amet deleniti qui, illum veniam quibusdam
-              reprehenderit.
-            </p>
-          </div>
+  <section class="home-about">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h3 class="lead text-md-right text-sm-left"> Hello. Our hotel has been present for over 20 years.
+            We make the best for all our customers.</h3>
+        </div>
+        <div class="col-md-6">
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit, assumenda
+            consequuntur non cumque ipsam incidunt laboriosam, facilis aliquam saepe fugit repellendus
+            porro iusto eos ab veniam? Doloremque obcaecati aspernatur
+            praesentium ab nesciunt ea optio ipsam beatae eligendi magnam.</p>
+          <p>soluta aut quibusdam eum nostrum quos fugiat odit minima possimus est, molestias, in modi
+            voluptatibus delectus provident? Id, numquam? Amet deleniti qui, illum veniam quibusdam
+            reprehenderit.
+          </p>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="home-about">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <h3 class="lead text-md-right text-sm-left"> Hello. Our hotel has been present for over 20 years.
-              We make the best for all our customers.</h3>
-          </div>
-          <div class="col-md-6">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit, assumenda
-              consequuntur non cumque ipsam incidunt laboriosam, facilis aliquam saepe fugit repellendus
-              porro iusto eos ab veniam? Doloremque obcaecati aspernatur
-              praesentium ab nesciunt ea optio ipsam beatae eligendi magnam.</p>
-            <p>soluta aut quibusdam eum nostrum quos fugiat odit minima possimus est, molestias, in modi
-              voluptatibus delectus provident? Id, numquam? Amet deleniti qui, illum veniam quibusdam
-              reprehenderit.
-            </p>
-          </div>
+  <section class="home-about">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h3 class="lead text-md-right text-sm-left"> Hello. Our hotel has been present for over 20 years.
+            We make the best for all our customers.</h3>
+        </div>
+        <div class="col-md-6">
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit, assumenda
+            consequuntur non cumque ipsam incidunt laboriosam, facilis aliquam saepe fugit repellendus
+            porro iusto eos ab veniam? Doloremque obcaecati aspernatur
+            praesentium ab nesciunt ea optio ipsam beatae eligendi magnam.</p>
+          <p>soluta aut quibusdam eum nostrum quos fugiat odit minima possimus est, molestias, in modi
+            voluptatibus delectus provident? Id, numquam? Amet deleniti qui, illum veniam quibusdam
+            reprehenderit.
+          </p>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="home-about">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <h3 class="lead text-md-right text-sm-left"> Hello. Our hotel has been present for over 20 years.
-              We make the best for all our customers.</h3>
-          </div>
-          <div class="col-md-6">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit, assumenda
-              consequuntur non cumque ipsam incidunt laboriosam, facilis aliquam saepe fugit repellendus
-              porro iusto eos ab veniam? Doloremque obcaecati aspernatur
-              praesentium ab nesciunt ea optio ipsam beatae eligendi magnam.</p>
-            <p>soluta aut quibusdam eum nostrum quos fugiat odit minima possimus est, molestias, in modi
-              voluptatibus delectus provident? Id, numquam? Amet deleniti qui, illum veniam quibusdam
-              reprehenderit.
-            </p>
-          </div>
+  <section class="home-about">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h3 class="lead text-md-right text-sm-left"> Hello. Our hotel has been present for over 20 years.
+            We make the best for all our customers.</h3>
+        </div>
+        <div class="col-md-6">
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit, assumenda
+            consequuntur non cumque ipsam incidunt laboriosam, facilis aliquam saepe fugit repellendus
+            porro iusto eos ab veniam? Doloremque obcaecati aspernatur
+            praesentium ab nesciunt ea optio ipsam beatae eligendi magnam.</p>
+          <p>soluta aut quibusdam eum nostrum quos fugiat odit minima possimus est, molestias, in modi
+            voluptatibus delectus provident? Id, numquam? Amet deleniti qui, illum veniam quibusdam
+            reprehenderit.
+          </p>
         </div>
       </div>
+    </div>
 
-    </section>
+  </section>
 
-    <!-- Home About End -->
+  <!-- Home About End -->
 
-    <!-- Home book a table  -->
+  <!-- Home book a table  -->
 
-    <section class="book-a-table">
-      <div class="container">`
-        <div class="row">
-          <div class="col-md-6">
+  <section class="book-a-table">
+    <div class="container">`
+      <div class="row">
+        <div class="col-md-6">
 
-          </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Home book a table  End -->
+  <!-- Home book a table  End -->
 
-    <!-- Footer -->
-
-
-    <!-- Footer End -->
+  <!-- Footer -->
 
 
+  <!-- Footer End -->
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 
 </html>

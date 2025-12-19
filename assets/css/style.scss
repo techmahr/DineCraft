@@ -7,11 +7,6 @@
 /* Navbar over carousel */
 
 .custom-navbar {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  z-index: 10;
-  background: transparent;
 
   .navbar-brand,
   .nav-link {
@@ -29,42 +24,41 @@
 
 #homeCarousel {
 
-  max-height: 100vh;
-  overflow: hidden;
-
-  .carousel-inner,
   .carousel-item {
-    height: 100%;
+    height: 100vh;
+    max-height: 1080px;
+    min-height: 400px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 
-  .carousel-item {
-    position: relative;
-  }
-
-  img {
+  .carousel-caption-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100%;
     width: 100%;
-    object-fit: cover; // key line
+    background: rgba(0, 0, 0, 0.3);
   }
 
-  .carousel-caption {
-    top: 50%;
-    bottom: auto;
-    transform: translateY(-50%);
-    text-align: center;
+  .carousel-caption-wrap .carousel-caption {
+    position: static;
+    padding-top: 0;
+    padding-bottom: 0;
+    width: 90%;
+    max-width: 1200px;
+  }
 
+  h1 {
+    font-size: 55px;
+  }
 
+  p {
+    font-size: 20px;
+  }
 
-    h1 {
-      font-size: 55px;
-    }
-
-    p {
-      font-size: 20px;
-    }
-
-    a {
-      margin-top: 20px;
-    }
+  a {
+    margin-top: 20px;
   }
 }

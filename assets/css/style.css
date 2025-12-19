@@ -4,13 +4,6 @@
 }
 
 /* Navbar over carousel */
-.custom-navbar {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  z-index: 10;
-  background: transparent;
-}
 .custom-navbar .navbar-brand,
 .custom-navbar .nav-link {
   color: #fff;
@@ -20,35 +13,35 @@
 }
 
 /* Home Carousel  */
-#homeCarousel {
-  max-height: 100vh;
-  overflow: hidden;
-}
-#homeCarousel .carousel-inner,
 #homeCarousel .carousel-item {
-  height: 100%;
+  height: 100vh;
+  max-height: 1080px;
+  min-height: 400px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
-#homeCarousel .carousel-item {
-  position: relative;
-}
-#homeCarousel img {
+#homeCarousel .carousel-caption-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100%;
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  background: rgba(0, 0, 0, 0.3);
 }
-#homeCarousel .carousel-caption {
-  top: 50%;
-  bottom: auto;
-  transform: translateY(-50%);
-  text-align: center;
+#homeCarousel .carousel-caption-wrap .carousel-caption {
+  position: static;
+  padding-top: 0;
+  padding-bottom: 0;
+  width: 90%;
+  max-width: 1200px;
 }
-#homeCarousel .carousel-caption h1 {
+#homeCarousel h1 {
   font-size: 55px;
 }
-#homeCarousel .carousel-caption p {
+#homeCarousel p {
   font-size: 20px;
 }
-#homeCarousel .carousel-caption a {
+#homeCarousel a {
   margin-top: 20px;
 }/*# sourceMappingURL=style.css.map */
