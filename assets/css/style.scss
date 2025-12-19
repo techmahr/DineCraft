@@ -1,6 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
 @import 'variables';
 @import 'navbar';
 @import 'footer';
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  color: $text-primary;
+}
 
 
 /* Buttons  */
@@ -56,6 +63,8 @@ a {
   color: $clr-primary !important;
 }
 
+
+
 /* Margins  */
 
 .sec-pad {
@@ -65,6 +74,21 @@ a {
   @media (min-width: 992px) {
     padding-top: $section-spacing * 2;
     padding-bottom: $section-spacing * 2;
+  }
+}
+
+/* Heading One  */
+
+.head1 {
+  h2 {
+    color: $text-primary;
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-size: 18px;
+    color: $text-secondary;
   }
 }
 
@@ -171,7 +195,7 @@ a {
 .menu-item-one {
   margin-bottom: 25px;
   padding-bottom: 10px;
-  border-bottom: 1px dashed $text-muted;
+  border-bottom: 1px dashed $text-secondary;
 
   .title-wrap {
     display: flex;
@@ -180,8 +204,8 @@ a {
 
     h5 {
       margin-bottom: 0;
-      font-weight: 700;
-      color: $text-main;
+      font-weight: 500;
+      color: $text-primary;
     }
 
     .price {
@@ -193,8 +217,8 @@ a {
 
   p {
     margin-top: 5px;
-    margin-bottom: 0;
-    color: #6c757d;
+    margin-bottom: 16px;
+    color: $text-secondary;
     font-size: 0.95rem;
   }
 

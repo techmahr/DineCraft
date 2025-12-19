@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
 /*
 
 Red #ff3600
@@ -27,7 +28,7 @@ Red #ff3600
 }
 .custom-navbar.navbar-scrolled .navbar-brand,
 .custom-navbar.navbar-scrolled .nav-link {
-  color: #1A1A1A !important;
+  color: #1F2632 !important;
 }
 .custom-navbar.navbar-scrolled .nav-link:hover {
   color: #D14A00 !important;
@@ -76,6 +77,11 @@ Red #ff3600
 .footer-one ul.timing-list li:last-child {
   border-bottom: none;
   margin-bottom: 0;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  color: #1F2632;
 }
 
 /* Buttons  */
@@ -134,6 +140,17 @@ a {
     padding-top: 80px;
     padding-bottom: 80px;
   }
+}
+
+/* Heading One  */
+.head1 h2 {
+  color: #1F2632;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+.head1 p {
+  font-size: 18px;
+  color: #527179;
 }
 
 /* Home Carousel  */
@@ -219,7 +236,7 @@ a {
 .menu-item-one {
   margin-bottom: 25px;
   padding-bottom: 10px;
-  border-bottom: 1px dashed #6C757D;
+  border-bottom: 1px dashed #527179;
 }
 .menu-item-one .title-wrap {
   display: flex;
@@ -228,8 +245,8 @@ a {
 }
 .menu-item-one .title-wrap h5 {
   margin-bottom: 0;
-  font-weight: 700;
-  color: #1A1A1A;
+  font-weight: 500;
+  color: #1F2632;
 }
 .menu-item-one .title-wrap .price {
   font-weight: 700;
@@ -238,8 +255,8 @@ a {
 }
 .menu-item-one p {
   margin-top: 5px;
-  margin-bottom: 0;
-  color: #6c757d;
+  margin-bottom: 16px;
+  color: #527179;
   font-size: 0.95rem;
 }
 @media (min-width: 768px) {
