@@ -1,9 +1,15 @@
+@use 'variables' as *;
+
 /* Footer Styles  */
 
 .footer-one {
     background-color: #1b1b1b;
     padding: 60px 0 30px 0;
     color: #fff;
+
+    h5 {
+        font-family: $font-primary;
+    }
 
     ul {
         list-style: none;
@@ -53,8 +59,6 @@
         P {
             font-size: 14px;
         }
-
-
 
         .pipe-separator {
             padding: 0 10px;
