@@ -20,7 +20,7 @@ Red #ff3600
   transition: color 0.3s ease;
 }
 .custom-navbar .nav-link:hover {
-  color: #D14A00 !important;
+  color: #d32f2f !important;
 }
 .custom-navbar.navbar-scrolled {
   background-color: #FFFFFF;
@@ -32,7 +32,7 @@ Red #ff3600
   color: #1F2632 !important;
 }
 .custom-navbar.navbar-scrolled .nav-link:hover {
-  color: #D14A00 !important;
+  color: #d32f2f !important;
 }
 .custom-navbar.navbar-scrolled .navbar-toggler {
   border-color: rgba(0, 0, 0, 0.1);
@@ -66,7 +66,7 @@ Red #ff3600
   font-size: 14px;
 }
 .footer-one ul li a:hover {
-  color: #D14A00;
+  color: #d32f2f;
 }
 .footer-one ul.timing-list li {
   display: flex;
@@ -125,37 +125,37 @@ h6 {
 }
 
 .btn-primary {
-  background-color: #D14A00;
-  border-color: #D14A00;
+  background-color: #d32f2f;
+  border-color: #d32f2f;
   color: #FFFFFF;
   font-weight: 600;
   transition: all 0.3s ease;
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
-  background-color: #B71C1C !important;
-  border-color: #B71C1C !important;
+  background-color: #1d0808 !important;
+  border-color: #1d0808 !important;
   color: #FFFFFF !important;
-  box-shadow: 0 4px 12px rgba(209, 74, 0, 0.2);
+  box-shadow: 0 4px 12px rgba(211, 47, 47, 0.2);
 }
 
 .btn-outline-primary {
-  color: #D14A00;
-  border-color: #D14A00;
+  color: #d32f2f;
+  border-color: #d32f2f;
   background-color: transparent;
 }
 .btn-outline-primary:hover {
-  background-color: #D14A00;
-  border-color: #D14A00;
+  background-color: #d32f2f;
+  border-color: #d32f2f;
   color: #FFFFFF;
 }
 
 a {
-  color: #D14A00;
+  color: #d32f2f;
   text-decoration: none;
 }
 
 .text-primary {
-  color: #D14A00 !important;
+  color: #d32f2f !important;
 }
 
 /* Margins  */
@@ -238,7 +238,7 @@ a {
   min-height: 400px;
 }
 .book-a-table-one .booking-form-wrap {
-  background-color: #D14A00;
+  background-color: #d32f2f;
   padding: 50px;
   height: 100%;
 }
@@ -285,7 +285,7 @@ a {
 }
 .menu-item-one .title-wrap .price {
   font-weight: 700;
-  color: #D14A00;
+  color: #d32f2f;
   font-size: 1.1rem;
 }
 .menu-item-one p {
