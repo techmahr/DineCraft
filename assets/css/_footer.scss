@@ -9,6 +9,7 @@
 
     h5 {
         font-family: $font-primary;
+        color: $text-white !important;
     }
 
     ul {
@@ -19,7 +20,7 @@
             margin-bottom: 10px;
 
             a {
-                color: $clr-white2;
+                color: $text-white2;
                 transition: 0.3s;
                 margin-bottom: 10px;
                 font-size: 14px;
@@ -36,8 +37,8 @@
                 display: flex;
                 justify-content: space-between;
                 margin-bottom: 10px;
-                color: $clr-white2;
-                border-bottom: 1px dotted $clr-white2;
+                color: $text-white2;
+                border-bottom: 1px dotted $text-white2;
                 padding-bottom: 5px;
                 font-size: 14px;
 

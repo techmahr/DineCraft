@@ -50,6 +50,7 @@ Red #ff3600
 }
 .footer-one h5 {
   font-family: "DM Sans", sans-serif;
+  color: #fff !important;
 }
 .footer-one ul {
   list-style: none;
