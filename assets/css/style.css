@@ -119,7 +119,6 @@ h6 {
   font-family: "Playfair Display", serif;
   line-height: normal;
   font-weight: 700;
-  letter-spacing: 1.2px;
 }
 
 /* Buttons  */
@@ -172,7 +171,7 @@ select {
   border-radius: 4px;
 }
 
-input {
+.form-control:not(textarea) {
   height: 45px !important;
 }
 
@@ -457,4 +456,25 @@ input {
     bottom: 10%;
     right: 15%;
   }
+}
+
+.contact-section ul {
+  padding: 0px;
+}
+.contact-section ul li {
+  display: block;
+  margin: 0 0 15px;
+}
+.contact-section ul li span {
+  display: inline-block;
+  min-width: 140px;
+}
+.contact-section ul .social-links {
+  display: inline;
+}
+.contact-section ul .social-links a {
+  border-color: #1F2632;
+}
+.contact-section ul .social-links a i {
+  color: #1F2632;
 }/*# sourceMappingURL=style.css.map */
