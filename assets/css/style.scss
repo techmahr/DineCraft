@@ -183,15 +183,6 @@ input {
 
 /* Book Table */
 
-.book-a-table-two {
-  padding: 80px 0;
-
-  .form-control {
-    margin-bottom: 32px;
-    border-radius: 4px;
-  }
-}
-
 .book-a-table-one {
 
   .book-table-img-section {
@@ -201,12 +192,22 @@ input {
     background-size: cover;
     height: 100%;
     min-height: 400px;
+    border-radius: 15px 0 0 15px;
+
+    @media (max-width: 767px) {
+      border-radius: 15px 15px 0px 0px;
+    }
   }
 
   .booking-form-wrap {
     background-color: $clr-primary;
     padding: 50px;
     height: 100%;
+    border-radius: 0 15px 15px 0;
+
+    @media (max-width: 767px) {
+      border-radius: 0px 0px 15px 15px;
+    }
 
     h2 {
       color: $clr-white;
@@ -227,7 +228,15 @@ input {
 
   }
 
+}
 
+.book-a-table-two {
+  padding: 80px 0;
+
+  .form-control {
+    margin-bottom: 32px;
+    border-radius: 4px;
+  }
 }
 
 /* Our menu  */
@@ -241,7 +250,7 @@ input {
   img {
     height: 80px;
     width: 80px;
-    border-radius: 50%;
+    border-radius: 15%;
     margin-right: 20px;
   }
 

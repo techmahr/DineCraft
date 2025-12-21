@@ -243,14 +243,6 @@ input {
 }
 
 /* Book Table */
-.book-a-table-two {
-  padding: 80px 0;
-}
-.book-a-table-two .form-control {
-  margin-bottom: 32px;
-  border-radius: 4px;
-}
-
 .book-a-table-one .book-table-img-section {
   background-image: url(../images/bnr1.jpg);
   background-position: center center;
@@ -258,11 +250,23 @@ input {
   background-size: cover;
   height: 100%;
   min-height: 400px;
+  border-radius: 15px 0 0 15px;
+}
+@media (max-width: 767px) {
+  .book-a-table-one .book-table-img-section {
+    border-radius: 15px 15px 0px 0px;
+  }
 }
 .book-a-table-one .booking-form-wrap {
   background-color: #d32f2f;
   padding: 50px;
   height: 100%;
+  border-radius: 0 15px 15px 0;
+}
+@media (max-width: 767px) {
+  .book-a-table-one .booking-form-wrap {
+    border-radius: 0px 0px 15px 15px;
+  }
 }
 .book-a-table-one .booking-form-wrap h2 {
   color: #FFFFFF;
@@ -282,6 +286,14 @@ input {
   color: #999;
 }
 
+.book-a-table-two {
+  padding: 80px 0;
+}
+.book-a-table-two .form-control {
+  margin-bottom: 32px;
+  border-radius: 4px;
+}
+
 /* Our menu  */
 .menu-item-one {
   margin-bottom: 25px;
@@ -292,7 +304,7 @@ input {
 .menu-item-one img {
   height: 80px;
   width: 80px;
-  border-radius: 50%;
+  border-radius: 15%;
   margin-right: 20px;
 }
 .menu-item-one .content-wrap {
