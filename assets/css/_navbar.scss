@@ -1,18 +1,11 @@
 @use 'variables' as *;
 
-/* Navbar Component */
 .custom-navbar {
     transition: all 0.4s ease-in-out;
     padding: 20px 0;
 
     .nav-logo {
         max-width: 180px;
-    }
-
-    // --- SHARED LINK STYLES ---
-    .navbar-brand,
-    .nav-link {
-        transition: color 0.3s ease;
     }
 
     .nav-item {
@@ -23,35 +16,56 @@
         }
     }
 
-    .nav-link:hover {
-        color: $clr-primary !important;
+    // Helper to handle Active/Hover states to avoid repeating code
+    @mixin nav-interaction {
+
+        &.active,
+        &:hover {
+            color: $clr-primary !important;
+        }
     }
 
-    // --- THEME 1: Light Mode (Dark Text for Light Backgrounds) ---
-    // Use this when the carousel is .carousel-light
+    // --- MOBILE MENU BACKGROUND ---
+    // This ensures that when the toggler is clicked, the background isn't transparent
+    @media (max-width: 991.98px) {
+        .navbar-collapse {
+            background-color: $clr-white; // Or $text-primary if you want dark mobile menu
+            padding: 20px;
+            margin-top: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+
+            .nav-link {
+                color: $text-primary !important; // Forces readable text on mobile
+            }
+        }
+    }
+
+    // --- THEME 1: Light Mode ---
     &.navbar-light-mode:not(.navbar-scrolled) {
 
         .navbar-brand,
         .nav-link {
-            color: $text-primary !important;
+            color: $text-primary;
+            @include nav-interaction;
         }
 
         .navbar-toggler {
-            filter: invert(1); // Makes the "hamburger" dark
+            filter: invert(1);
         }
     }
 
-    // --- THEME 2: Dark Mode (White Text for Dark Backgrounds) ---
-    // Use this when the carousel is .carousel-dark
+    // --- THEME 2: Dark Mode ---
     &.navbar-dark-mode:not(.navbar-scrolled) {
 
         .navbar-brand,
         .nav-link {
-            color: $clr-white !important;
+            color: $clr-white;
+            @include nav-interaction;
         }
     }
 
-    // --- SCROLLED STATE (Overrides everything) ---
+    // --- SCROLLED STATE ---
     &.navbar-scrolled {
         background-color: $clr-white;
         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -59,7 +73,8 @@
 
         .navbar-brand,
         .nav-link {
-            color: $text-primary !important;
+            color: $text-primary;
+            @include nav-interaction;
         }
 
         .navbar-toggler {
