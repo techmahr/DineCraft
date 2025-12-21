@@ -18,6 +18,12 @@ Red #ff3600
 .custom-navbar .nav-link {
   transition: color 0.3s ease;
 }
+.custom-navbar .nav-item {
+  padding-right: 30px;
+}
+.custom-navbar .nav-item:last-child {
+  padding-right: 0;
+}
 .custom-navbar .nav-link:hover {
   color: #d32f2f !important;
 }
@@ -252,7 +258,7 @@ input {
   color: #1F2632;
 }
 .home-carousel.carousel-light p {
-  color: #527179;
+  color: #1F2632;
 }
 
 /* Home About */

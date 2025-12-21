@@ -6,8 +6,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Display:ital@0;1&display=swap');
 
-
-
 body {
   font-family: $font-primary;
   color: $text-primary;
@@ -138,6 +136,7 @@ input {
 .home-carousel {
 
   // Shared styles for the item
+
   .carousel-item {
     height: 100vh;
     max-height: 900px;
@@ -148,6 +147,7 @@ input {
   }
 
   // Caption Wrapper (Flexbox Centering)
+
   .carousel-caption-wrap {
     display: flex;
     justify-content: center;
@@ -165,6 +165,7 @@ input {
   }
 
   // Shared Typography Styles
+
   h1 {
     font-size: 75px;
   }
@@ -202,7 +203,7 @@ input {
     }
 
     p {
-      color: $text-secondary;
+      color: $text-primary;
     }
   }
 }
