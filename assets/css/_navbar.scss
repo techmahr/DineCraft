@@ -6,6 +6,10 @@
 
     .nav-logo {
         max-width: 180px;
+
+        @media(max-width:767px) {
+            max-width: 130px;
+        }
     }
 
     .nav-item {

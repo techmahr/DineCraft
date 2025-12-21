@@ -13,6 +13,11 @@ Red #ff3600
 .custom-navbar .nav-logo {
   max-width: 180px;
 }
+@media (max-width: 767px) {
+  .custom-navbar .nav-logo {
+    max-width: 130px;
+  }
+}
 .custom-navbar .nav-item {
   padding-right: 30px;
 }
