@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Display:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 /*
 
 Red #ff3600
@@ -116,7 +116,10 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "DM Serif Display", serif;
+  font-family: "Playfair Display", serif;
+  line-height: normal;
+  font-weight: 700;
+  letter-spacing: 1.2px;
 }
 
 /* Buttons  */
@@ -290,6 +293,7 @@ input {
 @media (max-width: 767px) {
   .book-a-table-one .booking-form-wrap {
     border-radius: 0px 0px 15px 15px;
+    padding: 20px;
   }
 }
 .book-a-table-one .booking-form-wrap h2 {
