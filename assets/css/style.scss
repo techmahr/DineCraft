@@ -172,6 +172,8 @@ select {
 
   h1 {
     font-size: 75px;
+    line-height: 1.1;
+    margin-bottom: 24px;
 
     @media (max-width: 767px) {
       font-size: 60px;
