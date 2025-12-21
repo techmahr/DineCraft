@@ -259,6 +259,11 @@ select {
 .home-carousel h1 {
   font-size: 75px;
 }
+@media (max-width: 767px) {
+  .home-carousel h1 {
+    font-size: 60px;
+  }
+}
 .home-carousel p {
   font-size: 20px;
 }

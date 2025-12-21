@@ -172,6 +172,10 @@ select {
 
   h1 {
     font-size: 75px;
+
+    @media (max-width: 767px) {
+      font-size: 60px;
+    }
   }
 
   p {
