@@ -1,3 +1,57 @@
+// @use 'variables' as *;
+
+// /* Navbar Component */
+// .custom-navbar {
+//     transition: all 0.4s ease-in-out;
+//     padding: 20px 0;
+
+//     // Logo sizing
+//     .nav-logo {
+//         max-width: 180px;
+//     }
+
+//     // Base brand and link colors (Transparent state)
+//     .navbar-brand,
+//     .nav-link {
+//         color: $clr-white !important;
+//         transition: color 0.3s ease;
+//     }
+
+//     .nav-link {
+//         &:hover {
+//             color: $clr-primary !important;
+//         }
+//     }
+
+//     // Scrolled State (Triggered by JS)
+//     &.navbar-scrolled {
+//         background-color: $clr-white;
+//         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+//         padding: 10px 0; // Shrink effect
+
+//         .navbar-brand,
+//         .nav-link {
+//             color: $text-primary !important; // Dark text for white background
+//         }
+
+//         .nav-link {
+//             &:hover {
+//                 color: $clr-primary !important;
+//             }
+//         }
+
+//         // Mobile Toggler styling for white background
+//         .navbar-toggler {
+//             border-color: rgba(0, 0, 0, 0.1);
+//             background-color: rgba(0, 0, 0, 0.05);
+
+//             .navbar-toggler-icon {
+//                 filter: invert(1); // Flips white icon to black
+//             }
+//         }
+//     }
+// }
+
 @use 'variables' as *;
 
 /* Navbar Component */
@@ -5,49 +59,57 @@
     transition: all 0.4s ease-in-out;
     padding: 20px 0;
 
-    // Logo sizing
     .nav-logo {
         max-width: 180px;
     }
 
-    // Base brand and link colors (Transparent state)
+    // --- SHARED LINK STYLES ---
     .navbar-brand,
     .nav-link {
-        color: $clr-white !important;
         transition: color 0.3s ease;
     }
 
-    .nav-link {
-        &:hover {
-            color: $clr-primary !important;
-        }
+    .nav-link:hover {
+        color: $clr-primary !important;
     }
 
-    // Scrolled State (Triggered by JS)
-    &.navbar-scrolled {
-        background-color: $clr-white;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        padding: 10px 0; // Shrink effect
+    // --- THEME 1: Light Mode (Dark Text for Light Backgrounds) ---
+    // Use this when the carousel is .carousel-light
+    &.navbar-light-mode:not(.navbar-scrolled) {
 
         .navbar-brand,
         .nav-link {
-            color: $text-primary !important; // Dark text for white background
+            color: $text-primary !important;
         }
 
-        .nav-link {
-            &:hover {
-                color: $clr-primary !important;
-            }
-        }
-
-        // Mobile Toggler styling for white background
         .navbar-toggler {
-            border-color: rgba(0, 0, 0, 0.1);
-            background-color: rgba(0, 0, 0, 0.05);
+            filter: invert(1); // Makes the "hamburger" dark
+        }
+    }
 
-            .navbar-toggler-icon {
-                filter: invert(1); // Flips white icon to black
-            }
+    // --- THEME 2: Dark Mode (White Text for Dark Backgrounds) ---
+    // Use this when the carousel is .carousel-dark
+    &.navbar-dark-mode:not(.navbar-scrolled) {
+
+        .navbar-brand,
+        .nav-link {
+            color: $clr-white !important;
+        }
+    }
+
+    // --- SCROLLED STATE (Overrides everything) ---
+    &.navbar-scrolled {
+        background-color: $clr-white;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        padding: 10px 0;
+
+        .navbar-brand,
+        .nav-link {
+            color: $text-primary !important;
+        }
+
+        .navbar-toggler {
+            filter: invert(1);
         }
     }
 }

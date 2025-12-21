@@ -42,6 +42,7 @@ h6 {
 }
 
 // Primary Solid Button (Red)
+
 .btn-primary {
   background-color: $clr-primary;
   border-color: $clr-primary;
@@ -132,10 +133,11 @@ input {
   }
 }
 
-/* Home Carousel  */
+/* Home Carousel */
 
-#homeCarousel {
+.home-carousel {
 
+  // Shared styles for the item
   .carousel-item {
     height: 100vh;
     max-height: 900px;
@@ -145,23 +147,24 @@ input {
     background-repeat: no-repeat;
   }
 
+  // Caption Wrapper (Flexbox Centering)
   .carousel-caption-wrap {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
     width: 100%;
-    background: rgba(0, 0, 0, 0.3);
+
+    .carousel-caption {
+      position: static;
+      padding-top: 0;
+      padding-bottom: 0;
+      width: 90%;
+      max-width: 1000px;
+    }
   }
 
-  .carousel-caption-wrap .carousel-caption {
-    position: static;
-    padding-top: 0;
-    padding-bottom: 0;
-    width: 90%;
-    max-width: 1000px;
-  }
-
+  // Shared Typography Styles
   h1 {
     font-size: 75px;
   }
@@ -172,6 +175,35 @@ input {
 
   a {
     margin-top: 20px;
+  }
+
+  // --- THEME OVERRIDES ---
+
+  // Dark Background Version (Light Text)
+  &.carousel-dark {
+    .carousel-caption-wrap {
+      background: rgba(0, 0, 0, 0.4); // Darker overlay for readability
+    }
+
+    h1,
+    p {
+      color: #ffffff;
+    }
+  }
+
+  // Light Background Version (Dark Text)
+  &.carousel-light {
+    .carousel-caption-wrap {
+      background: rgba(255, 255, 255, 0.3); // Lighter overlay
+    }
+
+    h1 {
+      color: $text-primary;
+    }
+
+    p {
+      color: $text-secondary;
+    }
   }
 }
 

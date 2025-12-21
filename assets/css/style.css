@@ -16,11 +16,21 @@ Red #ff3600
 }
 .custom-navbar .navbar-brand,
 .custom-navbar .nav-link {
-  color: #FFFFFF !important;
   transition: color 0.3s ease;
 }
 .custom-navbar .nav-link:hover {
   color: #d32f2f !important;
+}
+.custom-navbar.navbar-light-mode:not(.navbar-scrolled) .navbar-brand,
+.custom-navbar.navbar-light-mode:not(.navbar-scrolled) .nav-link {
+  color: #1F2632 !important;
+}
+.custom-navbar.navbar-light-mode:not(.navbar-scrolled) .navbar-toggler {
+  filter: invert(1);
+}
+.custom-navbar.navbar-dark-mode:not(.navbar-scrolled) .navbar-brand,
+.custom-navbar.navbar-dark-mode:not(.navbar-scrolled) .nav-link {
+  color: #FFFFFF !important;
 }
 .custom-navbar.navbar-scrolled {
   background-color: #FFFFFF;
@@ -31,14 +41,7 @@ Red #ff3600
 .custom-navbar.navbar-scrolled .nav-link {
   color: #1F2632 !important;
 }
-.custom-navbar.navbar-scrolled .nav-link:hover {
-  color: #d32f2f !important;
-}
 .custom-navbar.navbar-scrolled .navbar-toggler {
-  border-color: rgba(0, 0, 0, 0.1);
-  background-color: rgba(0, 0, 0, 0.05);
-}
-.custom-navbar.navbar-scrolled .navbar-toggler .navbar-toggler-icon {
   filter: invert(1);
 }
 
@@ -203,8 +206,8 @@ input {
   color: #527179;
 }
 
-/* Home Carousel  */
-#homeCarousel .carousel-item {
+/* Home Carousel */
+.home-carousel .carousel-item {
   height: 100vh;
   max-height: 900px;
   min-height: 400px;
@@ -212,29 +215,44 @@ input {
   background-position: center;
   background-repeat: no-repeat;
 }
-#homeCarousel .carousel-caption-wrap {
+.home-carousel .carousel-caption-wrap {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
   width: 100%;
-  background: rgba(0, 0, 0, 0.3);
 }
-#homeCarousel .carousel-caption-wrap .carousel-caption {
+.home-carousel .carousel-caption-wrap .carousel-caption {
   position: static;
   padding-top: 0;
   padding-bottom: 0;
   width: 90%;
   max-width: 1000px;
 }
-#homeCarousel h1 {
+.home-carousel h1 {
   font-size: 75px;
 }
-#homeCarousel p {
+.home-carousel p {
   font-size: 20px;
 }
-#homeCarousel a {
+.home-carousel a {
   margin-top: 20px;
+}
+.home-carousel.carousel-dark .carousel-caption-wrap {
+  background: rgba(0, 0, 0, 0.4);
+}
+.home-carousel.carousel-dark h1,
+.home-carousel.carousel-dark p {
+  color: #ffffff;
+}
+.home-carousel.carousel-light .carousel-caption-wrap {
+  background: rgba(255, 255, 255, 0.3);
+}
+.home-carousel.carousel-light h1 {
+  color: #1F2632;
+}
+.home-carousel.carousel-light p {
+  color: #527179;
 }
 
 /* Home About */
