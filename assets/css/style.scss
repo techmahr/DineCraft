@@ -461,3 +461,125 @@ select {
     }
   }
 }
+
+// Faq styles 
+
+// // Faq styles 
+
+// .accordion {
+//   &#faqAccordion {
+//     .accordion-item {
+//       margin-bottom: 30px;
+//       border-radius: 15px !important;
+//       border: 1px solid rgba($clr-border, 0.2);
+//       overflow: hidden;
+//       background-color: $clr-white;
+//       transition: all 0.3s ease;
+
+//       &:hover {
+//         border-color: rgba($clr-primary, 0.4) !important;
+//       }
+//     }
+
+//     .accordion-header {
+//       margin-bottom: 0;
+//     }
+
+//     .accordion-button {
+//       font-weight: 700;
+//       color: $text-primary;
+//       padding: 20px;
+//       border-radius: 15px !important;
+//       font-size: 1.1rem;
+
+//       &:focus {
+//         box-shadow: none;
+//         border-color: rgba($clr-primary, 0.2);
+//       }
+
+//       &:not(.collapsed) {
+//         background-color: rgba($clr-primary, 0.05);
+//         color: $clr-primary;
+//         border-bottom-left-radius: 0 !important;
+//         border-bottom-right-radius: 0 !important;
+//         box-shadow: inset 0 -1px 0 rgba($text-secondary, 0.1);
+
+//         &::after {
+//           filter: sepia(100%) saturate(2000%) hue-rotate(340deg);
+//         }
+//       }
+//     }
+
+//     .accordion-body {
+//       padding: 25px;
+//       color: $text-secondary;
+//       line-height: 1.6;
+//       font-family: $font-primary;
+//     }
+//   }
+// }
+
+// Faq styles 
+.accordion {
+  &#faqAccordion {
+    .accordion-item {
+      margin-bottom: 30px;
+      border-radius: 15px !important;
+      border: 1px solid rgba($clr-border, 0.2);
+      overflow: hidden;
+      background-color: $clr-white;
+      transition: all 0.3s ease;
+
+      &:has(.collapse.show) {
+        background-color: rgba($clr-primary, 0.05); // Same BG for both
+        border-color: rgba($clr-primary, 0.2);
+      }
+
+      &:hover {
+        border-color: rgba($clr-primary, 0.4) !important;
+      }
+    }
+
+    .accordion-button {
+      font-weight: 700;
+      color: $text-primary;
+      padding: 20px;
+      border-radius: 15px !important;
+      font-size: 1.1rem;
+      background-color: transparent;
+
+      &:focus {
+        box-shadow: none;
+      }
+
+      &:not(.collapsed) {
+        color: $clr-primary;
+        background-color: transparent;
+        box-shadow: none;
+
+        &::after {
+          filter: sepia(100%) saturate(2000%) hue-rotate(340deg);
+        }
+      }
+    }
+
+    .accordion-body {
+      padding: 0 20px 25px 20px;
+      color: $text-secondary;
+      line-height: 1.6;
+      font-family: $font-primary;
+      background-color: transparent;
+    }
+  }
+}
+
+.contact-block {
+  background: $bg-light;
+  border-radius: 15px;
+  padding: 40px 20px 50px 20px;
+
+  img {
+    max-width: 200px;
+    padding: 20px 0;
+  }
+}

@@ -2,212 +2,302 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>L'Artisan | Modern Bistro Template</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-    <style>
-        :root {
-            --primary-gold: #C5A059;
-            --dark-bg: #111111;
-        }
-
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #fff;
-            color: #333;
-        }
-
-        h1,
-        h2,
-        h3,
-        .serif {
-            font-family: 'Playfair Display', serif;
-        }
-
-        /* Hero Split Screen */
-        .hero-section {
-            min-height: 90vh;
-            display: flex;
-            align-items: center;
-        }
-
-        .hero-content {
-            padding: 10% 5%;
-        }
-
-        .hero-image {
-            background: url('https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&q=80') center/cover;
-            min-height: 50vh;
-        }
-
-        /* Info Strip */
-        .info-strip {
-            background: var(--dark-bg);
-            color: white;
-            padding: 20px 0;
-            border-bottom: 3px solid var(--primary-gold);
-        }
-
-        .info-item i {
-            color: var(--primary-gold);
-            margin-right: 10px;
-        }
-
-        /* Menu Icons */
-        .badge-vegan {
-            background: #2ecc71;
-            font-size: 10px;
-            padding: 3px 6px;
-            border-radius: 4px;
-            color: white;
-        }
-
-        .badge-spicy {
-            background: #e74c3c;
-            font-size: 10px;
-            padding: 3px 6px;
-            border-radius: 4px;
-            color: white;
-        }
-
-        /* Signature Carousel Card */
-        .dish-card {
-            border: none;
-            transition: transform 0.3s;
-        }
-
-        .dish-card:hover {
-            transform: translateY(-10px);
-        }
-
-        .btn-gold {
-            background: var(--primary-gold);
-            color: white;
-            border-radius: 0;
-            padding: 12px 30px;
-        }
-    </style>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>DineCraft</title>
+    <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 
 <body>
 
-    <header class="container-fluid g-0">
-        <div class="row g-0 align-items-center">
-            <div class="col-lg-6 hero-content bg-light">
-                <span class="text-uppercase tracking-widest text-muted">Est. 2025</span>
-                <h1 class="display-2 my-4">Experience the Art of <span style="color: var(--primary-gold)">Fine Dining</span></h1>
-                <p class="lead mb-5">A culinary journey through seasonal flavors and artisanal techniques.</p>
-                <a href="#booking" class="btn btn-gold btn-lg">Book a Table</a>
-            </div>
-            <div class="col-lg-6 hero-image d-none d-lg-block" style="height: 100vh;"></div>
-        </div>
-    </header>
+    <!-- Navbar -->
 
-    <section class="info-strip">
-        <div class="container">
-            <div class="row text-center">
-                <div class="col-md-4 mb-3 mb-md-0 info-item">
-                    <i class="fa-solid fa-clock"></i> Mon-Sun: 12:00 PM - 11:00 PM
-                </div>
-                <div class="col-md-4 mb-3 mb-md-0 info-item">
-                    <a href="tel:+123456789" class="text-white text-decoration-none"><i class="fa-solid fa-phone"></i> +1 (234) 567-890</a>
-                </div>
-                <div class="col-md-4 info-item">
-                    <a href="https://maps.google.com" target="_blank" class="text-white text-decoration-none"><i class="fa-solid fa-location-dot"></i> 123 Gourmet St, New York</a>
-                </div>
-            </div>
-        </div>
-    </section>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark custom-navbar navbar-light-mode">
+        <div class="container-fluid">
 
-    <section class="py-5 my-5">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-5">
-                    <img src="https://images.unsplash.com/photo-1583394293214-28ded15ee548?auto=format&fit=crop&q=80" class="img-fluid rounded shadow" alt="Chef">
-                </div>
-                <div class="col-md-6 offset-md-1">
-                    <h2 class="display-4 mb-4">The Passion Behind <br>Every Ingredient</h2>
-                    <p>Our kitchen is led by Chef Julian Vance, who believes that great food starts at the roots. We partner with local organic farms to ensure every vegetable is picked at dawn and served by dusk.</p>
-                    <img src="signature-placeholder.png" alt="Chef Signature" width="150" class="mt-3">
-                </div>
+            <!-- Logo -->
+            <a class="navbar-brand " href="index.html">
+                <img class="nav-logo" src="./assets/images/logo.png" alt="DineCraft" />
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Nav items -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="menu.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="reservation.html">Reservation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="faq.html">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+
             </div>
         </div>
-    </section>
+    </nav>
 
-    <section class="bg-light py-5">
-        <div class="container">
-            <div class="text-center mb-5">
-                <h2 class="display-5">Chef's Specials</h2>
-                <div style="width: 50px; height: 3px; background: var(--primary-gold); margin: 20px auto;"></div>
-            </div>
-            <div class="row">
-                <div class="col-md-4 mb-4">
-                    <div class="card dish-card h-100">
-                        <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&q=80" class="card-img-top" alt="Dish">
-                        <div class="card-body text-center">
-                            <h5 class="serif h4">Truffle Risotto</h5>
-                            <p class="text-muted small">Arborio rice, fresh black truffle, parmesan.</p>
-                            <span class="fw-bold" style="color: var(--primary-gold)">$32.00</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <!-- Navbar End -->
 
-    <section class="py-5">
+    <!--   Title  -->
+
+    <section class="our-menu sec-pad bg-light">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 mx-auto">
-                    <div class="text-center mb-5">
-                        <h2 class="display-5">Main Menu</h2>
-                    </div>
-                    <div class="d-flex justify-content-between align-items-baseline mb-4 border-bottom pb-2">
-                        <div>
-                            <h5 class="serif mb-0">Pan-Seared Scallops <span class="badge-vegan">VEGAN</span></h5>
-                            <small class="text-muted">Cauliflower silk, lemon caper butter</small>
-                        </div>
-                        <span class="fw-bold">$28</span>
-                    </div>
-                    <div class="d-flex justify-content-between align-items-baseline mb-4 border-bottom pb-2">
-                        <div>
-                            <h5 class="serif mb-0">Spicy Diavola <span class="badge-spicy">HOT</span></h5>
-                            <small class="text-muted">Nduja, chili flakes, honey glaze</small>
-                        </div>
-                        <span class="fw-bold">$24</span>
+                <div class="col-md-10 offset-md-1">
+                    <div class="text-center head1 pt-5">
+                        <h2>FAQ</h2>
+                        <p class="mb-0">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, quas voluptatem cupiditate praesentium commodi magnam eligendi dicta aliquam rem. Maiores eos placeat earum quo culpa totam repudiandae quasi magni iusto ratione laudantium
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer class="bg-dark text-white py-5">
+    <!--   Title  End -->
+
+    <section class="fac-section sec-pad">
         <div class="container">
             <div class="row">
-                <div class="col-md-4 mb-4">
-                    <h3 class="serif text-white mb-4">L'Artisan</h3>
-                    <p class="text-muted">Redefining the bistro experience since 2025.</p>
-                    <div class="d-flex gap-3">
-                        <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="text-white"><i class="fab fa-facebook"></i></a>
+                <div class="col-md-8">
+                    <h5 class="mb-5 w-75">We are always at your service. To ensure your evening is nothing short of exceptional, we’ve provided answers to our guests' most common queries.</h5>
+
+                    <div class="accordion accordion-flush" id="faqAccordion">
+
+                        <div class="accordion-item mb-4 border rounded-4 overflow-hidden">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq-1" aria-expanded="true">
+                                    How can I make a reservation at DineCraft?
+                                </button>
+                            </h2>
+                            <div id="faq-1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    You can easily book a table through our website's "Reservations" page or by calling our host team directly. We recommend booking at least 48 hours in advance for weekend dining.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item mb-4 border rounded-4 overflow-hidden">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq-2">
+                                    Do you have on-site parking?
+                                </button>
+                            </h2>
+                            <div id="faq-2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Yes, we offer complimentary valet parking for all our dinner guests, as well as a dedicated parking lot located just behind the building.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item mb-4 border rounded-4 overflow-hidden">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq-3">
+                                    Can you accommodate allergies?
+                                </button>
+                            </h2>
+                            <div id="faq-3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Absolutely. Please inform your server of any dietary restrictions. Our kitchen is well-versed in gluten-free, nut-free, and vegan preparations.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item mb-4 border rounded-4 overflow-hidden">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq-4">
+                                    Do you accept credit cards?
+                                </button>
+                            </h2>
+                            <div id="faq-4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    We accept all major credit cards including Visa, Mastercard, and American Express, as well as mobile payments like Apple Pay and Google Pay.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item mb-4 border rounded-4 overflow-hidden">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq-5">
+                                    How do I purchase a gift card?
+                                </button>
+                            </h2>
+                            <div id="faq-5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Gift cards can be purchased in person at the restaurant or digitally through our website. They are available in any denomination and never expire.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item mb-4 border rounded-4 overflow-hidden">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq-6">
+                                    How can I make a booking for a large group?
+                                </button>
+                            </h2>
+                            <div id="faq-6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    For groups of 10 or more, please visit our 'Events' page or email our events coordinator. We offer special set menus for larger parties to ensure the best service.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item mb-4 border rounded-4 overflow-hidden">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq-7">
+                                    If I have a question about an existing reservation?
+                                </button>
+                            </h2>
+                            <div id="faq-7" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Please reply to your confirmation email or call us directly with your reservation number. We are happy to adjust times or party sizes based on availability.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item mb-4 border rounded-4 overflow-hidden">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq-8">
+                                    How do I find you?
+                                </button>
+                            </h2>
+                            <div id="faq-8" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    We are located at Hudson 487, New York. We are easily accessible via the subway (Blue Line) and are located right next to the historic library building.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item mb-4 border rounded-4 overflow-hidden">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq-9">
+                                    Is there a dress code?
+                                </button>
+                            </h2>
+                            <div id="faq-9" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    We maintain a "Smart Casual" dress code. While we don't require jackets, we ask that guests refrain from wearing swimwear or athletic team uniforms.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item mb-4 border rounded-4 overflow-hidden">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq-10">
+                                    Do you offer takeout or delivery?
+                                </button>
+                            </h2>
+                            <div id="faq-10" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Yes! You can order for pickup directly through our website, or find us on major delivery platforms for home service within a 5-mile radius.
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-4">
+                    <div class="contact-block text-center">
+                        <h3>Still have questions?</h3>
+                        <p>Our team is always happy to help! Visit our contact page or contact us directly.</p>
+                        <img src="./assets/images/support.png" alt="Support">
+                        <a class="btn btn-primary mt-3" href="contact.html">Contact Us</a>
                     </div>
                 </div>
-                <div class="col-md-4 mb-4">
-                    <h5 class="mb-4">Newsletter</h5>
-                    <div class="input-group">
-                        <input type="text" class="form-control rounded-0" placeholder="Email Address">
-                        <button class="btn btn-gold">Join</button>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+
+    <footer class="footer-one">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-4 col-lg-4">
+                    <h5 class="mb-4 text-primary">Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="reservation.html">Reservation</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-md-12">
+                    <h5 class="mb-4 text-primary">Opening Hours</h5>
+                    <ul class="timing-list">
+                        <li>Monday<span>Closed</span></li>
+                        <li>Tuesday<span>10:00AM - 11:00 PM</span></li>
+                        <li>Wednesday<span>10:00AM - 11:00 PM</span></li>
+                        <li>Thursday<span>10:00AM - 11:00 PM</span></li>
+                        <li>Friday<span>10:00AM - 11:00 PM</span></li>
+                        <li>Saturday<span>10:00AM - 11:00 PM</span></li>
+                        <li>Sunday<span>10:00AM - 11:00 PM</span></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="mb-4 text-primary">Find Us</h5>
+                    <p class="text-white-50">
+                        123 Gourmet Avenue,<br>
+                        Culinary District, NY 10001
+                    </p>
+                    <p class="text-white-50">
+                        Email: info@dinecraft.com<br>
+                        Phone: +1 (555) 123-4567
+                    </p>
+                    <div class="social-links mt-3">
+                        <a href="#" class="btn btn-outline-light btn-sm me-2"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="btn btn-outline-light btn-sm me-2"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="btn btn-outline-light btn-sm me-2"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#" class="btn btn-outline-light btn-sm me-2"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" class="btn btn-outline-light btn-sm"><i class="bi bi-youtube"></i></a>
                     </div>
+                </div>
+
+            </div>
+
+            <hr class="mt-5 mb-4 border-secondary">
+
+            <div class="row copyright">
+                <div class="col-md-6 text-md-start">
+                    <p class="mb-0">&copy; 2025 DineCraft Restaurant.</p>
+                </div>
+                <div class="col-md-6 d-flex justify-content-md-end mt-3 mt-md-0">
+                    <a href="terms.html">Terms & Conditions</a>
+                    <span class="pipe-separator">|</span>
+                    <a href="privacy.html">Privacy Policy</a>
                 </div>
             </div>
+
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Footer End -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="assets/js/app.js"></script>
 </body>
 
 </html>
