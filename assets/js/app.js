@@ -29,3 +29,17 @@ if (myCarousel) {
         }
     });
 }
+
+// Codes for gallery 
+
+const galleryModal = document.getElementById('galleryModal');
+const modalImage = document.getElementById('modalImage');
+
+galleryModal.addEventListener('show.bs.modal', function (event) {
+  // The element (gallery-item) that triggered the modal
+  const triggerElement = event.relatedTarget;
+  // Get the image source from the child img tag
+  const imageSrc = triggerElement.querySelector('img').src;
+  // Update the modal image source
+  modalImage.src = imageSrc;
+});
