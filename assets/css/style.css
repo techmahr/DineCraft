@@ -596,6 +596,10 @@ select {
 #galleryModal .modal-content {
   background: transparent;
 }
+#galleryModal .btn-close {
+  background-color: #d32f2f;
+  opacity: 1;
+}
 #galleryModal #modalImage {
   max-height: 90vh;
   width: auto;

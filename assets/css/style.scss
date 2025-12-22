@@ -609,7 +609,7 @@ select {
     transform: scale(1.15);
   }
 
-  // Optional: Add a subtle overlay on hover
+  // Subtle overlay on hover
   &::after {
     content: '';
     position: absolute;
@@ -631,6 +631,11 @@ select {
 #galleryModal {
   .modal-content {
     background: transparent;
+  }
+
+  .btn-close {
+    background-color: $clr-primary;
+    opacity: 1;
   }
 
   #modalImage {
