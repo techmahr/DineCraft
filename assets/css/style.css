@@ -178,6 +178,15 @@ body {
   color: #fff;
 }
 
+.form-control {
+  margin-bottom: 32px;
+  border-radius: 10px;
+}
+
+.form-control:not(textarea) {
+  height: 48px;
+}
+
 .btn-outline-primary {
   color: #d32f2f;
   border-color: #d32f2f;
@@ -192,16 +201,6 @@ body {
 a {
   color: #d32f2f;
   text-decoration: none;
-}
-
-input,
-textarea,
-select {
-  border-radius: 4px;
-}
-
-.form-control:not(textarea) {
-  height: 45px !important;
 }
 
 .text-primary {
@@ -340,7 +339,6 @@ select {
   margin-bottom: 20px;
   border: none;
   padding: 12px;
-  border-radius: 4px;
 }
 .book-a-table-one .booking-form-wrap .form-control::-moz-placeholder {
   color: #999;
@@ -354,7 +352,6 @@ select {
 }
 .book-a-table-two .form-control {
   margin-bottom: 32px;
-  border-radius: 4px;
 }
 
 /* Our menu  */

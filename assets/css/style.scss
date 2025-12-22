@@ -61,6 +61,16 @@ body {
   color: #fff;
 }
 
+.form-control {
+  margin-bottom: 32px;
+  border-radius: 10px;
+  // border: none;
+}
+
+.form-control:not(textarea) {
+  height: 48px;
+}
+
 // Outline Button (Red Border, White Background)
 .btn-outline-primary {
   color: $clr-primary;
@@ -79,15 +89,13 @@ a {
   text-decoration: none;
 }
 
-input,
-textarea,
-select {
-  border-radius: 4px;
-}
+// input,
+// textarea,
+// select {
+//   border-radius: 4px;
+// }
 
-.form-control:not(textarea) {
-  height: 45px !important;
-}
+
 
 .text-primary {
   color: $clr-primary !important;
@@ -260,7 +268,6 @@ select {
       margin-bottom: 20px;
       border: none;
       padding: 12px;
-      border-radius: 4px;
 
       &::placeholder {
         color: #999;
@@ -276,7 +283,6 @@ select {
 
   .form-control {
     margin-bottom: 32px;
-    border-radius: 4px;
   }
 }
 
