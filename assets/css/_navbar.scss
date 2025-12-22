@@ -85,4 +85,15 @@
             filter: invert(1);
         }
     }
+
+    // Drop down menu styles 
+    .dropdown-menu {
+        border: none;
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+
+        .dropdown-item:hover {
+            background-color: $clr-off-white;
+            color: $clr-primary;
+        }
+    }
 }

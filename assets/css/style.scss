@@ -341,6 +341,28 @@ select {
 
 }
 
+// Menu end 
+
+// Menu 2 
+
+.h-100-img {
+  width: 100%;
+  border-radius: 15px;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+
+  // min-height for mobile so the image doesn't disappear if empty
+  @media (max-width: 767px) {
+    height: 300px;
+  }
+}
+
+// Menu 2 end 
+
+
+
+
 // Blog 
 
 .card-blog,
@@ -641,5 +663,21 @@ select {
   #modalImage {
     max-height: 90vh;
     width: auto;
+  }
+}
+
+// Terms and conditions page 
+
+.terms-section,
+.privacy-section {
+  h5 {}
+
+  p {
+    color: $text-secondary;
+  }
+
+  hr {
+    margin: 32px 0;
+    border-color: $clr-border;
   }
 }

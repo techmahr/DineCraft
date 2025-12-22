@@ -74,6 +74,14 @@ Red #ff3600
 .custom-navbar.navbar-scrolled .navbar-toggler {
   filter: invert(1);
 }
+.custom-navbar .dropdown-menu {
+  border: none;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+.custom-navbar .dropdown-menu .dropdown-item:hover {
+  background-color: #F8F9FA;
+  color: #d32f2f;
+}
 
 /* Footer Styles  */
 .footer-one {
@@ -400,6 +408,20 @@ select {
   margin-bottom: 0;
 }
 
+.h-100-img {
+  width: 100%;
+  border-radius: 15px;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+}
+@media (max-width: 767px) {
+  .h-100-img {
+    height: 300px;
+  }
+}
+
 .card-blog,
 .card-team {
   padding: 15px;
@@ -603,4 +625,14 @@ select {
 #galleryModal #modalImage {
   max-height: 90vh;
   width: auto;
+}
+
+.terms-section p,
+.privacy-section p {
+  color: #527179;
+}
+.terms-section hr,
+.privacy-section hr {
+  margin: 32px 0;
+  border-color: #527179;
 }/*# sourceMappingURL=style.css.map */
