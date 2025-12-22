@@ -14,21 +14,21 @@ window.addEventListener('scroll', () => {
 
 // Handle Carousel Slide Logic
  
-if (myCarousel) {
-    myCarousel.addEventListener('slide.bs.carousel', event => {
-        const nextSlide = event.relatedTarget; 
+// if (myCarousel) {
+//     myCarousel.addEventListener('slide.bs.carousel', event => {
+//         const nextSlide = event.relatedTarget; 
         
-        // Check the class of the incoming slide
-        if (nextSlide.classList.contains('carousel-light')) {
-            navbar.classList.add('navbar-light-mode');
-            navbar.classList.remove('navbar-dark-mode');
-        } else {
-            // Default to dark mode (white text) for dark images
-            navbar.classList.add('navbar-dark-mode');
-            navbar.classList.remove('navbar-light-mode');
-        }
-    });
-}
+//         // Check the class of the incoming slide
+//         if (nextSlide.classList.contains('carousel-light')) {
+//             navbar.classList.add('navbar-light-mode');
+//             navbar.classList.remove('navbar-dark-mode');
+//         } else {
+//             // Default to dark mode (white text) for dark images
+//             navbar.classList.add('navbar-dark-mode');
+//             navbar.classList.remove('navbar-light-mode');
+//         }
+//     });
+// }
 
 // Codes for gallery 
 
