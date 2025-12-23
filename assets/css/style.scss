@@ -779,3 +779,30 @@ a {
     break-inside: avoid; // Prevents card from splitting between columns
   }
 }
+
+
+// Gallery modal 
+
+/*  Next and Previous buttons */
+.carousel-control-prev,
+.carousel-control-next {
+  width: 60px;
+  opacity: 1;
+}
+
+/* Create the Red Background Circle */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: $clr-primary !important;
+  padding: 22px;
+  border-radius: 15%;
+  background-size: 50%;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+/* Hover effect */
+.carousel-control-prev:hover .carousel-control-prev-icon,
+.carousel-control-next:hover .carousel-control-next-icon {
+  background-color: $clr-primary;
+  transform: scale(1.1);
+}
