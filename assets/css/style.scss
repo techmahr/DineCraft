@@ -793,7 +793,8 @@ a {
 /* Create the Red Background Circle */
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-  background-color: $clr-primary !important;
+  background-color: $clr-primary;
+  opacity: 0.7;
   padding: 22px;
   border-radius: 15%;
   background-size: 50%;
