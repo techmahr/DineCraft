@@ -807,3 +807,35 @@ a {
   background-color: $clr-primary;
   transform: scale(1.1);
 }
+
+// Button hover styles 
+
+.btn-shine {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.btn-shine:hover {
+  transform: translateY(-1px);
+  background-color: red !important;
+  border-color: red !important;
+  // box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn-shine::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -60%;
+  width: 20%;
+  height: 200%;
+  background: rgba(255, 255, 255, 0.3);
+  background: rgba($clr-primary, 0.5);
+  transform: rotate(30deg);
+  transition: all 0.5s ease;
+}
+
+.btn-shine:hover::after {
+  left: 120%;
+}
