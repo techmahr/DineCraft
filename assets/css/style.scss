@@ -448,6 +448,7 @@ a {
     align-items: center;
     justify-content: center;
     background-color: #fff;
+    font-size: 22px;
   }
 
 }
@@ -543,63 +544,6 @@ a {
     }
   }
 }
-
-// Faq styles 
-
-// // Faq styles 
-
-// .accordion {
-//   &#faqAccordion {
-//     .accordion-item {
-//       margin-bottom: 30px;
-//       border-radius: 15px !important;
-//       border: 1px solid rgba($clr-border, 0.2);
-//       overflow: hidden;
-//       background-color: $clr-white;
-//       transition: all 0.3s ease;
-
-//       &:hover {
-//         border-color: rgba($clr-primary, 0.4) !important;
-//       }
-//     }
-
-//     .accordion-header {
-//       margin-bottom: 0;
-//     }
-
-//     .accordion-button {
-//       font-weight: 700;
-//       color: $text-primary;
-//       padding: 20px;
-//       border-radius: 15px !important;
-//       font-size: 1.1rem;
-
-//       &:focus {
-//         box-shadow: none;
-//         border-color: rgba($clr-primary, 0.2);
-//       }
-
-//       &:not(.collapsed) {
-//         background-color: rgba($clr-primary, 0.05);
-//         color: $clr-primary;
-//         border-bottom-left-radius: 0 !important;
-//         border-bottom-right-radius: 0 !important;
-//         box-shadow: inset 0 -1px 0 rgba($text-secondary, 0.1);
-
-//         &::after {
-//           filter: sepia(100%) saturate(2000%) hue-rotate(340deg);
-//         }
-//       }
-//     }
-
-//     .accordion-body {
-//       padding: 25px;
-//       color: $text-secondary;
-//       line-height: 1.6;
-//       font-family: $font-primary;
-//     }
-//   }
-// }
 
 // Faq styles 
 .accordion {
@@ -812,5 +756,26 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-between;
+  }
+}
+
+// Testimoinial styles 
+
+.masonry-wrapper {
+  column-count: 3;
+  column-gap: 1.5rem;
+
+  @media (max-width: 992px) {
+    column-count: 2;
+  }
+
+  @media (max-width: 576px) {
+    column-count: 1;
+  }
+
+  .card-testimonial {
+    display: inline-block; // Important for some browser compatibility
+    width: 100%;
+    break-inside: avoid; // Prevents card from splitting between columns
   }
 }
