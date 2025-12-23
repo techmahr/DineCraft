@@ -149,10 +149,7 @@ body {
   border-radius: 4px;
 }
 
-.btn-primary,
-.btn-outline-primary,
-.btn-dark,
-.btn-light {
+.btn-wide {
   padding: 10px 25px;
   text-transform: uppercase;
   font-weight: 300 !important;
@@ -178,6 +175,20 @@ body {
   color: #fff;
 }
 
+/* Target the date and time inputs specifically */
+input[type=date].form-control,
+input[type=time].form-control {
+  color: #6c757d;
+  /* Bootstrap's default placeholder gray */
+}
+
+/* 2. Change the color to black/dark when a date or time is actually picked */
+input[type=date].form-control:valid,
+input[type=time].form-control:valid {
+  color: #212529;
+  /* Bootstrap's default text color */
+}
+
 .form-control {
   margin-bottom: 32px;
   border-radius: 10px;
@@ -185,6 +196,12 @@ body {
 
 .form-control:not(textarea) {
   height: 48px;
+}
+
+/* Removes the blue glow and restores a neutral border */
+.form-control:focus {
+  border-color: #d32f2f;
+  box-shadow: none;
 }
 
 .btn-outline-primary {
