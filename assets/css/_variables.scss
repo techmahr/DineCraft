@@ -1,45 +1,40 @@
-/*
+// ===============================
+// Brand color palette
+// ===============================
 
-Red #ff3600
-#ff553e 
+// App primary theme colors 
+$color-primary: #d32f2f; // Primary brand color
+$color-primary-dark: #1d0808; // For hover states and buttons
+$color-off-white: #F8F9FA; // For section backgrounds to provide contrast
 
-*/
+// Background colors
+// $color-bg-light: #f1f7fa !important;
+$color-bg-light: #f4f1ee !important;
 
-// Brand Colors
+// Text Colors
+$color-text-primary: #1F2632;
+$color-text-secondary: #527179;
+$color-text-tertiary: #789299;
+$color-text-white-primary: #fff;
+$color-text-white-secondary: #b4b4b4;
 
-// $clr-primary: #D32F2F;
-// $clr-primary: #e4405f;
-// $clr-primary: #D14A00;
-$clr-primary: #d32f2f;
+// Borders
+$color-border-primary: #dee2e6;
+// $color-border-secondary: $color-accent-teal;
 
-$clr-primary-dark: #1d0808; // For hover states and buttons
-$clr-white: #FFFFFF;
-$clr-off-white: #F8F9FA; // For section backgrounds to provide contrast
-$clr-black: #000000;
-$clr-border: #527179;
+// ===============================
+// Typography
+// ===============================
+$font-family-base: 'DM Sans', sans-serif;
+$font-family-heading: "Playfair Display", serif;
 
-// Font 
-$font-primary: 'DM Sans', sans-serif;
-// $font-secondary: "DM Serif Display", serif;
-$font-secondary: "Playfair Display", serif;
-// $font-secondary: 'DM Sans', sans-serif;
+// ===============================
+// Layout tokens
+// ===============================
+$section-spacing-y: 40px;
 
-// Text & Neutral Colors
-$text-primary: #1F2632;
-$text-secondary: #527179;
-$text-tertiary: #789299;
-$text-white: #fff;
-$text-white2: #b4b4b4;
-
-// $bg-light: #f1f7fa !important;
-$bg-light: #f4f1ee !important;
-
-$border-color: #E0E0E0; // For dashed lines and separators
-
-$section-spacing: 40px;
-
-
-
-// Variables for easy adjustment
+// ===============================
+// Gallery tokens
+// ===============================
 $gallery-height: 250px;
-$zoom-speed: 0.4s;
+$gallery-zoom-speed: 0.4s;

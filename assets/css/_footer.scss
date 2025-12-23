@@ -9,8 +9,8 @@
     color: #fff;
 
     h5 {
-        font-family: $font-primary;
-        color: $text-white !important;
+        font-family: $font-family-base;
+        color: $color-text-white-primary !important;
     }
 
     ul {
@@ -21,13 +21,13 @@
             margin-bottom: 10px;
 
             a {
-                color: $text-white2;
+                color: $color-text-white-secondary;
                 transition: 0.3s;
                 margin-bottom: 10px;
                 font-size: 14px;
 
                 &:hover {
-                    color: $clr-primary;
+                    color: $color-primary;
                 }
             }
         }
@@ -38,13 +38,13 @@
                 display: flex;
                 justify-content: space-between;
                 margin-bottom: 10px;
-                color: $text-white2;
-                border-bottom: 1px dotted $text-white2;
+                color: $color-text-white-secondary;
+                border-bottom: 1px dotted $color-text-white-secondary;
                 padding-bottom: 5px;
                 font-size: 14px;
 
                 span {
-                    color: $clr-white;
+                    color: $color-text-white-primary;
                     font-size: 14px;
                 }
 

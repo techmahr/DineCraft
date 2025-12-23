@@ -25,7 +25,7 @@
 
         &.active,
         &:hover {
-            color: $clr-primary !important;
+            color: $color-primary !important;
         }
     }
 
@@ -33,14 +33,14 @@
     // This ensures that when the toggler is clicked, the background isn't transparent
     @media (max-width: 991.98px) {
         .navbar-collapse {
-            background-color: $clr-white; // Or $text-primary if you want dark mobile menu
+            background-color: $color-text-white-primary; // Or $color-text-primary if you want dark mobile menu
             padding: 20px;
             margin-top: 15px;
             border-radius: 8px;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 
             .nav-link {
-                color: $text-primary !important; // Forces readable text on mobile
+                color: $color-text-primary !important; // Forces readable text on mobile
             }
         }
     }
@@ -50,7 +50,7 @@
 
         .navbar-brand,
         .nav-link {
-            color: $text-primary;
+            color: $color-text-primary;
             @include nav-interaction;
         }
 
@@ -64,20 +64,20 @@
 
         .navbar-brand,
         .nav-link {
-            color: $clr-white;
+            color: $color-text-white-primary;
             @include nav-interaction;
         }
     }
 
     // --- SCROLLED STATE ---
     &.navbar-scrolled {
-        background-color: $clr-white;
+        background-color: $color-text-white-primary;
         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         padding: 10px 0;
 
         .navbar-brand,
         .nav-link {
-            color: $text-primary;
+            color: $color-text-primary;
             @include nav-interaction;
         }
 
@@ -92,8 +92,8 @@
         box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
 
         .dropdown-item:hover {
-            background-color: $clr-off-white;
-            color: $clr-primary;
+            background-color: $color-off-white;
+            color: $color-primary;
         }
     }
 }

@@ -1,11 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
-/*
-
-Red #ff3600
-#ff553e 
-
-*/
 .custom-navbar {
   transition: all 0.4s ease-in-out;
   padding: 20px 0;
@@ -26,7 +20,7 @@ Red #ff3600
 }
 @media (max-width: 991.98px) {
   .custom-navbar .navbar-collapse {
-    background-color: #FFFFFF;
+    background-color: #fff;
     padding: 20px;
     margin-top: 15px;
     border-radius: 8px;
@@ -50,7 +44,7 @@ Red #ff3600
 }
 .custom-navbar.navbar-dark-mode:not(.navbar-scrolled) .navbar-brand,
 .custom-navbar.navbar-dark-mode:not(.navbar-scrolled) .nav-link {
-  color: #FFFFFF;
+  color: #fff;
 }
 .custom-navbar.navbar-dark-mode:not(.navbar-scrolled) .navbar-brand.active, .custom-navbar.navbar-dark-mode:not(.navbar-scrolled) .navbar-brand:hover,
 .custom-navbar.navbar-dark-mode:not(.navbar-scrolled) .nav-link.active,
@@ -58,7 +52,7 @@ Red #ff3600
   color: #d32f2f !important;
 }
 .custom-navbar.navbar-scrolled {
-  background-color: #FFFFFF;
+  background-color: #fff;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   padding: 10px 0;
 }
@@ -119,7 +113,7 @@ Red #ff3600
   font-size: 14px;
 }
 .footer-one ul.timing-list li span {
-  color: #FFFFFF;
+  color: #fff;
   font-size: 14px;
 }
 .footer-one ul.timing-list li:last-child {
@@ -158,14 +152,14 @@ body {
 .btn-primary {
   background-color: #d32f2f;
   border-color: #d32f2f;
-  color: #FFFFFF;
+  color: #fff;
   font-weight: 600;
   transition: all 0.3s ease;
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
   background-color: #1d0808 !important;
   border-color: #1d0808 !important;
-  color: #FFFFFF !important;
+  color: #fff !important;
   box-shadow: 0 4px 12px rgba(211, 47, 47, 0.2);
 }
 
@@ -212,7 +206,7 @@ input[type=time].form-control:valid {
 .btn-outline-primary:hover {
   background-color: #d32f2f;
   border-color: #d32f2f;
-  color: #FFFFFF;
+  color: #fff;
 }
 
 a {
@@ -348,7 +342,7 @@ a {
   }
 }
 .book-a-table-one .booking-form-wrap h2 {
-  color: #FFFFFF;
+  color: #fff;
   margin-bottom: 30px;
   font-weight: 700;
 }
@@ -575,9 +569,9 @@ a {
 .accordion#faqAccordion .accordion-item {
   margin-bottom: 30px;
   border-radius: 15px !important;
-  border: 1px solid rgba(82, 113, 121, 0.2);
+  border: 1px solid rgba(222, 226, 230, 0.2);
   overflow: hidden;
-  background-color: #FFFFFF;
+  background-color: #fff;
   transition: all 0.3s ease;
 }
 .accordion#faqAccordion .accordion-item:has(.collapse.show) {
@@ -674,7 +668,7 @@ a {
 .terms-section hr,
 .privacy-section hr {
   margin: 32px 0;
-  border-color: #527179;
+  border-color: #dee2e6;
 }
 
 .blog-details-wrap {
