@@ -390,7 +390,8 @@ a {
 // Blog 
 
 .card-blog,
-.card-team {
+.card-team,
+.card-testimonial {
   padding: 15px;
   border: 0px;
   background: $bg-light;
@@ -420,6 +421,35 @@ a {
   i {
     color: $text-tertiary;
   }
+}
+
+// Tesimonial 
+.card-testimonial {
+
+  .quote-icon {
+    font-size: 62px !important;
+    color: $clr-primary;
+  }
+
+  .ratings {
+    margin-bottom: 8px;
+
+    i {
+      color: $clr-primary;
+    }
+  }
+
+  .testi-user {
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    margin-right: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+  }
+
 }
 
 // Team carousel 

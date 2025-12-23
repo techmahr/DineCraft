@@ -434,7 +434,8 @@ a {
 }
 
 .card-blog,
-.card-team {
+.card-team,
+.card-testimonial {
   padding: 15px;
   border: 0px;
   background: #f4f1ee !important;
@@ -442,28 +443,55 @@ a {
   margin-bottom: 24px;
 }
 .card-blog .card-body,
-.card-team .card-body {
+.card-team .card-body,
+.card-testimonial .card-body {
   padding-bottom: 10px;
 }
 .card-blog img,
-.card-team img {
+.card-team img,
+.card-testimonial img {
   border-radius: 10px;
 }
 .card-blog h5,
-.card-team h5 {
+.card-team h5,
+.card-testimonial h5 {
   margin-bottom: 15px;
 }
 .card-blog .card-text,
-.card-team .card-text {
+.card-team .card-text,
+.card-testimonial .card-text {
   color: #527179;
 }
 .card-blog span,
-.card-team span {
+.card-team span,
+.card-testimonial span {
   font-size: 14px;
 }
 .card-blog i,
-.card-team i {
+.card-team i,
+.card-testimonial i {
   color: #789299;
+}
+
+.card-testimonial .quote-icon {
+  font-size: 62px !important;
+  color: #d32f2f;
+}
+.card-testimonial .ratings {
+  margin-bottom: 8px;
+}
+.card-testimonial .ratings i {
+  color: #d32f2f;
+}
+.card-testimonial .testi-user {
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  margin-right: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
 }
 
 .img-collage-wrap {
