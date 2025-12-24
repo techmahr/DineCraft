@@ -811,4 +811,23 @@ a {
 
 .btn-shine:hover::after {
   left: 120%;
+}
+
+.loader-wrapper {
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s;
+}
+.loader-wrapper .spinner-border {
+  height: 60px;
+  width: 60px;
+  color: #d32f2f;
 }/*# sourceMappingURL=style.css.map */
