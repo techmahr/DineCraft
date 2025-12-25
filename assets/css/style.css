@@ -120,11 +120,17 @@
   border-bottom: none;
   margin-bottom: 0;
 }
-.footer-one .copyright P {
+.footer-one .copyright p {
   font-size: 14px;
 }
 .footer-one .copyright .pipe-separator {
   padding: 0 10px;
+}
+.footer-one .copyright a {
+  color: #fff;
+}
+.footer-one .copyright a:hover {
+  color: #d32f2f;
 }
 
 body {

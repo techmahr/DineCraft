@@ -58,12 +58,21 @@
     }
 
     .copyright {
-        P {
+        p {
             font-size: 14px;
         }
 
         .pipe-separator {
             padding: 0 10px;
         }
+
+        a {
+            color: #fff;
+
+            &:hover {
+                color: $color-primary;
+            }
+        }
     }
+
 }
