@@ -729,6 +729,7 @@ a {
 .privacy-section hr {
   margin: 32px 0;
   border-color: #dee2e6;
+  opacity: 1;
 }
 
 .blog-details-wrap {

@@ -742,7 +742,6 @@ a {
 
 .terms-section,
 .privacy-section {
-  h5 {}
 
   p {
     color: $color-text-secondary;
@@ -751,6 +750,7 @@ a {
   hr {
     margin: 32px 0;
     border-color: $color-border-primary ;
+    opacity: 1;
   }
 }
 
