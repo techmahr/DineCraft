@@ -197,6 +197,9 @@ input[type=time].form-control:valid {
   border-color: #d32f2f;
   box-shadow: none;
 }
+.form-control:hover {
+  border-color: #d32f2f;
+}
 
 .btn-outline-primary {
   color: #d32f2f;
@@ -277,11 +280,11 @@ a {
     -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
   }
 }
-.footer-one a,
+.footer-one .social-links a,
 .contact-section .social-links a {
   margin-bottom: 10px;
 }
-.footer-one a:hover,
+.footer-one .social-links a:hover,
 .contact-section .social-links a:hover {
   border-color: #d32f2f !important;
   background-color: #d32f2f !important;
@@ -865,36 +868,15 @@ a {
 }
 
 .btn-link {
-  position: relative;
+  /* Necessary to allow the transform to work smoothly */
+  display: inline-block;
+  margin-bottom: 0px !important;
   text-decoration: none;
-  color: #d32f2f;
-  padding: 0 0.5rem;
-  text-decoration: none;
-  z-index: 1;
-  transition: color 0.3s ease-in-out;
-}
-.btn-link::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 0;
-  background-color: #d32f2f;
-  border-radius: 5px;
-  z-index: -1;
-  transition: width 0.3s ease-in-out;
+  /* Defines how fast and smooth the movement is */
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 .btn-link:hover {
-  color: white;
-}
-.btn-link:hover::before {
-  width: 100%;
-}
-.btn-link i {
-  transition: transform 0.3s ease;
-  margin-left: 0.5rem;
-}
-.btn-link:hover i {
+  /* Moves the entire text 5px to the right */
   transform: translateX(5px);
+  color: #b51616;
 }/*# sourceMappingURL=style.css.map */
