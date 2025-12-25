@@ -277,6 +277,16 @@ a {
     -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
   }
 }
+.footer-one a,
+.contact-section .social-links a {
+  margin-bottom: 10px;
+}
+.footer-one a:hover,
+.contact-section .social-links a:hover {
+  border-color: #d32f2f !important;
+  background-color: #d32f2f !important;
+}
+
 /* Heading One  */
 .head1 h2 {
   color: #1F2632;
@@ -359,7 +369,7 @@ a {
   min-height: 400px;
   border-radius: 15px 0 0 15px;
 }
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .book-a-table-one .book-table-img-section {
     border-radius: 15px 15px 0px 0px;
   }
@@ -500,6 +510,12 @@ a {
 .card-team i,
 .card-testimonial i {
   color: #789299;
+}
+.card-blog .social-links a i:hover,
+.card-team .social-links a i:hover,
+.card-testimonial .social-links a i:hover {
+  color: #d32f2f;
+  background-color: transparent;
 }
 
 .card-testimonial .quote-icon {
