@@ -157,8 +157,8 @@ body {
   transition: all 0.3s ease;
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
-  background-color: #1d0808 !important;
-  border-color: #1d0808 !important;
+  background-color: #b51616 !important;
+  border-color: #b51616 !important;
   color: #fff !important;
   box-shadow: 0 4px 12px rgba(211, 47, 47, 0.2);
 }
@@ -242,6 +242,41 @@ a {
   }
 }
 
+.loader-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: #fff;
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  display: block;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  margin: -20px 0 0 -20px;
+  background: #d32f2f;
+  animation: sk-rotateplane 1.2s infinite ease-in-out;
+}
+@keyframes sk-rotateplane {
+  0% {
+    transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+  }
+  50% {
+    transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+  }
+  100% {
+    transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+    -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+  }
+}
 /* Heading One  */
 .head1 h2 {
   color: #1F2632;
@@ -792,8 +827,8 @@ a {
 
 .btn-shine:hover {
   transform: translateY(-1px);
-  background-color: red !important;
-  border-color: red !important;
+  background-color: #b51616 !important;
+  border-color: #b51616 !important;
 }
 
 .btn-shine::after {
@@ -811,23 +846,4 @@ a {
 
 .btn-shine:hover::after {
   left: 120%;
-}
-
-.loader-wrapper {
-  background-color: #fff;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 9999;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: all 0.2s;
-}
-.loader-wrapper .spinner-border {
-  height: 60px;
-  width: 60px;
-  color: #d32f2f;
 }/*# sourceMappingURL=style.css.map */

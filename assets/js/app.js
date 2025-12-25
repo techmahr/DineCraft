@@ -48,6 +48,6 @@ if (spinnerWrapperEl) {
         spinnerWrapperEl.style.opacity = '0';
         setTimeout(() => {
             spinnerWrapperEl.style.display = 'none';
-        }, 2000); 
+        }, 400); 
     });
 }
