@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 .custom-navbar {
   transition: all 0.4s ease-in-out;
   padding: 20px 0;
@@ -133,19 +132,34 @@
 }
 
 body {
-  background-color: yellow;
-}
-
-body {
   font-family: "DM Sans", sans-serif;
   color: #1F2632;
-  background-color: red;
 }
 
 .font-heading {
   font-family: "Playfair Display", serif;
   line-height: normal;
   font-weight: 700;
+}
+
+.page-title {
+  font-size: 40px;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.f-40 {
+  font-size: 40px !important;
+}
+
+a {
+  color: #d32f2f;
+  text-decoration: none;
+}
+
+.text-primary {
+  color: #d32f2f !important;
 }
 
 /* Buttons  */
@@ -173,37 +187,6 @@ body {
   box-shadow: 0 4px 12px rgba(211, 47, 47, 0.2);
 }
 
-.badge-primary {
-  background-color: #d32f2f;
-  padding: 8px 12px;
-  color: #fff;
-}
-
-.form-control {
-  margin-bottom: 32px;
-  border-radius: 10px;
-}
-
-.form-control:not(textarea) {
-  height: 48px;
-}
-
-/* Removes the blue glow and restores a neutral border */
-.form-control:focus {
-  border-color: #d32f2f;
-  box-shadow: none;
-}
-.form-control:hover {
-  border-color: #d32f2f;
-}
-
-.page-title {
-  font-size: 40px;
-  font-family: "Playfair Display", serif;
-  font-weight: 700;
-  margin-bottom: 20px;
-}
-
 .btn-outline-primary {
   color: #d32f2f;
   border-color: #d32f2f;
@@ -215,37 +198,63 @@ body {
   color: #fff;
 }
 
-a {
-  color: #d32f2f;
+.btn-shine {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+.btn-shine:hover {
+  transform: translateY(-1px);
+  background-color: #b51616 !important;
+  border-color: #b51616 !important;
+}
+.btn-shine::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -60%;
+  width: 20%;
+  height: 200%;
+  background: rgba(255, 255, 255, 0.3);
+  background: rgba(211, 47, 47, 0.5);
+  transform: rotate(30deg);
+  transition: all 0.5s ease;
+}
+.btn-shine:hover::after {
+  left: 120%;
+}
+
+.btn-link {
+  /* Necessary to allow the transform to work smoothly */
+  display: inline-block;
+  margin-bottom: 0px !important;
   text-decoration: none;
+  /* Defines how fast and smooth the movement is */
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+.btn-link:hover {
+  /* Moves the entire text 5px to the right */
+  transform: translateX(5px);
+  color: #b51616;
 }
 
-.text-primary {
-  color: #d32f2f !important;
+.form-control {
+  margin-bottom: 32px;
+  border-radius: 10px;
+}
+.form-control:focus, .form-control:hover {
+  border-color: #d32f2f;
+  box-shadow: none;
 }
 
-.bg-light {
-  background-color: #f4f1ee !important;
+.form-control:not(textarea) {
+  height: 48px;
 }
 
-/* Margins  */
-.mb-32 {
-  margin-bottom: 32px !important;
-}
-
-.mt-32 {
-  margin-top: 32px !important;
-}
-
-.sec-pad {
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
-@media (min-width: 992px) {
-  .sec-pad {
-    padding-top: 80px;
-    padding-bottom: 80px;
-  }
+.badge-primary {
+  background-color: #d32f2f;
+  padding: 8px 12px;
+  color: #fff;
 }
 
 .loader-wrapper {
@@ -283,31 +292,6 @@ a {
     -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
   }
 }
-.footer-one .social-links a,
-.contact-section .social-links a {
-  margin-bottom: 10px;
-}
-.footer-one .social-links a:hover,
-.contact-section .social-links a:hover {
-  border-color: #d32f2f !important;
-  background-color: #d32f2f !important;
-}
-
-.f-40 {
-  font-size: 40px !important;
-}
-
-/* Heading One  */
-.head1 h2 {
-  color: #1F2632;
-  font-size: 40px;
-  margin-bottom: 20px;
-}
-.head1 p {
-  font-size: 18px;
-  color: #527179;
-}
-
 /* Home Carousel */
 .home-carousel .carousel-item {
   height: 100vh;
@@ -362,6 +346,60 @@ a {
 }
 .home-carousel.carousel-light p {
   color: #1F2632;
+}
+
+/*  Next and Previous button styles */
+.carousel-control-prev,
+.carousel-control-next {
+  width: 60px;
+  opacity: 1;
+}
+
+/* Create the Button Red Background */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #d32f2f;
+  opacity: 0.7;
+  padding: 22px;
+  border-radius: 15%;
+  background-size: 50%;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+/* Hover effect */
+.carousel-control-prev:hover .carousel-control-prev-icon,
+.carousel-control-next:hover .carousel-control-next-icon {
+  background-color: #d32f2f;
+  transform: scale(1.1);
+}
+
+body {
+  background-color: yellow;
+}
+
+.bg-light {
+  background-color: #f4f1ee !important;
+}
+
+.footer-one .social-links a,
+.contact-section .social-links a {
+  margin-bottom: 10px;
+}
+.footer-one .social-links a:hover,
+.contact-section .social-links a:hover {
+  border-color: #d32f2f !important;
+  background-color: #d32f2f !important;
+}
+
+/* Heading One  */
+.head1 h2 {
+  color: #1F2632;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+.head1 p {
+  font-size: 18px;
+  color: #527179;
 }
 
 /* Home About */
@@ -817,72 +855,4 @@ a {
   width: 100%;
   -moz-column-break-inside: avoid;
        break-inside: avoid;
-}
-
-/*  Next and Previous buttons */
-.carousel-control-prev,
-.carousel-control-next {
-  width: 60px;
-  opacity: 1;
-}
-
-/* Create the Red Background Circle */
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  background-color: #d32f2f;
-  opacity: 0.7;
-  padding: 22px;
-  border-radius: 15%;
-  background-size: 50%;
-  transition: transform 0.2s ease, background-color 0.2s ease;
-}
-
-/* Hover effect */
-.carousel-control-prev:hover .carousel-control-prev-icon,
-.carousel-control-next:hover .carousel-control-next-icon {
-  background-color: #d32f2f;
-  transform: scale(1.1);
-}
-
-.btn-shine {
-  position: relative;
-  overflow: hidden;
-  transition: all 0.3s ease;
-}
-
-.btn-shine:hover {
-  transform: translateY(-1px);
-  background-color: #b51616 !important;
-  border-color: #b51616 !important;
-}
-
-.btn-shine::after {
-  content: "";
-  position: absolute;
-  top: -50%;
-  left: -60%;
-  width: 20%;
-  height: 200%;
-  background: rgba(255, 255, 255, 0.3);
-  background: rgba(211, 47, 47, 0.5);
-  transform: rotate(30deg);
-  transition: all 0.5s ease;
-}
-
-.btn-shine:hover::after {
-  left: 120%;
-}
-
-.btn-link {
-  /* Necessary to allow the transform to work smoothly */
-  display: inline-block;
-  margin-bottom: 0px !important;
-  text-decoration: none;
-  /* Defines how fast and smooth the movement is */
-  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
-}
-.btn-link:hover {
-  /* Moves the entire text 5px to the right */
-  transform: translateX(5px);
-  color: #b51616;
 }/*# sourceMappingURL=style.css.map */

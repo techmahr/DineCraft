@@ -1,194 +1,23 @@
 @use './abstract/variables' as *;
 @use './layout/navbar' as *;
 @use './layout/footer' as *;
-@use './base/fonts' as *;
+@use './base/typography' as *;
+@use './components/buttons' as *;
+@use './components/forms' as *;
+@use './components/badges' as *;
+@use './components/loader' as *;
+@use './components/carousel' as *;
 
 
 body {
-  font-family: $font-family-base;
-  color: $color-text-primary;
-  background-color: red;
-}
-
-.font-heading {
-  font-family: $font-family-heading;
-  line-height: normal;
-  font-weight: 700;
-}
-
-/* Buttons  */
-
-.btn {
-  border-radius: 4px;
-}
-
-.btn-wide {
-  padding: 10px 25px;
-  text-transform: uppercase;
-  font-weight: 300 !important;
-}
-
-// Primary Solid Button (Red)
-
-.btn-primary {
-  background-color: $color-primary;
-  border-color: $color-primary;
-  color: $color-text-white-primary;
-  font-weight: 600;
-  transition: all 0.3s ease;
-
-  &:hover,
-  &:focus,
-  &:active {
-    background-color: $color-primary-dark !important;
-    border-color: $color-primary-dark !important;
-    color: $color-text-white-primary !important;
-    box-shadow: 0 4px 12px rgba($color-primary, 0.2);
-  }
-}
-
-.badge-primary {
-  background-color: $color-primary;
-  padding: 8px 12px;
-  color: #fff;
-}
-
-.form-control {
-  margin-bottom: 32px;
-  border-radius: 10px;
-}
-
-.form-control:not(textarea) {
-  height: 48px;
-}
-
-/* Removes the blue glow and restores a neutral border */
-
-.form-control {
-  &:focus {
-    border-color: $color-primary;
-    box-shadow: none;
-  }
-
-  &:hover {
-    border-color: $color-primary;
-  }
-}
-
-// Inner page header title 
-
-.page-title {
-  font-size: 40px;
-  font-family: $font-family-heading;
-  font-weight: 700;
-  margin-bottom: 20px;
-}
-
-// Outline Button (Red Border, White Background)
-
-.btn-outline-primary {
-  color: $color-primary;
-  border-color: $color-primary;
-  background-color: transparent;
-
-  &:hover {
-    background-color: $color-primary;
-    border-color: $color-primary;
-    color: $color-text-white-primary;
-  }
-}
-
-a {
-  color: $color-primary;
-  text-decoration: none;
-}
-
-.text-primary {
-  color: $color-primary !important;
+  background-color: yellow;
 }
 
 .bg-light {
   background-color: $color-bg-light;
 }
 
-/* Margins  */
 
-.mb-32 {
-  margin-bottom: 32px !important;
-}
-
-.mt-32 {
-  margin-top: 32px !important;
-}
-
-.sec-pad {
-  padding-top: $section-spacing-y;
-  padding-bottom: $section-spacing-y;
-
-  @media (min-width: 992px) {
-    padding-top: $section-spacing-y * 2;
-    padding-bottom: $section-spacing-y * 2;
-  }
-}
-
-// Loader 
-
-.loader-wrapper {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 9999;
-  background: #fff;
-}
-
-.spinner {
-  width: 40px;
-  height: 40px;
-  display: block;
-  position: relative;
-  left: 50%;
-  top: 50%;
-  margin: -20px 0 0 -20px;
-  background: $color-primary;
-  -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
-  animation: sk-rotateplane 1.2s infinite ease-in-out;
-}
-
-
-@-webkit-keyframes sk-rotateplane {
-  0% {
-    -webkit-transform: perspective(120px);
-  }
-
-  50% {
-    -webkit-transform: perspective(120px) rotateY(180deg);
-  }
-
-  100% {
-    -webkit-transform: perspective(120px) rotateY(180deg) rotateX(180deg);
-  }
-}
-
-@keyframes sk-rotateplane {
-  0% {
-    transform: perspective(120px) rotateX(0deg) rotateY(0deg);
-    -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg);
-  }
-
-  50% {
-    transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
-    -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
-  }
-
-  100% {
-    transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
-    -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
-  }
-}
-
-// Loader end 
 
 .footer-one .social-links,
 .contact-section .social-links {
@@ -203,10 +32,7 @@ a {
   }
 }
 
-// Make font size 40px 
-.f-40 {
-  font-size: 40px !important;
-}
+
 
 /* Heading One  */
 
@@ -223,88 +49,6 @@ a {
   }
 }
 
-/* Home Carousel */
-
-.home-carousel {
-
-  // Shared styles for the item
-
-  .carousel-item {
-    height: 100vh;
-    max-height: 900px;
-    min-height: 400px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-
-  // Caption Wrapper (Flexbox Centering)
-
-  .carousel-caption-wrap {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-
-    .carousel-caption {
-      position: static;
-      padding-top: 0;
-      padding-bottom: 0;
-      width: 90%;
-      max-width: 1000px;
-    }
-  }
-
-  // Shared Typography Styles
-
-  h1 {
-    font-size: 75px;
-    line-height: 1.1;
-    margin-bottom: 24px;
-
-    @media (max-width: 767px) {
-      font-size: 60px;
-    }
-  }
-
-  p {
-    font-size: 20px;
-  }
-
-  a {
-    margin-top: 20px;
-  }
-
-  // --- THEME OVERRIDES ---
-
-  // Dark Background Version (Light Text)
-  &.carousel-dark {
-    .carousel-caption-wrap {
-      background: rgba(0, 0, 0, 0.4); // Darker overlay for readability
-    }
-
-    h1,
-    p {
-      color: #ffffff;
-    }
-  }
-
-  // Light Background Version (Dark Text)
-  &.carousel-light {
-    .carousel-caption-wrap {
-      background: rgba(255, 255, 255, 0.3); // Lighter overlay
-    }
-
-    h1 {
-      color: $color-text-primary;
-    }
-
-    p {
-      color: $color-text-primary;
-    }
-  }
-}
 
 /* Home About */
 
@@ -899,85 +643,3 @@ a {
     break-inside: avoid; // Prevents card from splitting between columns
   }
 }
-
-
-// Gallery modal 
-
-/*  Next and Previous buttons */
-.carousel-control-prev,
-.carousel-control-next {
-  width: 60px;
-  opacity: 1;
-}
-
-/* Create the Red Background Circle */
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  background-color: $color-primary;
-  opacity: 0.7;
-  padding: 22px;
-  border-radius: 15%;
-  background-size: 50%;
-  transition: transform 0.2s ease, background-color 0.2s ease;
-}
-
-/* Hover effect */
-.carousel-control-prev:hover .carousel-control-prev-icon,
-.carousel-control-next:hover .carousel-control-next-icon {
-  background-color: $color-primary;
-  transform: scale(1.1);
-}
-
-// Button hover styles 
-
-.btn-shine {
-  position: relative;
-  overflow: hidden;
-  transition: all 0.3s ease;
-}
-
-.btn-shine:hover {
-  transform: translateY(-1px);
-  background-color: $color-primary-dark !important;
-  border-color: $color-primary-dark !important;
-}
-
-.btn-shine::after {
-  content: "";
-  position: absolute;
-  top: -50%;
-  left: -60%;
-  width: 20%;
-  height: 200%;
-  background: rgba(255, 255, 255, 0.3);
-  background: rgba($color-primary, 0.5);
-  transform: rotate(30deg);
-  transition: all 0.5s ease;
-}
-
-.btn-shine:hover::after {
-  left: 120%;
-}
-
-// Gallery modal end 
-
-// link button styles 
-
-.btn-link {
-  /* Necessary to allow the transform to work smoothly */
-  display: inline-block;
-  margin-bottom: 0px !important;
-  text-decoration: none;
-
-  /* Defines how fast and smooth the movement is */
-  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
-
-  &:hover {
-    /* Moves the entire text 5px to the right */
-    transform: translateX(5px);
-
-    color: $color-primary-dark;
-  }
-}
-
-// link button styles end 

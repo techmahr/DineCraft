@@ -1,0 +1,7 @@
+@use '../abstract/variables' as *;
+
+.badge-primary {
+    background-color: $color-primary;
+    padding: 8px 12px;
+    color: #fff;
+}

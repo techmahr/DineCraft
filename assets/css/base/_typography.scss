@@ -1,0 +1,35 @@
+@use '../abstract/variables' as *;
+
+body {
+    font-family: $font-family-base;
+    color: $color-text-primary;
+}
+
+.font-heading {
+    font-family: $font-family-heading;
+    line-height: normal;
+    font-weight: 700;
+}
+
+// Inner page header title 
+
+.page-title {
+    font-size: 40px;
+    font-family: $font-family-heading;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+// Make font size 40px 
+.f-40 {
+    font-size: 40px !important;
+}
+
+a {
+    color: $color-primary;
+    text-decoration: none;
+}
+
+.text-primary {
+    color: $color-primary !important;
+}

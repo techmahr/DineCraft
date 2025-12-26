@@ -1,0 +1,20 @@
+@use '../abstract/variables' as *;
+
+// Margin and border radius for textbox and text area 
+
+.form-control {
+    margin-bottom: 32px;
+    border-radius: 10px;
+
+    &:focus,
+    &:hover {
+        border-color: $color-primary; // Gives border color for texboxes and text area
+        box-shadow: none; // Removes the unwanted blue glow on textboxes and text area
+    }
+}
+
+// To make the textbox height 48px
+
+.form-control:not(textarea) {
+    height: 48px;
+}
