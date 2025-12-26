@@ -1,12 +1,13 @@
-@use './abstracts/variables' as *;
-@use 'navbar' as *;
-@use 'footer' as *;
+@use './abstract/variables' as *;
+@use './layout/navbar' as *;
+@use './layout/footer' as *;
 
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
 body {
   font-family: $font-family-base;
   color: $color-text-primary;
+  background-color: red;
 }
 
 .font-heading {
