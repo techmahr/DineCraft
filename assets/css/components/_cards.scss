@@ -1,0 +1,68 @@
+@use '../abstract/variables' as *;
+
+
+.card-blog,
+.card-team,
+.card-testimonial {
+    padding: 15px;
+    border: 0px;
+    background: $color-bg-light;
+    border-radius: 10px;
+    margin-bottom: 24px;
+
+    .card-body {
+        padding-bottom: 10px;
+    }
+
+    img {
+        border-radius: 10px;
+    }
+
+    h5 {
+        margin-bottom: 15px;
+    }
+
+    .card-text {
+        color: $color-text-secondary;
+    }
+
+    span {
+        font-size: 14px;
+    }
+
+    i {
+        color: $color-text-tertiary;
+    }
+
+    .social-links a i {
+        &:hover {
+            color: $color-primary;
+            background-color: transparent;
+        }
+    }
+}
+
+// Card blog item 
+
+.card-blog-item {
+    background-color: $color-bg-light;
+    border-radius: 15px;
+    padding: 16px;
+    margin-bottom: 24px;
+
+    .date {
+        color: $color-text-secondary;
+        font-size: 16px;
+    }
+
+    .title {
+        margin: 10px 0 15px 0;
+        font-size: 20px;
+    }
+
+    .info {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}

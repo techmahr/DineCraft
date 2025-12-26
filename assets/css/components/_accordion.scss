@@ -1,0 +1,54 @@
+@use '../abstract/variables' as *;
+
+.accordion {
+    &#faqAccordion {
+        .accordion-item {
+            margin-bottom: 30px;
+            border-radius: 15px !important;
+            border: 1px solid rgba($color-border-primary , 0.2);
+            overflow: hidden;
+            background-color: $color-text-white-primary;
+            transition: all 0.3s ease;
+
+            &:has(.collapse.show) {
+                background-color: rgba($color-primary, 0.05); // Same BG for both
+                border-color: rgba($color-primary, 0.2);
+            }
+
+            &:hover {
+                border-color: rgba($color-primary, 0.4) !important;
+            }
+        }
+
+        .accordion-button {
+            font-weight: 700;
+            color: $color-text-primary;
+            padding: 20px;
+            border-radius: 15px !important;
+            font-size: 1.1rem;
+            background-color: transparent;
+
+            &:focus {
+                box-shadow: none;
+            }
+
+            &:not(.collapsed) {
+                color: $color-primary;
+                background-color: transparent;
+                box-shadow: none;
+
+                &::after {
+                    filter: sepia(100%) saturate(2000%) hue-rotate(340deg);
+                }
+            }
+        }
+
+        .accordion-body {
+            padding: 0 20px 25px 20px;
+            color: $color-text-secondary;
+            line-height: 1.6;
+            font-family: $font-family-base;
+            background-color: transparent;
+        }
+    }
+}
