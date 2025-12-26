@@ -206,6 +206,13 @@ input[type=time].form-control:valid {
   border-color: #d32f2f;
 }
 
+.page-title {
+  font-size: 40px;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
 .btn-outline-primary {
   color: #d32f2f;
   border-color: #d32f2f;

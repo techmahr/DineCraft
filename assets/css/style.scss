@@ -89,7 +89,17 @@ input[type="time"].form-control:valid {
   }
 }
 
+// Inner page header title 
+
+.page-title {
+  font-size: 40px;
+  font-family: $font-family-heading;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
 // Outline Button (Red Border, White Background)
+
 .btn-outline-primary {
   color: $color-primary;
   border-color: $color-primary;
