@@ -174,20 +174,6 @@ body {
   color: #fff;
 }
 
-/* Target the date and time inputs specifically */
-input[type=date].form-control,
-input[type=time].form-control {
-  color: #6c757d;
-  /* Bootstrap's default placeholder gray */
-}
-
-/* 2. Change the color to black/dark when a date or time is actually picked */
-input[type=date].form-control:valid,
-input[type=time].form-control:valid {
-  color: #212529;
-  /* Bootstrap's default text color */
-}
-
 .form-control {
   margin-bottom: 32px;
   border-radius: 10px;
