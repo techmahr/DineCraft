@@ -392,7 +392,7 @@ a {
   height: 100%;
   border-radius: 0 15px 15px 0;
 }
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .book-a-table-one .booking-form-wrap {
     border-radius: 0px 0px 15px 15px;
     padding: 20px;
