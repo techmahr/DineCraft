@@ -295,6 +295,10 @@ a {
   background-color: #d32f2f !important;
 }
 
+.f-40 {
+  font-size: 40px !important;
+}
+
 /* Heading One  */
 .head1 h2 {
   color: #1F2632;
@@ -757,12 +761,6 @@ a {
 }
 .blog-details-wrap img {
   border-radius: 10px;
-}
-.blog-details-wrap h1,
-.blog-details-wrap h2,
-.blog-details-wrap h3 {
-  margin-bottom: 24px;
-  font-family: "DM Sans", sans-serif !important;
 }
 .blog-details-wrap p,
 .blog-details-wrap li {
