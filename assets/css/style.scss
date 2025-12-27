@@ -24,6 +24,7 @@
 /* 1. ABSTRACTS
    Global variables, color tokens, and mixins. */
 @use './abstract/variables' as *;
+@use './abstract/mixins' as *;
 
 /* 2. BASE & UTILITIES
    Core resets, fonts, and global helper classes. */

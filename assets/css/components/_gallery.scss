@@ -1,5 +1,5 @@
 @use '../abstract/variables' as *;
-
+@use '../abstract/mixins' as *;
 
 .gallery-item {
     position: relative;
@@ -14,26 +14,30 @@
         transition: transform $gallery-zoom-speed ease-in-out;
     }
 
-    &:hover img {
-        transform: scale(1.15);
-    }
+    // Mixins 
+    @include hover-zoom(1.15, $gallery-zoom-speed);
+    @include hover-overlay(0.1);
 
-    // Subtle overlay on hover
-    &::after {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(0, 0, 0, 0.1);
-        opacity: 0;
-        transition: opacity 0.3s;
-    }
+    // &:hover img {
+    //     transform: scale(1.15);
+    // }
 
-    &:hover::after {
-        opacity: 1;
-    }
+    // // Subtle overlay on hover
+    // &::after { 
+    //     content: '';
+    //     position: absolute;
+    //     top: 0; 
+    //     left: 0;
+    //     width: 100%;
+    //     height: 100%;
+    //     background: rgba(0, 0, 0, 0.1);
+    //     opacity: 0;
+    //     transition: opacity 0.3s;
+    // }
+
+    // &:hover::after {
+    //     opacity: 1;
+    // }
 }
 
 // Modal styling to make the image pop
