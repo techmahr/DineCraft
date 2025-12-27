@@ -14,7 +14,7 @@
         transition: transform $gallery-zoom-speed ease-in-out;
     }
 
-    // Mixins 
+    // Using hover animation mixins 
     @include hover-zoom(1.15, $gallery-zoom-speed);
     @include hover-overlay(0.1);
 

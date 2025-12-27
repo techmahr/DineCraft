@@ -503,16 +503,59 @@ a {
   background: #f4f1ee !important;
   border-radius: 10px;
   margin-bottom: 24px;
+  position: relative;
+  overflow: hidden;
+}
+.card-blog .card-img-wrapper,
+.card-team .card-img-wrapper,
+.card-testimonial .card-img-wrapper {
+  overflow: hidden;
+  border-radius: 10px;
+  position: relative;
+  position: relative;
+  overflow: hidden;
+}
+.card-blog .card-img-wrapper img,
+.card-team .card-img-wrapper img,
+.card-testimonial .card-img-wrapper img {
+  transition: transform 0.4s ease-in-out;
+}
+.card-blog .card-img-wrapper:hover img,
+.card-team .card-img-wrapper:hover img,
+.card-testimonial .card-img-wrapper:hover img {
+  transform: scale(1.15);
+}
+.card-blog .card-img-wrapper::after,
+.card-team .card-img-wrapper::after,
+.card-testimonial .card-img-wrapper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transition: opacity 0.3s;
+  pointer-events: none;
+}
+.card-blog .card-img-wrapper:hover::after,
+.card-team .card-img-wrapper:hover::after,
+.card-testimonial .card-img-wrapper:hover::after {
+  opacity: 1;
+}
+.card-blog .card-img-wrapper img,
+.card-team .card-img-wrapper img,
+.card-testimonial .card-img-wrapper img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
 }
 .card-blog .card-body,
 .card-team .card-body,
 .card-testimonial .card-body {
   padding-bottom: 10px;
-}
-.card-blog img,
-.card-team img,
-.card-testimonial img {
-  border-radius: 10px;
 }
 .card-blog h5,
 .card-team h5,
@@ -539,6 +582,35 @@ a {
 .card-testimonial .social-links a i:hover {
   color: #d32f2f;
   background-color: transparent;
+}
+.card-blog img,
+.card-team img,
+.card-testimonial img {
+  transition: transform 0.4s ease-in-out;
+}
+.card-blog:hover img,
+.card-team:hover img,
+.card-testimonial:hover img {
+  transform: scale(1.15);
+}
+.card-blog::after,
+.card-team::after,
+.card-testimonial::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transition: opacity 0.3s;
+  pointer-events: none;
+}
+.card-blog:hover::after,
+.card-team:hover::after,
+.card-testimonial:hover::after {
+  opacity: 1;
 }
 
 .card-blog-item {

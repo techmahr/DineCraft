@@ -1,5 +1,5 @@
 @use '../abstract/variables' as *;
-
+@use '../abstract/mixins' as *;
 
 .card-blog,
 .card-team,
@@ -10,12 +10,25 @@
     border-radius: 10px;
     margin-bottom: 24px;
 
-    .card-body {
-        padding-bottom: 10px;
+    .card-img-wrapper {
+        overflow: hidden;
+        border-radius: 10px;
+        position: relative;
+
+        // Mixins for animatoins 
+        @include hover-zoom(1.15, $gallery-zoom-speed);
+        @include hover-overlay(0.1);
+
+        img {
+            display: block;
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
     }
 
-    img {
-        border-radius: 10px;
+    .card-body {
+        padding-bottom: 10px;
     }
 
     h5 {
@@ -40,6 +53,10 @@
             background-color: transparent;
         }
     }
+
+    // Using hover animation mixins 
+    @include hover-zoom(1.15, $gallery-zoom-speed);
+    @include hover-overlay(0.1);
 }
 
 // Card blog item 
