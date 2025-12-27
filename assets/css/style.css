@@ -576,6 +576,11 @@ a {
 .card-testimonial i {
   color: #789299;
 }
+.card-blog .social-links a:hover,
+.card-team .social-links a:hover,
+.card-testimonial .social-links a:hover {
+  background-color: transparent;
+}
 .card-blog .social-links a i:hover,
 .card-team .social-links a i:hover,
 .card-testimonial .social-links a i:hover {

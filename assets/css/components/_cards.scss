@@ -47,10 +47,16 @@
         color: $color-text-tertiary;
     }
 
-    .social-links a i {
+    .social-links a {
         &:hover {
-            color: $color-primary;
             background-color: transparent;
+        }
+
+        i {
+            &:hover {
+                color: $color-primary;
+                background-color: transparent;
+            }
         }
     }
 

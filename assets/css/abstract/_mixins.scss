@@ -2,7 +2,7 @@
 
 // _mixins.scss
 
-// 1. The Zoom Effect
+// 1. The Zoom Effect on hover 
 @mixin hover-zoom($scale: 1.15, $speed: 0.4s) {
     img {
         transition: transform $speed ease-in-out;
