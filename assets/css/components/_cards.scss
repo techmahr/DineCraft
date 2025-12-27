@@ -66,3 +66,100 @@
         justify-content: space-between;
     }
 }
+
+
+// -----------------------------------------------------------------------------
+// Restaurant Menu Items
+// Styles for food/drink list items with/without images and pricing.
+// -----------------------------------------------------------------------------
+
+.menu-item-one {
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+    border-bottom: 1px dashed $color-text-secondary;
+    display: flex;
+
+    img {
+        height: 80px;
+        width: 80px;
+        border-radius: 15%;
+        margin-right: 20px;
+    }
+
+    .content-wrap {
+        width: 100%;
+    }
+
+    .title-wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        h5 {
+            margin-bottom: 0;
+            font-weight: 500;
+            color: $color-text-primary;
+        }
+
+        .price {
+            font-weight: 700;
+            color: $color-primary;
+            font-size: 1.1rem;
+        }
+    }
+
+    p {
+        margin-top: 5px;
+        margin-bottom: 16px;
+        color: $color-text-secondary;
+        font-size: 0.95rem;
+    }
+
+    &:last-child {
+        @media (min-width: 768px) {
+            border-bottom: none;
+            margin-bottom: 0;
+        }
+
+        .col-md-6:last-child & {
+            border-bottom: none;
+            margin-bottom: 0;
+        }
+    }
+}
+
+// Restaurant Menu Items End
+
+// -----------------------------------------------------------------------------
+// Testimonial Card 
+// Styles for testimonial card
+// -----------------------------------------------------------------------------
+
+.card-testimonial {
+
+    .quote-icon {
+        font-size: 62px !important;
+        color: $color-primary;
+    }
+
+    .ratings {
+        margin-bottom: 8px;
+
+        i {
+            color: $color-primary;
+        }
+    }
+
+    .testi-user {
+        height: 45px;
+        width: 45px;
+        border-radius: 50%;
+        margin-right: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #fff;
+        font-size: 22px;
+    }
+
+}

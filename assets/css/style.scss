@@ -2,6 +2,7 @@
 @use './layout/navbar' as *;
 @use './layout/footer' as *;
 @use './base/typography' as *;
+@use './base/utilities' as *;
 @use './components/buttons' as *;
 @use './components/forms' as *;
 @use './components/badges' as *;
@@ -10,10 +11,11 @@
 @use './components/cards' as *;
 @use './components/accordion' as *;
 @use './components/gallery' as *;
+@use './pages/testimonials' as *;
 
 
 body {
-  background-color: yellow;
+  background-color: green;
 }
 
 .bg-light {
@@ -48,14 +50,8 @@ body {
   }
 }
 
-
-/* Home About */
-
-.home-about {
-  padding: 80px 0;
-}
-
 /* Book Table */
+
 .book-a-table-one {
 
   .book-table-img-wrap {
@@ -115,65 +111,7 @@ body {
   }
 }
 
-/* Our menu  */
 
-.menu-item-one {
-  margin-bottom: 25px;
-  padding-bottom: 10px;
-  border-bottom: 1px dashed $color-text-secondary;
-  display: flex;
-
-  img {
-    height: 80px;
-    width: 80px;
-    border-radius: 15%;
-    margin-right: 20px;
-  }
-
-  .content-wrap {
-    width: 100%;
-  }
-
-  .title-wrap {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    h5 {
-      margin-bottom: 0;
-      font-weight: 500;
-      color: $color-text-primary;
-    }
-
-    .price {
-      font-weight: 700;
-      color: $color-primary;
-      font-size: 1.1rem;
-    }
-  }
-
-  p {
-    margin-top: 5px;
-    margin-bottom: 16px;
-    color: $color-text-secondary;
-    font-size: 0.95rem;
-  }
-
-  &:last-child {
-    @media (min-width: 768px) {
-      border-bottom: none;
-      margin-bottom: 0;
-    }
-
-    .col-md-6:last-child & {
-      border-bottom: none;
-      margin-bottom: 0;
-    }
-  }
-
-}
-
-// Menu end 
 
 // Menu 2 
 
@@ -194,35 +132,6 @@ body {
 
 
 
-// Tesimonial 
-.card-testimonial {
-
-  .quote-icon {
-    font-size: 62px !important;
-    color: $color-primary;
-  }
-
-  .ratings {
-    margin-bottom: 8px;
-
-    i {
-      color: $color-primary;
-    }
-  }
-
-  .testi-user {
-    height: 45px;
-    width: 45px;
-    border-radius: 50%;
-    margin-right: 16px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #fff;
-    font-size: 22px;
-  }
-
-}
 
 // Team carousel 
 
@@ -332,9 +241,6 @@ body {
 }
 
 
-
-
-
 // Terms and conditions page 
 
 .terms-section,
@@ -382,7 +288,6 @@ body {
     border-radius: 10px;
   }
 
-
   p,
   li {
     color: $color-text-secondary;
@@ -398,28 +303,5 @@ body {
     li {
       margin-bottom: 15px;
     }
-  }
-}
-
-
-
-// Testimoinial page styles 
-
-.masonry-wrapper {
-  column-count: 3;
-  column-gap: 1.5rem;
-
-  @media (max-width: 992px) {
-    column-count: 2;
-  }
-
-  @media (max-width: 576px) {
-    column-count: 1;
-  }
-
-  .card-testimonial {
-    display: inline-block; // Important for some browser compatibility
-    width: 100%;
-    break-inside: avoid; // Prevents card from splitting between columns
   }
 }

@@ -1,0 +1,20 @@
+// Testimoinial page styles 
+
+.masonry-wrapper {
+    column-count: 3;
+    column-gap: 1.5rem;
+
+    @media (max-width: 992px) {
+        column-count: 2;
+    }
+
+    @media (max-width: 576px) {
+        column-count: 1;
+    }
+
+    .card-testimonial {
+        display: inline-block; // Important for some browser compatibility
+        width: 100%;
+        break-inside: avoid; // Prevents card from splitting between columns
+    }
+}
