@@ -1,0 +1,17 @@
+@use '../abstract/variables' as *;
+
+// Terms and privacy page styles 
+
+.terms-section,
+.privacy-section {
+
+    p {
+        color: $color-text-secondary;
+    }
+
+    hr {
+        margin: 32px 0;
+        border-color: $color-border-primary ;
+        opacity: 1;
+    }
+}

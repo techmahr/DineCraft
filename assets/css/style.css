@@ -1,3 +1,98 @@
+@charset "UTF-8";
+/* ==========================================================================
+   Template Name: DineCraft
+   Version:       1.0.0
+   Author:        Mahroof
+   Website:       Prettycodes.com
+   Description:   Premium Bootstrap 5 Restaurant & Hospitality Template
+   --------------------------------------------------------------------------
+   Copyright © 2026 Mahroof. All rights reserved.
+   ========================================================================== */
+/* ==========================================================================
+   TEMPLATING INSTRUCTIONS
+   ==========================================================================
+   This file acts as the central hub for all project styles.
+   It uses the Sass @use rule to modularize components.
+
+   How to Customize:
+   1. Colors & Typography: Edit /abstract/_variables.scss
+   2. Global Tags:         Edit /base/_typography.scss
+   3. Individual UI:       Edit the respective file in /components/
+   4. Page Layouts:        Edit specific files in /pages/ for unique views.
+   ========================================================================== */
+/* 1. ABSTRACTS
+   Global variables, color tokens, and mixins. */
+/* 2. BASE & UTILITIES
+   Core resets, fonts, and global helper classes. */
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+body {
+  font-family: "DM Sans", sans-serif;
+  color: #1F2632;
+}
+
+a {
+  color: #d32f2f;
+  text-decoration: none;
+}
+
+.text-primary {
+  color: #d32f2f !important;
+}
+
+.font-heading {
+  font-family: "Playfair Display", serif;
+  line-height: normal;
+  font-weight: 700;
+}
+
+.page-title {
+  font-size: 40px;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.f-40 {
+  font-size: 40px !important;
+}
+
+/* Heading One  */
+.head1 h2 {
+  color: #1F2632;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+.head1 p {
+  font-size: 18px;
+  color: #527179;
+}
+
+/* Margins  */
+.mb-32 {
+  margin-bottom: 32px !important;
+}
+
+.mt-32 {
+  margin-top: 32px !important;
+}
+
+.sec-pad {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+@media (min-width: 992px) {
+  .sec-pad {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+
+.bg-light {
+  background-color: #f4f1ee !important;
+}
+
+/* 3. LAYOUT
+   Major structural elements present across all pages. */
 .custom-navbar {
   transition: all 0.4s ease-in-out;
   padding: 20px 0;
@@ -131,57 +226,8 @@
   color: #d32f2f;
 }
 
-body {
-  font-family: "DM Sans", sans-serif;
-  color: #1F2632;
-}
-
-.font-heading {
-  font-family: "Playfair Display", serif;
-  line-height: normal;
-  font-weight: 700;
-}
-
-.page-title {
-  font-size: 40px;
-  font-family: "Playfair Display", serif;
-  font-weight: 700;
-  margin-bottom: 20px;
-}
-
-.f-40 {
-  font-size: 40px !important;
-}
-
-a {
-  color: #d32f2f;
-  text-decoration: none;
-}
-
-.text-primary {
-  color: #d32f2f !important;
-}
-
-/* Margins  */
-.mb-32 {
-  margin-bottom: 32px !important;
-}
-
-.mt-32 {
-  margin-top: 32px !important;
-}
-
-.sec-pad {
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
-@media (min-width: 992px) {
-  .sec-pad {
-    padding-top: 80px;
-    padding-bottom: 80px;
-  }
-}
-
+/* 4. COMPONENTS
+   Reusable UI elements and standalone modules. */
 /* Buttons  */
 .btn {
   border-radius: 4px;
@@ -391,6 +437,62 @@ a {
 .carousel-control-next:hover .carousel-control-next-icon {
   background-color: #d32f2f;
   transform: scale(1.1);
+}
+
+.img-collage-wrap {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  padding: 20px;
+}
+.img-collage-wrap img {
+  position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+  border: 4px solid white;
+}
+.img-collage-wrap .first {
+  width: 70%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.img-collage-wrap .second {
+  width: 45%;
+  height: 300px;
+  top: 15%;
+  right: 0;
+  z-index: 2;
+}
+.img-collage-wrap .third {
+  width: 200px;
+  height: 200px;
+  bottom: 18%;
+  right: 20%;
+  z-index: 3;
+}
+@media (max-width: 768px) {
+  .img-collage-wrap {
+    height: 400px;
+  }
+  .img-collage-wrap .first {
+    width: 75%;
+    height: 300px;
+  }
+  .img-collage-wrap .second {
+    width: 50%;
+    height: 180px;
+    top: 10%;
+  }
+  .img-collage-wrap .third {
+    width: 120px;
+    height: 120px;
+    bottom: 10%;
+    right: 15%;
+  }
 }
 
 .card-blog,
@@ -613,60 +715,6 @@ a {
   width: auto;
 }
 
-.masonry-wrapper {
-  -moz-column-count: 3;
-       column-count: 3;
-  -moz-column-gap: 1.5rem;
-       column-gap: 1.5rem;
-}
-@media (max-width: 992px) {
-  .masonry-wrapper {
-    -moz-column-count: 2;
-         column-count: 2;
-  }
-}
-@media (max-width: 576px) {
-  .masonry-wrapper {
-    -moz-column-count: 1;
-         column-count: 1;
-  }
-}
-.masonry-wrapper .card-testimonial {
-  display: inline-block;
-  width: 100%;
-  -moz-column-break-inside: avoid;
-       break-inside: avoid;
-}
-
-body {
-  background-color: green;
-}
-
-.bg-light {
-  background-color: #f4f1ee !important;
-}
-
-.footer-one .social-links a,
-.contact-section .social-links a {
-  margin-bottom: 10px;
-}
-.footer-one .social-links a:hover,
-.contact-section .social-links a:hover {
-  border-color: #d32f2f !important;
-  background-color: #d32f2f !important;
-}
-
-/* Heading One  */
-.head1 h2 {
-  color: #1F2632;
-  font-size: 40px;
-  margin-bottom: 20px;
-}
-.head1 p {
-  font-size: 18px;
-  color: #527179;
-}
-
 /* Book Table */
 .book-a-table-one .book-table-img-wrap {
   height: 100%;
@@ -715,13 +763,16 @@ body {
   color: #999;
 }
 
-.book-a-table-two {
-  padding: 80px 0;
+.social-links a {
+  margin-bottom: 10px;
 }
-.book-a-table-two .form-control {
-  margin-bottom: 32px;
+.social-links a:hover {
+  border-color: #d32f2f;
+  background-color: #d32f2f;
 }
 
+/* 5. PAGE-SPECIFIC STYLES
+   Styles unique to specific sections or individual templates. */
 .h-100-img {
   width: 100%;
   border-radius: 15px;
@@ -736,102 +787,29 @@ body {
   }
 }
 
-.img-collage-wrap {
-  position: relative;
-  width: 100%;
-  height: 600px;
-  padding: 20px;
+.masonry-wrapper {
+  -moz-column-count: 3;
+       column-count: 3;
+  -moz-column-gap: 1.5rem;
+       column-gap: 1.5rem;
 }
-.img-collage-wrap img {
-  position: absolute;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 15px;
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
-  border: 4px solid white;
-}
-.img-collage-wrap .first {
-  width: 70%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: 1;
-}
-.img-collage-wrap .second {
-  width: 45%;
-  height: 300px;
-  top: 15%;
-  right: 0;
-  z-index: 2;
-}
-.img-collage-wrap .third {
-  width: 200px;
-  height: 200px;
-  bottom: 18%;
-  right: 20%;
-  z-index: 3;
-}
-@media (max-width: 768px) {
-  .img-collage-wrap {
-    height: 400px;
-  }
-  .img-collage-wrap .first {
-    width: 75%;
-    height: 300px;
-  }
-  .img-collage-wrap .second {
-    width: 50%;
-    height: 180px;
-    top: 10%;
-  }
-  .img-collage-wrap .third {
-    width: 120px;
-    height: 120px;
-    bottom: 10%;
-    right: 15%;
+@media (max-width: 992px) {
+  .masonry-wrapper {
+    -moz-column-count: 2;
+         column-count: 2;
   }
 }
-
-.contact-section ul {
-  padding: 0px;
+@media (max-width: 576px) {
+  .masonry-wrapper {
+    -moz-column-count: 1;
+         column-count: 1;
+  }
 }
-.contact-section ul li {
-  display: block;
-  margin: 0 0 15px;
-}
-.contact-section ul li span {
+.masonry-wrapper .card-testimonial {
   display: inline-block;
-  min-width: 140px;
-}
-.contact-section ul .social-links {
-  display: inline;
-}
-.contact-section ul .social-links a {
-  border-color: #1F2632;
-}
-.contact-section ul .social-links a i {
-  color: #1F2632;
-}
-
-.contact-block {
-  background: #f4f1ee !important;
-  border-radius: 15px;
-  padding: 40px 20px 50px 20px;
-}
-.contact-block img {
-  max-width: 200px;
-  padding: 20px 0;
-}
-
-.terms-section p,
-.privacy-section p {
-  color: #527179;
-}
-.terms-section hr,
-.privacy-section hr {
-  margin: 32px 0;
-  border-color: #dee2e6;
-  opacity: 1;
+  width: 100%;
+  -moz-column-break-inside: avoid;
+       break-inside: avoid;
 }
 
 .blog-details-wrap {
@@ -869,4 +847,46 @@ body {
 }
 .blog-details-wrap ol li {
   margin-bottom: 15px;
+}
+
+.terms-section p,
+.privacy-section p {
+  color: #527179;
+}
+.terms-section hr,
+.privacy-section hr {
+  margin: 32px 0;
+  border-color: #dee2e6;
+  opacity: 1;
+}
+
+.contact-block {
+  background: #f4f1ee !important;
+  border-radius: 15px;
+  padding: 40px 20px 50px 20px;
+}
+.contact-block img {
+  max-width: 200px;
+  padding: 20px 0;
+}
+
+.contact-section ul {
+  padding: 0px;
+}
+.contact-section ul li {
+  display: block;
+  margin: 0 0 15px;
+}
+.contact-section ul li span {
+  display: inline-block;
+  min-width: 140px;
+}
+.contact-section ul .social-links {
+  display: inline;
+}
+.contact-section ul .social-links a {
+  border-color: #1F2632;
+}
+.contact-section ul .social-links a i {
+  color: #1F2632;
 }/*# sourceMappingURL=style.css.map */

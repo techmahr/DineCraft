@@ -1,0 +1,16 @@
+// Menu 2 
+
+.h-100-img {
+    width: 100%;
+    border-radius: 15px;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+
+    // min-height for mobile so the image doesn't disappear if empty
+    @media (max-width: 767px) {
+        height: 300px;
+    }
+}
+
+// Menu 2 end 

@@ -1,0 +1,50 @@
+@use '../abstract/variables' as *;
+
+// Blog details page 
+
+.blog-details-wrap {
+    padding: 32px;
+    border: 0px;
+    background: $color-bg-light;
+    border-radius: 10px;
+    margin-bottom: 24px;
+
+    header {
+        .writer {
+            display: flex;
+            align-items: center;
+            margin: 34px 0 20px 0;
+
+            span {
+                margin-right: 10px;
+                font-size: 20px;
+            }
+
+            i {
+                color: $color-primary;
+                font-size: 20px;
+            }
+        }
+    }
+
+    img {
+        border-radius: 10px;
+    }
+
+    p,
+    li {
+        color: $color-text-secondary;
+    }
+
+    i {
+        margin-right: 8px;
+    }
+
+    ol {
+        padding-left: 20px;
+
+        li {
+            margin-bottom: 15px;
+        }
+    }
+}

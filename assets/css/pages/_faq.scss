@@ -1,0 +1,14 @@
+@use '../abstract/variables' as *;
+
+// Faq styles 
+
+.contact-block {
+    background: $color-bg-light;
+    border-radius: 15px;
+    padding: 40px 20px 50px 20px;
+
+    img {
+        max-width: 200px;
+        padding: 20px 0;
+    }
+}

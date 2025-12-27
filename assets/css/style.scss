@@ -1,307 +1,60 @@
+/* ==========================================================================
+   Template Name: DineCraft
+   Version:       1.0.0
+   Author:        Mahroof
+   Website:       Prettycodes.com
+   Description:   Premium Bootstrap 5 Restaurant & Hospitality Template
+   --------------------------------------------------------------------------
+   Copyright © 2026 Mahroof. All rights reserved.
+   ========================================================================== */
+
+/* ==========================================================================
+   TEMPLATING INSTRUCTIONS
+   ==========================================================================
+   This file acts as the central hub for all project styles.
+   It uses the Sass @use rule to modularize components.
+   
+   How to Customize:
+   1. Colors & Typography: Edit /abstract/_variables.scss
+   2. Global Tags:         Edit /base/_typography.scss
+   3. Individual UI:       Edit the respective file in /components/
+   4. Page Layouts:        Edit specific files in /pages/ for unique views.
+   ========================================================================== */
+
+/* 1. ABSTRACTS
+   Global variables, color tokens, and mixins. */
 @use './abstract/variables' as *;
-@use './layout/navbar' as *;
-@use './layout/footer' as *;
+
+/* 2. BASE & UTILITIES
+   Core resets, fonts, and global helper classes. */
+@use './base/fonts' as *;
 @use './base/typography' as *;
 @use './base/utilities' as *;
+
+/* 3. LAYOUT
+   Major structural elements present across all pages. */
+@use './layout/navbar' as *;
+@use './layout/footer' as *;
+
+/* 4. COMPONENTS
+   Reusable UI elements and standalone modules. */
 @use './components/buttons' as *;
 @use './components/forms' as *;
 @use './components/badges' as *;
 @use './components/loader' as *;
 @use './components/carousel' as *;
+@use './components/collage-images' as *;
 @use './components/cards' as *;
 @use './components/accordion' as *;
 @use './components/gallery' as *;
+@use './components/booking-two' as *;
+@use './components/social-links' as *;
+
+/* 5. PAGE-SPECIFIC STYLES
+   Styles unique to specific sections or individual templates. */
+@use './pages/menu-two' as *;
 @use './pages/testimonials' as *;
-
-
-body {
-  background-color: green;
-}
-
-.bg-light {
-  background-color: $color-bg-light;
-}
-
-.footer-one .social-links,
-.contact-section .social-links {
-
-  a {
-    margin-bottom: 10px;
-
-    &:hover {
-      border-color: $color-primary !important;
-      background-color: $color-primary !important;
-    }
-  }
-}
-
-/* Heading One  */
-
-.head1 {
-  h2 {
-    color: $color-text-primary;
-    font-size: 40px;
-    margin-bottom: 20px;
-  }
-
-  p {
-    font-size: 18px;
-    color: $color-text-secondary;
-  }
-}
-
-/* Book Table */
-
-.book-a-table-one {
-
-  .book-table-img-wrap {
-    height: 100%;
-    min-height: 400px;
-    overflow: hidden; // Keeps corners clean
-    border-radius: 15px 0 0 15px;
-
-    @media (max-width: 991px) {
-      border-radius: 15px 15px 0px 0px;
-    }
-  }
-
-  .book-table-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; // This is the magic line that mimics background-size: cover
-    display: block;
-  }
-
-  .booking-form-wrap {
-    background-color: $color-primary;
-    padding: 50px;
-    height: 100%;
-    border-radius: 0 15px 15px 0;
-
-    @media (max-width: 991px) {
-      border-radius: 0px 0px 15px 15px;
-      padding: 20px;
-    }
-
-    h2 {
-      color: $color-text-white-primary;
-      margin-bottom: 30px;
-      font-weight: 700;
-    }
-
-    .form-control {
-      margin-bottom: 20px;
-      border: none;
-      padding: 12px;
-
-      &::placeholder {
-        color: #999;
-      }
-    }
-
-  }
-}
-
-
-.book-a-table-two {
-  padding: 80px 0;
-
-  .form-control {
-    margin-bottom: 32px;
-  }
-}
-
-
-
-// Menu 2 
-
-.h-100-img {
-  width: 100%;
-  border-radius: 15px;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-
-  // min-height for mobile so the image doesn't disappear if empty
-  @media (max-width: 767px) {
-    height: 300px;
-  }
-}
-
-// Menu 2 end 
-
-
-
-
-// Team carousel 
-
-.img-collage-wrap {
-  position: relative;
-  width: 100%;
-  height: 600px;
-  padding: 20px;
-
-  img {
-    position: absolute;
-    object-fit: cover;
-    border-radius: 15px;
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
-    border: 4px solid white;
-  }
-
-  .first {
-    width: 70%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: 1;
-  }
-
-  .second {
-    width: 45%;
-    height: 300px;
-    top: 15%;
-    right: 0;
-    z-index: 2;
-  }
-
-  .third {
-    width: 200px;
-    height: 200px;
-    bottom: 18%;
-    right: 20%;
-    z-index: 3;
-  }
-
-  // Nested Media Query
-  @media (max-width: 768px) {
-    height: 400px;
-
-    .first {
-      width: 75%;
-      height: 300px;
-    }
-
-    .second {
-      width: 50%;
-      height: 180px;
-      top: 10%;
-    }
-
-    .third {
-      width: 120px;
-      height: 120px;
-      bottom: 10%;
-      right: 15%;
-    }
-  }
-}
-
-// contact section 
-
-.contact-section ul {
-  padding: 0px;
-
-  li {
-    display: block;
-    margin: 0 0 15px;
-
-    span {
-      display: inline-block;
-      min-width: 140px;
-    }
-  }
-
-  .social-links {
-    display: inline;
-
-    a {
-      border-color: $color-text-primary;
-
-      i {
-        color: $color-text-primary;
-      }
-    }
-  }
-}
-
-
-
-// Faq styles 
-
-.contact-block {
-  background: $color-bg-light;
-  border-radius: 15px;
-  padding: 40px 20px 50px 20px;
-
-  img {
-    max-width: 200px;
-    padding: 20px 0;
-  }
-}
-
-
-// Terms and conditions page 
-
-.terms-section,
-.privacy-section {
-
-  p {
-    color: $color-text-secondary;
-  }
-
-  hr {
-    margin: 32px 0;
-    border-color: $color-border-primary ;
-    opacity: 1;
-  }
-}
-
-// Blog details page 
-
-.blog-details-wrap {
-  padding: 32px;
-  border: 0px;
-  background: $color-bg-light;
-  border-radius: 10px;
-  margin-bottom: 24px;
-
-  header {
-    .writer {
-      display: flex;
-      align-items: center;
-      margin: 34px 0 20px 0;
-
-      span {
-        margin-right: 10px;
-        font-size: 20px;
-      }
-
-      i {
-        color: $color-primary;
-        font-size: 20px;
-      }
-    }
-  }
-
-  img {
-    border-radius: 10px;
-  }
-
-  p,
-  li {
-    color: $color-text-secondary;
-  }
-
-  i {
-    margin-right: 8px;
-  }
-
-  ol {
-    padding-left: 20px;
-
-    li {
-      margin-bottom: 15px;
-    }
-  }
-}
+@use './pages/blog-details' as *;
+@use './pages/terms-privacy' as *;
+@use './pages/faq' as *;
+@use './pages/contact' as *;

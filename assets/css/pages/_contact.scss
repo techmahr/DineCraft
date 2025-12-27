@@ -1,0 +1,29 @@
+@use '../abstract/variables' as *;
+
+// contact section 
+
+.contact-section ul {
+    padding: 0px;
+
+    li {
+        display: block;
+        margin: 0 0 15px;
+
+        span {
+            display: inline-block;
+            min-width: 140px;
+        }
+    }
+
+    .social-links {
+        display: inline;
+
+        a {
+            border-color: $color-text-primary;
+
+            i {
+                color: $color-text-primary;
+            }
+        }
+    }
+}

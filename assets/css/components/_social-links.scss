@@ -1,0 +1,12 @@
+@use '../abstract/variables' as *;
+
+.social-links {
+    a {
+        margin-bottom: 10px;
+
+        &:hover {
+            border-color: $color-primary;
+            background-color: $color-primary;
+        }
+    }
+}
