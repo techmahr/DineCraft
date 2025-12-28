@@ -10,7 +10,7 @@
  * A split-screen design where the image and form wrap into a single unit.
  */
 
-.book-a-table-two {
+.book-a-table-split {
 
     /**
      * Image Container
@@ -54,7 +54,7 @@
         }
 
         h2 {
-            color: $color-text-white-primary;
+            color: $color-text-light-base;
             margin-bottom: 30px;
             font-weight: 700;
         }

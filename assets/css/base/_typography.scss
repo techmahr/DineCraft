@@ -7,20 +7,16 @@
 
 // --- Global Base Styles ---
 
-/**
- * Default Body Styling
- * Sets the primary font family and text color for the entire application.
- */
+// Default Body Styling
+// * Sets the primary font family and text color for the entire application.
 
 body {
     font-family: $font-family-base;
-    color: $color-text-primary;
+    color: $color-text-dark-base;
 }
 
-/**
- * Global Link Styling
- * Defines the default appearance for all anchor tags.
- */
+// Global Link Styling
+// Defines the default appearance for all anchor tags.
 
 a {
     color: $color-primary;
@@ -29,28 +25,24 @@ a {
 
 // --- Utility & Helper Classes ---
 
-/**
- * Theme Color Utility
- * Forces the text to use the primary brand color defined in variables.
- */
+// * Theme Color Utility
+// * Forces the text to use the primary brand color defined in variables.
+
 .text-primary {
     color: $color-primary !important;
 }
 
-/**
- * Heading Font Override
- * Applies the secondary/heading font stack to any element.
- */
+text-secondary // * Heading Font Override
+// * Applies the secondary/heading font stack to any element.
+
 .font-heading {
     font-family: $font-family-heading;
     line-height: normal;
     font-weight: 700;
 }
 
-/**
- * Fixed Font Size Utility
- * Use this to force a 40px font size on any element.
- */
+// Fixed Font Size Utility
+// Use this to force a 40px font size on any element.
 
 .f-40 {
     font-size: 40px !important;
@@ -58,10 +50,8 @@ a {
 
 // --- Page & Section Headers ---
 
-/**
- * Main Page Title
- * Designed for the primary H1 or header title on inner pages.
- */
+// Main Page Title
+// Designed for the primary H1 or header title on inner pages.
 
 .page-title {
     font-size: 40px;
@@ -72,20 +62,18 @@ a {
 
 // --- Content Blocks ---
 
-/**
- * Head1 Component
- * A layout block used for section headings containing a title and description.
- */
+// * Head1 Component
+// A layout block used for section headings containing a title and description.
 
 .head1 {
     h2 {
-        color: $color-text-primary;
+        color: $color-text-dark-base;
         font-size: 40px;
         margin-bottom: 20px;
     }
 
     p {
         font-size: 18px;
-        color: $color-text-secondary;
+        color: $color-text-dark-muted;
     }
 }

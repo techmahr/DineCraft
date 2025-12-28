@@ -18,7 +18,7 @@
 
     h5 {
         font-family: $font-family-base;
-        color: $color-text-white-primary !important;
+        color: $color-text-light-base !important;
     }
 
     // --- Footer Navigation Lists ---
@@ -30,7 +30,7 @@
             margin-bottom: 10px;
 
             a {
-                color: $color-text-white-secondary;
+                color: $color-text-light-muted;
                 transition: 0.3s;
                 margin-bottom: 10px;
                 font-size: 14px;
@@ -50,13 +50,13 @@
                 display: flex;
                 justify-content: space-between;
                 margin-bottom: 10px;
-                color: $color-text-white-secondary;
-                border-bottom: 1px dotted $color-text-white-secondary;
+                color: $color-text-light-muted;
+                border-bottom: 1px dotted $color-text-light-muted;
                 padding-bottom: 5px;
                 font-size: 14px;
 
                 span {
-                    color: $color-text-white-primary;
+                    color: $color-text-light-base;
                     font-size: 14px;
                 }
 

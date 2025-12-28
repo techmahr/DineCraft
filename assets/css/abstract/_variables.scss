@@ -6,36 +6,43 @@
 
 // --- Brand Color Palette ---
 // Use these to change the primary theme identity.
+
 $color-primary: #d32f2f; // Main brand color (Used for buttons, links, backgrounds, etc.)
 $color-primary-dark: #b51616; // Darker shade for hover states and active elements
 $color-off-white: #F8F9FA; // Light neutral used for section backgrounds
 
 // --- Background Colors ---
 // Controls the background of different layout sections.
+
 // $color-bg-light: #f1f7fa !important;
 $color-bg-light: #f4f1ee !important;
 
 // --- Text Colors ---
 // These ensure high readability and consistent hierarchy across the site.
-$color-text-primary: #1F2632; // Main body and heading text
-$color-text-secondary: #527179; // Subtitles and descriptions
-$color-text-tertiary: #789299; // Muted text and captions
-$color-text-white-primary: #fff; // Text on dark backgrounds
-$color-text-white-secondary: #b4b4b4; // Muted text on dark backgrounds
+
+$color-text-dark-base: #1F2632; // Main body and heading text
+$color-text-dark-muted: #527179; // Subtitles and descriptions
+$color-text-dark-subtle: #789299; // Muted text and captions
+$color-text-light-base: #fff; // Text on dark backgrounds
+$color-text-light-muted: #b4b4b4; // Muted text on dark backgrounds
 
 // --- Borders & UI Elements ---
+
 $color-border-primary: #dee2e6; // Default border color for inputs and dividers
 
 // --- Typography ---
 // Define the font stacks used throughout the template.
+
 $font-family-base: 'DM Sans', sans-serif; // Primary font for body text
 $font-family-heading: "Playfair Display", serif; // Elegant font for titles and headings
 
 // --- Layout & Spacing Tokens ---
 // Global spacing values to maintain vertical rhythm.
+
 $section-spacing-y: 40px; // Standard top/bottom padding for sections
 
 // --- Component Tokens: Gallery ---
 // Specific settings for gallery and image-heavy components.
+
 $gallery-height: 250px; // Default height for gallery thumbnails
 $gallery-zoom-speed: 0.4s; // Animation duration for hover zoom effects

@@ -5,14 +5,12 @@
 
 @use '../abstract/variables' as *;
 
-/**
- * 1. Image Zoom Effect
- * Scales the <img> child element when the parent container is hovered.
- * * @param {Number} $scale (1.15) - The magnification level of the zoom.
- * @param {Time} $speed (0.4s)   - The duration of the transition.
- * * Usage: 
- * .card-image { @include hover-zoom(1.2, 0.5s); }
- */
+// 1. Image Zoom Effect
+// Scales the <img> child element when the parent container is hovered.
+// * * @param {Number} $scale (1.15) - The magnification level of the zoom.
+// * @param {Time} $speed (0.4s)   - The duration of the transition.
+// * * Usage: 
+// * .card-image { @include hover-zoom(1.2, 0.5s); }
 
 // 1. The Zoom Effect On Hover 
 @mixin hover-zoom($scale: 1.15, $speed: 0.4s) {
@@ -28,15 +26,15 @@
     }
 }
 
-/**
- * 2. Dark Overlay Effect
- * Creates a pseudo-element overlay that appears on hover.
- * Useful for banners, cards, and gallery items.
- * * @param {Number} $opacity (0.1) - The final opacity of the overlay.
- * @param {Time} $speed (0.3s)    - The fade-in speed.
- * * Usage:
- * .portfolio-item { @include hover-overlay(0.5); }
- */
+
+// * 2. Dark Overlay Effect
+// * Creates a pseudo-element overlay that appears on hover.
+// * Useful for banners, cards, and gallery items.
+// * * @param {Number} $opacity (0.1) - The final opacity of the overlay.
+// * @param {Time} $speed (0.3s)    - The fade-in speed.
+// * * Usage:
+// .portfolio-item { @include hover-overlay(0.5); }
+//
 
 @mixin hover-overlay($opacity: 0.1, $speed: 0.3s) {
     position: relative;

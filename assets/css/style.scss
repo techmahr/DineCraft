@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Template Name: DineCraft
+   Template Name: DineCraft by PrettyCodes.com
    Version:       1.0.0
    Author:        Mahroof
    Website:       Prettycodes.com
@@ -21,24 +21,35 @@
    4. Page Layouts:        Edit specific files in /pages/ for unique views.
    ========================================================================== */
 
-/* 1. ABSTRACTS
-   Global variables, color tokens, and mixins. */
+/* ==========================================================================
+   1. ABSTRACTS
+   Variables, color tokens, mixins
+   ========================================================================== */
+
 @use './abstract/variables' as *;
 @use './abstract/mixins' as *;
 
-/* 2. BASE & UTILITIES
-   Core resets, fonts, and global helper classes. */
+/* ==========================================================================
+   2. BASE & UTILITIES
+   Global resets, fonts, typography, helpers
+   ========================================================================== */
+
 @use './base/fonts' as *;
 @use './base/typography' as *;
 @use './base/utilities' as *;
 
-/* 3. LAYOUT
-   Major structural elements present across all pages. */
+/* ==========================================================================
+   3. LAYOUT
+   Shared structural elements
+   ========================================================================== */
+
 @use './layout/navbar' as *;
 @use './layout/footer' as *;
 
-/* 4. COMPONENTS
-   Reusable UI elements and standalone modules. */
+/* ==========================================================================
+   4. COMPONENTS
+   Reusable UI modules
+   ========================================================================== */
 @use './components/buttons' as *;
 @use './components/forms' as *;
 @use './components/badges' as *;
@@ -48,13 +59,15 @@
 @use './components/cards' as *;
 @use './components/accordion' as *;
 @use './components/gallery' as *;
-@use './components/booking-one' as *;
-@use './components/booking-two' as *;
+@use './components/booking-classic' as *;
+@use './components/booking-split' as *;
 @use './components/social-links' as *;
 
-/* 5. PAGE-SPECIFIC STYLES
-   Styles unique to specific sections or individual templates. */
-@use './pages/menu-two' as *;
+/* ==========================================================================
+   5. PAGE-SPECIFIC STYLES
+   Styles unique to individual pages
+   ========================================================================== */
+@use './pages/menu-showcase' as *;
 @use './pages/testimonials' as *;
 @use './pages/blog-details' as *;
 @use './pages/terms-privacy' as *;

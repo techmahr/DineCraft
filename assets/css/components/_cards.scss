@@ -53,7 +53,7 @@
     }
 
     .card-text {
-        color: $color-text-secondary;
+        color: $color-text-dark-muted;
     }
 
     span {
@@ -61,7 +61,7 @@
     }
 
     i {
-        color: $color-text-tertiary;
+        color: $color-text-dark-subtle;
     }
 
     // Social Links (Used primarily in Card-Team)
@@ -97,7 +97,7 @@
     margin-bottom: 24px;
 
     .date {
-        color: $color-text-secondary;
+        color: $color-text-dark-muted;
         font-size: 16px;
     }
 
@@ -125,7 +125,7 @@
 .menu-item-one {
     margin-bottom: 25px;
     padding-bottom: 10px;
-    border-bottom: 1px dashed $color-text-secondary;
+    border-bottom: 1px dashed $color-text-dark-muted;
     display: flex;
 
     img {
@@ -147,7 +147,7 @@
         h5 {
             margin-bottom: 0;
             font-weight: 500;
-            color: $color-text-primary;
+            color: $color-text-dark-base;
         }
 
         .price {
@@ -160,7 +160,7 @@
     p {
         margin-top: 5px;
         margin-bottom: 16px;
-        color: $color-text-secondary;
+        color: $color-text-dark-muted;
         font-size: 0.95rem;
     }
 

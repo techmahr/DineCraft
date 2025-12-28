@@ -37,7 +37,7 @@
 .btn-primary {
     background-color: $color-primary;
     border-color: $color-primary;
-    color: $color-text-white-primary;
+    color: $color-text-light-base;
     font-weight: 600;
     transition: all 0.3s ease;
 
@@ -46,7 +46,7 @@
     &:active {
         background-color: $color-primary-dark !important;
         border-color: $color-primary-dark !important;
-        color: $color-text-white-primary !important;
+        color: $color-text-light-base !important;
         box-shadow: 0 4px 12px rgba($color-primary, 0.2); // Soft glow effect
     }
 }
@@ -64,7 +64,7 @@
     &:hover {
         background-color: $color-primary;
         border-color: $color-primary;
-        color: $color-text-white-primary;
+        color: $color-text-light-base;
     }
 }
 

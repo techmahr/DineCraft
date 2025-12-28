@@ -19,7 +19,7 @@
             border-radius: 15px !important; // Forces rounded corners on all sides
             border: 1px solid rgba($color-border-primary , 0.2);
             overflow: hidden;
-            background-color: $color-text-white-primary;
+            background-color: $color-text-light-base;
             transition: all 0.3s ease;
 
             // Highlight state when the accordion is expanded
@@ -40,7 +40,7 @@
         */
         .accordion-button {
             font-weight: 700;
-            color: $color-text-primary;
+            color: $color-text-dark-base;
             padding: 20px;
             border-radius: 15px !important;
             font-size: 1.1rem;
@@ -70,7 +70,7 @@
          */
         .accordion-body {
             padding: 0 20px 25px 20px; // Optimized padding for readability
-            color: $color-text-secondary;
+            color: $color-text-dark-muted;
             line-height: 1.6;
             font-family: $font-family-base;
             background-color: transparent;
