@@ -24,10 +24,6 @@
    1. ABSTRACTS
    Variables, color tokens, mixins
    ========================================================================== */
-/* ==========================================================================
-   2. BASE & UTILITIES
-   Global resets, fonts, typography, helpers
-   ========================================================================== */
 /**
  * Google Fonts Import
  * * 1. DM Sans: Used for body text and UI elements.
@@ -36,6 +32,19 @@
  * Weights: 400 through 900 (Variable) including Italics
  */
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+.hover-lift {
+  transition: transform 0.35s cubic-bezier(0.25, 1, 0.5, 1), box-shadow 0.35s cubic-bezier(0.25, 1, 0.5, 1);
+  will-change: transform;
+}
+.hover-lift:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* ==========================================================================
+   2. BASE & UTILITIES
+   Global resets, fonts, typography, helpers
+   ========================================================================== */
 body {
   font-family: "DM Sans", sans-serif;
   color: #1F2632;
