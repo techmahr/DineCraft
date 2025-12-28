@@ -240,7 +240,7 @@ a {
 .custom-navbar .dropdown-menu .dropdown-item {
   padding: 8px 20px;
 }
-.custom-navbar .dropdown-menu .dropdown-item :hover {
+.custom-navbar .dropdown-menu .dropdown-item:hover, .custom-navbar .dropdown-menu .dropdown-item:active {
   background-color: #f4f1ee !important;
   color: #d32f2f;
 }

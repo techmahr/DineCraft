@@ -140,8 +140,8 @@
         .dropdown-item {
             padding: 8px 20px;
 
-            :hover {
-
+            &:hover,
+            &:active {
                 background-color: $color-bg-light;
                 color: $color-primary;
             }
