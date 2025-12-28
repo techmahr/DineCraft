@@ -1,39 +1,41 @@
-// ===============================
-// Brand color palette
-// ===============================
+// -----------------------------------------------------------------------------
+// Global Variables & Design Tokens
+// This file controls the core visual identity of the template, 
+// including colors, typography, and spacing.
+// -----------------------------------------------------------------------------
 
-// App primary theme colors 
-$color-primary: #d32f2f; // Primary brand color
-$color-primary-dark: #b51616; // For hover states and buttons
-$color-off-white: #F8F9FA; // For section backgrounds to provide contrast
+// --- Brand Color Palette ---
+// Use these to change the primary theme identity.
+$color-primary: #d32f2f; // Main brand color (Used for buttons, links, backgrounds, etc.)
+$color-primary-dark: #b51616; // Darker shade for hover states and active elements
+$color-off-white: #F8F9FA; // Light neutral used for section backgrounds
 
-// Background colors
+// --- Background Colors ---
+// Controls the background of different layout sections.
 // $color-bg-light: #f1f7fa !important;
 $color-bg-light: #f4f1ee !important;
 
-// Text Colors
-$color-text-primary: #1F2632;
-$color-text-secondary: #527179;
-$color-text-tertiary: #789299;
-$color-text-white-primary: #fff;
-$color-text-white-secondary: #b4b4b4;
+// --- Text Colors ---
+// These ensure high readability and consistent hierarchy across the site.
+$color-text-primary: #1F2632; // Main body and heading text
+$color-text-secondary: #527179; // Subtitles and descriptions
+$color-text-tertiary: #789299; // Muted text and captions
+$color-text-white-primary: #fff; // Text on dark backgrounds
+$color-text-white-secondary: #b4b4b4; // Muted text on dark backgrounds
 
-// Borders
-$color-border-primary: #dee2e6;
+// --- Borders & UI Elements ---
+$color-border-primary: #dee2e6; // Default border color for inputs and dividers
 
-// ===============================
-// Typography
-// ===============================
-$font-family-base: 'DM Sans', sans-serif;
-$font-family-heading: "Playfair Display", serif;
+// --- Typography ---
+// Define the font stacks used throughout the template.
+$font-family-base: 'DM Sans', sans-serif; // Primary font for body text
+$font-family-heading: "Playfair Display", serif; // Elegant font for titles and headings
 
-// ===============================
-// Layout tokens
-// ===============================
-$section-spacing-y: 40px;
+// --- Layout & Spacing Tokens ---
+// Global spacing values to maintain vertical rhythm.
+$section-spacing-y: 40px; // Standard top/bottom padding for sections
 
-// ===============================
-// Gallery tokens
-// ===============================
-$gallery-height: 250px;
-$gallery-zoom-speed: 0.4s;
+// --- Component Tokens: Gallery ---
+// Specific settings for gallery and image-heavy components.
+$gallery-height: 250px; // Default height for gallery thumbnails
+$gallery-zoom-speed: 0.4s; // Animation duration for hover zoom effects

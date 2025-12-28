@@ -1,25 +1,43 @@
+// -----------------------------------------------------------------------------
+// Accordion & FAQ Styles
+// Custom styling for Bootstrap 5 accordions, specifically optimized for FAQs.
+// -----------------------------------------------------------------------------
+
 @use '../abstract/variables' as *;
+
+// --- FAQ Specific Accordion ---
 
 .accordion {
     &#faqAccordion {
+
+        /**
+        * Accordion Item Wrapper
+        * Features a modern card-like design with rounded corners and smooth transitions.
+        */
         .accordion-item {
             margin-bottom: 30px;
-            border-radius: 15px !important;
+            border-radius: 15px !important; // Forces rounded corners on all sides
             border: 1px solid rgba($color-border-primary , 0.2);
             overflow: hidden;
             background-color: $color-text-white-primary;
             transition: all 0.3s ease;
 
+            // Highlight state when the accordion is expanded
             &:has(.collapse.show) {
                 background-color: rgba($color-primary, 0.05); // Same BG for both
                 border-color: rgba($color-primary, 0.2);
             }
 
+            // Interactive hover state for better UX
             &:hover {
                 border-color: rgba($color-primary, 0.4) !important;
             }
         }
 
+        /**
+        * Accordion Trigger Button
+        * Handles the interactive header of each FAQ item.
+        */
         .accordion-button {
             font-weight: 700;
             color: $color-text-primary;
@@ -28,23 +46,30 @@
             font-size: 1.1rem;
             background-color: transparent;
 
+            // Removes default Bootstrap focus rings for a cleaner look
             &:focus {
                 box-shadow: none;
             }
 
+            // Styles applied when the accordion item is active (open)
             &:not(.collapsed) {
                 color: $color-primary;
                 background-color: transparent;
                 box-shadow: none;
 
+                // Adjusts the arrow icon color to match the primary theme
                 &::after {
                     filter: sepia(100%) saturate(2000%) hue-rotate(340deg);
                 }
             }
         }
 
+        /**
+         * Accordion Content Body
+         * Styles the internal text area of the expanded item.
+         */
         .accordion-body {
-            padding: 0 20px 25px 20px;
+            padding: 0 20px 25px 20px; // Optimized padding for readability
             color: $color-text-secondary;
             line-height: 1.6;
             font-family: $font-family-base;

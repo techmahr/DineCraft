@@ -1,10 +1,25 @@
+// -----------------------------------------------------------------------------
+// Buttons & Call-to-Actions
+// Custom button variations and interactive hover effects.
+// -----------------------------------------------------------------------------
+
 @use '../abstract/variables' as *;
 
-/* Buttons  */
+// --- Base Button Overrides ---
+
+/**
+ * Global Button Reset
+ * Standardizes border radius across all Bootstrap button types.
+ */
 
 .btn {
     border-radius: 4px;
 }
+
+/**
+ * Wide Button Utility
+ * Increases padding and adds a clean, uppercase aesthetic for prominent CTAs.
+ */
 
 .btn-wide {
     padding: 10px 25px;
@@ -12,7 +27,12 @@
     font-weight: 300 !important;
 }
 
-// Primary Solid Button (Red)
+// --- Brand Button Styles ---
+
+/**
+ * Primary Solid Button
+ * The main theme button using the primary brand color and custom shadow on hover.
+ */
 
 .btn-primary {
     background-color: $color-primary;
@@ -27,11 +47,14 @@
         background-color: $color-primary-dark !important;
         border-color: $color-primary-dark !important;
         color: $color-text-white-primary !important;
-        box-shadow: 0 4px 12px rgba($color-primary, 0.2);
+        box-shadow: 0 4px 12px rgba($color-primary, 0.2); // Soft glow effect
     }
 }
 
-// Outline Button (Red Border, White Background)
+/**
+ * Outline Button
+ * A transparent variation with a primary-colored border.
+ */
 
 .btn-outline-primary {
     color: $color-primary;
@@ -45,7 +68,12 @@
     }
 }
 
-// Button hover styles 
+// --- Premium Interaction Effects ---
+
+/**
+ * Shine Hover Effect
+ * Adds a modern "glass-swipe" animation and subtle lift when hovered.
+ */
 
 .btn-shine {
     position: relative;
@@ -53,7 +81,7 @@
     transition: all 0.3s ease;
 
     &:hover {
-        transform: translateY(-1px);
+        transform: translateY(-1px); // Subtle lift effect
         background-color: $color-primary-dark !important;
         border-color: $color-primary-dark !important;
     }
@@ -72,29 +100,23 @@
     }
 
     &:hover::after {
-        left: 120%;
+        left: 120%; // Animates the shine across the button
     }
 }
 
-// Button hover styles end
-
-// link button styles 
+/**
+ * Animated Link Button
+ * A text-based button that slides to the right on hover for a dynamic feel.
+ */
 
 .btn-link {
-    /* Necessary to allow the transform to work smoothly */
     display: inline-block;
     margin-bottom: 0px !important;
     text-decoration: none;
-
-    /* Defines how fast and smooth the movement is */
     transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
 
     &:hover {
-        /* Moves the entire text 5px to the right */
-        transform: translateX(5px);
-
+        transform: translateX(5px); // Moves text 5px to the right
         color: $color-primary-dark;
     }
 }
-
-// link button styles end 

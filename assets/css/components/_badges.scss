@@ -1,4 +1,17 @@
+// -----------------------------------------------------------------------------
+// Badge & Tag Styles
+// Custom badge components for labels, categories, and status indicators.
+// -----------------------------------------------------------------------------
+
 @use '../abstract/variables' as *;
+
+// --- Badge Variations ---
+
+/**
+ * Primary Theme Badge
+ * A custom-styled badge using the main brand color.
+ * Often used for categories, labels, or featured tags.
+ */
 
 .badge-primary {
     background-color: $color-primary;

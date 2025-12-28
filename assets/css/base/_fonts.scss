@@ -1,1 +1,14 @@
+// -----------------------------------------------------------------------------
+// Typography Imports
+// This file fetches external web fonts from Google Fonts.
+// -----------------------------------------------------------------------------
+
+/**
+ * Google Fonts Import
+ * * 1. DM Sans: Used for body text and UI elements.
+ * Weights: 400 (Regular), 500 (Medium), 700 (Bold)
+ * * 2. Playfair Display: Used for headings and featured titles.
+ * Weights: 400 through 900 (Variable) including Italics
+ */
+
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');

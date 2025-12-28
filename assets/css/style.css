@@ -22,29 +22,81 @@
    ========================================================================== */
 /* 1. ABSTRACTS
    Global variables, color tokens, and mixins. */
+/**
+ * Google Fonts Import
+ * * 1. DM Sans: Used for body text and UI elements.
+ * Weights: 400 (Regular), 500 (Medium), 700 (Bold)
+ * * 2. Playfair Display: Used for headings and featured titles.
+ * Weights: 400 through 900 (Variable) including Italics
+ */
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+/**
+ * 1. Image Zoom Effect
+ * Scales the <img> child element when the parent container is hovered.
+ * * @param {Number} $scale (1.15) - The magnification level of the zoom.
+ * @param {Time} $speed (0.4s)   - The duration of the transition.
+ * * Usage: 
+ * .card-image { @include hover-zoom(1.2, 0.5s); }
+ */
+/**
+ * 2. Dark Overlay Effect
+ * Creates a pseudo-element overlay that appears on hover.
+ * Useful for banners, cards, and gallery items.
+ * * @param {Number} $opacity (0.1) - The final opacity of the overlay.
+ * @param {Time} $speed (0.3s)    - The fade-in speed.
+ * * Usage:
+ * .portfolio-item { @include hover-overlay(0.5); }
+ */
 /* 2. BASE & UTILITIES
    Core resets, fonts, and global helper classes. */
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+/**
+ * Default Body Styling
+ * Sets the primary font family and text color for the entire application.
+ */
 body {
   font-family: "DM Sans", sans-serif;
   color: #1F2632;
 }
 
+/**
+ * Global Link Styling
+ * Defines the default appearance for all anchor tags.
+ */
 a {
   color: #d32f2f;
   text-decoration: none;
 }
 
+/**
+ * Theme Color Utility
+ * Forces the text to use the primary brand color defined in variables.
+ */
 .text-primary {
   color: #d32f2f !important;
 }
 
+/**
+ * Heading Font Override
+ * Applies the secondary/heading font stack to any element.
+ */
 .font-heading {
   font-family: "Playfair Display", serif;
   line-height: normal;
   font-weight: 700;
 }
 
+/**
+ * Fixed Font Size Utility
+ * Use this to force a 40px font size on any element.
+ */
+.f-40 {
+  font-size: 40px !important;
+}
+
+/**
+ * Main Page Title
+ * Designed for the primary H1 or header title on inner pages.
+ */
 .page-title {
   font-size: 40px;
   font-family: "Playfair Display", serif;
@@ -52,11 +104,10 @@ a {
   margin-bottom: 20px;
 }
 
-.f-40 {
-  font-size: 40px !important;
-}
-
-/* Heading One  */
+/**
+ * Head1 Component
+ * A layout block used for section headings containing a title and description.
+ */
 .head1 h2 {
   color: #1F2632;
   font-size: 40px;
@@ -67,15 +118,27 @@ a {
   color: #527179;
 }
 
-/* Margins  */
+/**
+ * Bottom Margin Utility
+ * Applies a fixed 32px spacing to the bottom of an element.
+ */
 .mb-32 {
   margin-bottom: 32px !important;
 }
 
+/**
+ * Top Margin Utility
+ * Applies a fixed 32px spacing to the top of an element.
+ */
 .mt-32 {
   margin-top: 32px !important;
 }
 
+/**
+ * Standard Section Padding
+ * Provides consistent vertical rhythm across different sections.
+ * Scales up for larger screens (992px and above) based on the $section-spacing-y variable.
+ */
 .sec-pad {
   padding-top: 40px;
   padding-bottom: 40px;
@@ -87,6 +150,10 @@ a {
   }
 }
 
+/**
+ * Light Background Utility
+ * Applies the custom light background color defined in design tokens.
+ */
 .bg-light {
   background-color: #f4f1ee !important;
 }
@@ -228,17 +295,28 @@ a {
 
 /* 4. COMPONENTS
    Reusable UI elements and standalone modules. */
-/* Buttons  */
+/**
+ * Global Button Reset
+ * Standardizes border radius across all Bootstrap button types.
+ */
 .btn {
   border-radius: 4px;
 }
 
+/**
+ * Wide Button Utility
+ * Increases padding and adds a clean, uppercase aesthetic for prominent CTAs.
+ */
 .btn-wide {
   padding: 10px 25px;
   text-transform: uppercase;
   font-weight: 300 !important;
 }
 
+/**
+ * Primary Solid Button
+ * The main theme button using the primary brand color and custom shadow on hover.
+ */
 .btn-primary {
   background-color: #d32f2f;
   border-color: #d32f2f;
@@ -253,6 +331,10 @@ a {
   box-shadow: 0 4px 12px rgba(211, 47, 47, 0.2);
 }
 
+/**
+ * Outline Button
+ * A transparent variation with a primary-colored border.
+ */
 .btn-outline-primary {
   color: #d32f2f;
   border-color: #d32f2f;
@@ -264,6 +346,10 @@ a {
   color: #fff;
 }
 
+/**
+ * Shine Hover Effect
+ * Adds a modern "glass-swipe" animation and subtle lift when hovered.
+ */
 .btn-shine {
   position: relative;
   overflow: hidden;
@@ -290,16 +376,17 @@ a {
   left: 120%;
 }
 
+/**
+ * Animated Link Button
+ * A text-based button that slides to the right on hover for a dynamic feel.
+ */
 .btn-link {
-  /* Necessary to allow the transform to work smoothly */
   display: inline-block;
   margin-bottom: 0px !important;
   text-decoration: none;
-  /* Defines how fast and smooth the movement is */
   transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 .btn-link:hover {
-  /* Moves the entire text 5px to the right */
   transform: translateX(5px);
   color: #b51616;
 }
@@ -317,6 +404,11 @@ a {
   height: 48px;
 }
 
+/**
+ * Primary Theme Badge
+ * A custom-styled badge using the main brand color.
+ * Often used for categories, labels, or featured tags.
+ */
 .badge-primary {
   background-color: #d32f2f;
   padding: 8px 12px;
@@ -495,6 +587,29 @@ a {
   }
 }
 
+/* ==========================================================================
+   Template Name: DineCraft
+   Version:       1.0.0
+   Author:        Mahroof
+   Website:       Prettycodes.com
+   Description:   Premium Bootstrap 5 Restaurant & Hospitality Template
+   --------------------------------------------------------------------------
+   Copyright © 2026 Mahroof. All rights reserved.
+   ========================================================================== */
+/* ==========================================================================
+   TEMPLATING INSTRUCTIONS
+   ==========================================================================
+   This file acts as the central hub for all project styles.
+   It uses the Sass @use rule to modularize components.
+
+   How to Customize:
+   1. Colors & Typography: Edit /abstract/_variables.scss
+   2. Global Tags:         Edit /base/_typography.scss
+   3. Individual UI:       Edit the respective file in /components/
+   4. Page Layouts:        Edit specific files in /pages/ for unique views.
+   ========================================================================== */
+/* 1. ABSTRACTS
+   Global variables, color tokens, and mixins. */
 .card-blog,
 .card-team,
 .card-testimonial {
@@ -503,6 +618,7 @@ a {
   background: #f4f1ee !important;
   border-radius: 10px;
   margin-bottom: 24px;
+  overflow: hidden;
   position: relative;
   overflow: hidden;
 }
@@ -512,6 +628,7 @@ a {
   overflow: hidden;
   border-radius: 10px;
   position: relative;
+  overflow: hidden;
   position: relative;
   overflow: hidden;
 }
@@ -705,6 +822,20 @@ a {
   font-size: 22px;
 }
 
+.accordion#faqAccordion {
+  /**
+  * Accordion Item Wrapper
+  * Features a modern card-like design with rounded corners and smooth transitions.
+  */
+  /**
+  * Accordion Trigger Button
+  * Handles the interactive header of each FAQ item.
+  */
+  /**
+   * Accordion Content Body
+   * Styles the internal text area of the expanded item.
+   */
+}
 .accordion#faqAccordion .accordion-item {
   margin-bottom: 30px;
   border-radius: 15px !important;
@@ -747,11 +878,35 @@ a {
   background-color: transparent;
 }
 
+/* ==========================================================================
+   Template Name: DineCraft
+   Version:       1.0.0
+   Author:        Mahroof
+   Website:       Prettycodes.com
+   Description:   Premium Bootstrap 5 Restaurant & Hospitality Template
+   --------------------------------------------------------------------------
+   Copyright © 2026 Mahroof. All rights reserved.
+   ========================================================================== */
+/* ==========================================================================
+   TEMPLATING INSTRUCTIONS
+   ==========================================================================
+   This file acts as the central hub for all project styles.
+   It uses the Sass @use rule to modularize components.
+
+   How to Customize:
+   1. Colors & Typography: Edit /abstract/_variables.scss
+   2. Global Tags:         Edit /base/_typography.scss
+   3. Individual UI:       Edit the respective file in /components/
+   4. Page Layouts:        Edit specific files in /pages/ for unique views.
+   ========================================================================== */
+/* 1. ABSTRACTS
+   Global variables, color tokens, and mixins. */
 .gallery-item {
   position: relative;
   overflow: hidden;
   border-radius: 15px;
   height: 250px;
+  overflow: hidden;
   position: relative;
   overflow: hidden;
 }
@@ -795,12 +950,39 @@ a {
   width: auto;
 }
 
-/* Book Table */
+/**
+ * Book A Table - Style One
+ * Specifically targets the layout of the first booking form variation.
+ */
+.book-a-table-one {
+  /**
+  * Submission Button
+  * Adds specific vertical spacing to the button within this component
+  * to separate it clearly from the form fields.
+  */
+}
 .book-a-table-one button {
   margin-top: 32px;
 }
 
-/* Book Table */
+/**
+ * Book A Table - Style Two
+ * A split-screen design where the image and form wrap into a single unit.
+ */
+.book-a-table-two {
+  /**
+   * Image Container
+   * Ensures the image takes up full height and handles responsive rounding.
+   */
+  /**
+   * Image Styling
+   * Optimized to fill the container without distortion.
+   */
+  /**
+   * Booking Form Container
+   * The colored side of the split component.
+   */
+}
 .book-a-table-two .book-table-img-wrap {
   height: 100%;
   min-height: 400px;
@@ -824,6 +1006,10 @@ a {
   padding: 50px;
   height: 100%;
   border-radius: 0 15px 15px 0;
+  /**
+   * Form Inputs
+   * Custom overrides for Bootstrap's .form-control within this specific section.
+   */
 }
 @media (max-width: 991px) {
   .book-a-table-two .booking-form-wrap {

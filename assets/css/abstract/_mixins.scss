@@ -1,9 +1,24 @@
+// -----------------------------------------------------------------------------
+// Global Mixins
+// This file contains reusable logic for hover effects, animations, and overlays.
+// -----------------------------------------------------------------------------
+
 @use '../abstract/variables' as *;
 
-// _mixins.scss
+/**
+ * 1. Image Zoom Effect
+ * Scales the <img> child element when the parent container is hovered.
+ * * @param {Number} $scale (1.15) - The magnification level of the zoom.
+ * @param {Time} $speed (0.4s)   - The duration of the transition.
+ * * Usage: 
+ * .card-image { @include hover-zoom(1.2, 0.5s); }
+ */
 
-// 1. The Zoom Effect on hover 
+// 1. The Zoom Effect On Hover 
 @mixin hover-zoom($scale: 1.15, $speed: 0.4s) {
+    // Ensure the container clips the scaling image
+    overflow: hidden;
+
     img {
         transition: transform $speed ease-in-out;
     }
@@ -13,10 +28,19 @@
     }
 }
 
-// 2. The Dark Overlay Effect
+/**
+ * 2. Dark Overlay Effect
+ * Creates a pseudo-element overlay that appears on hover.
+ * Useful for banners, cards, and gallery items.
+ * * @param {Number} $opacity (0.1) - The final opacity of the overlay.
+ * @param {Time} $speed (0.3s)    - The fade-in speed.
+ * * Usage:
+ * .portfolio-item { @include hover-overlay(0.5); }
+ */
+
 @mixin hover-overlay($opacity: 0.1, $speed: 0.3s) {
     position: relative;
-    overflow: hidden; // Ensures overlay doesn't spill out
+    overflow: hidden;
 
     &::after {
         content: '';
@@ -25,10 +49,11 @@
         left: 0;
         width: 100%;
         height: 100%;
-        // background: rgba(0, 0, 0, $opacity); hover color for cards 
+        // Background hover color is pulled from variables for theme consistency
+        // background: rgba(0, 0, 0, $opacity); 
         opacity: 0;
         transition: opacity $speed;
-        pointer-events: none; // Allows clicking the image/link underneath
+        pointer-events: none; // Prevents the overlay from blocking link clicks
     }
 
     &:hover::after {
