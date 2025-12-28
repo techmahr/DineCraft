@@ -135,6 +135,7 @@
         border: none;
         padding: 10px 0;
         box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+        border: 1px solid $color-border-primary;
 
         .dropdown-item {
             padding: 8px 20px;

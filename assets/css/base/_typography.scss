@@ -32,7 +32,13 @@ a {
     color: $color-primary !important;
 }
 
-text-secondary // * Heading Font Override
+// * Forces the text to use the text muted color defined in variables.
+
+.text-dark-muted {
+    color: $color-text-dark-muted !important;
+}
+
+// * Heading Font Override
 // * Applies the secondary/heading font stack to any element.
 
 .font-heading {
