@@ -1,6 +1,14 @@
+// -----------------------------------------------------------------------------
+// Page Styles: Legal Pages (Terms & Privacy)
+// Layout logic for Terms & Conditions, Privacy Policy, and other legal documents.
+// -----------------------------------------------------------------------------
+
 @use '../abstract/variables' as *;
 
-// Terms and privacy page styles 
+/**
+ * Terms privacy Containers
+ * Standardizes the typography and layout for long-form legal documentation.
+ */
 
 .terms-section,
 .privacy-section {

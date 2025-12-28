@@ -1,6 +1,15 @@
+// -----------------------------------------------------------------------------
+// Component: Page Pre-Loader
+// A full-screen overlay with a 3D rotating animation to improve perceived load time.
+// -----------------------------------------------------------------------------
+
 @use '../abstract/variables' as *;
 
-// Loader 
+/**
+ * Loader Wrapper
+ * Creates a high-z-index, full-screen background to hide the page content
+ * until it is fully loaded.
+ */
 
 .loader-wrapper {
     position: fixed;
@@ -11,6 +20,11 @@
     z-index: 9999;
     background: #fff;
 }
+
+/**
+ * Loading Spinner
+ * The central animated square. Uses the theme's primary brand color.
+ */
 
 .spinner {
     width: 40px;
@@ -25,6 +39,12 @@
     animation: sk-rotateplane 1.2s infinite ease-in-out;
 }
 
+// --- Keyframe Animations ---
+
+/**
+ * 3D Rotating Plane Animation
+ * Creates a sophisticated "flipping" effect using CSS 3D perspectives.
+ */
 @-webkit-keyframes sk-rotateplane {
     0% {
         -webkit-transform: perspective(120px);
@@ -55,5 +75,3 @@
         -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
     }
 }
-
-// Loader end 

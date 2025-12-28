@@ -1,46 +1,46 @@
+// -----------------------------------------------------------------------------
+// Component: Image Gallery & Lightbox Modal
+// Styles for the interactive gallery grid and its corresponding popup viewer.
+// -----------------------------------------------------------------------------
+
 @use '../abstract/variables' as *;
 @use '../abstract/mixins' as *;
+
+// --- Gallery Grid Item ---
+
+/**
+ * Gallery Item Container
+ * Controls the dimensions and clipping of individual gallery thumbnails.
+ */
 
 .gallery-item {
     position: relative;
     overflow: hidden;
     border-radius: 15px;
-    height: $gallery-height;
+    height: $gallery-height; // Controlled via global variables
 
+    /**
+     * Gallery Image Styling
+     * Ensures images fill the container perfectly without distortion.
+     */
     img {
         width: 100%;
         height: 100%;
-        object-fit: cover;
+        object-fit: cover; // Maintains aspect ratio while filling the height/width
         transition: transform $gallery-zoom-speed ease-in-out;
     }
 
-    // Using hover animation mixins 
+    // Applying global hover interaction mixins for a premium feel
     @include hover-zoom(1.15, $gallery-zoom-speed);
     @include hover-overlay(0.1);
-
-    // &:hover img {
-    //     transform: scale(1.15);
-    // }
-
-    // // Subtle overlay on hover
-    // &::after { 
-    //     content: '';
-    //     position: absolute;
-    //     top: 0; 
-    //     left: 0;
-    //     width: 100%;
-    //     height: 100%;
-    //     background: rgba(0, 0, 0, 0.1);
-    //     opacity: 0;
-    //     transition: opacity 0.3s;
-    // }
-
-    // &:hover::after {
-    //     opacity: 1;
-    // }
 }
 
-// Modal styling to make the image pop
+// --- Lightbox / Modal Display ---
+
+/**
+ * Gallery Modal Overrides
+ * Customizes the Bootstrap Modal to act as a high-end image lightbox.
+ */
 
 #galleryModal {
     .modal-content {

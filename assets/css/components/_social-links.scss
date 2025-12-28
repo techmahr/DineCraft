@@ -1,9 +1,23 @@
+// -----------------------------------------------------------------------------
+// Component: Social Media Links
+// Styling for social icons typically found in footers, team cards, or headers.
+// -----------------------------------------------------------------------------
+
 @use '../abstract/variables' as *;
+
+/**
+ * Social Links Container
+ * Manages the layout and interactive states of social media anchor tags.
+ */
 
 .social-links {
     a {
         margin-bottom: 10px;
 
+        /**
+         * Hover Interaction
+         * Switches the border and background to the primary brand color.
+         */
         &:hover {
             border-color: $color-primary;
             background-color: $color-primary;

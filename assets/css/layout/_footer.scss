@@ -1,9 +1,17 @@
+// -----------------------------------------------------------------------------
+// Component: Main Footer (Style One)
+// A comprehensive footer featuring multi-column layouts and schedule listings.
+// -----------------------------------------------------------------------------
+
 @use '../abstract/variables' as *;
 
-/* Footer Styles  */
+/**
+ * Footer Style One
+ * Designed with a dark aesthetic for high contrast and modern appeal.
+ */
 
 .footer-one {
-    // background-color: #1b1b1b;
+
     background-color: #2D2926;
     padding: 60px 0 30px 0;
     color: #fff;
@@ -13,6 +21,7 @@
         color: $color-text-white-primary !important;
     }
 
+    // --- Footer Navigation Lists ---
     ul {
         list-style: none;
         padding: 0;
@@ -27,12 +36,15 @@
                 font-size: 14px;
 
                 &:hover {
-                    color: $color-primary;
+                    color: $color-primary; // Switches to theme color on hover
                 }
             }
         }
 
-        // Specific style for the Opening Hours list
+        /**
+         * Timing List Variation
+         * Specifically for "Opening Hours" with a dotted-bottom separator.
+         */
         &.timing-list {
             li {
                 display: flex;
@@ -48,7 +60,7 @@
                     font-size: 14px;
                 }
 
-                // Remove border from the last day (Sunday)
+                // Removes border and margin from the final list item for a clean finish
                 &:last-child {
                     border-bottom: none;
                     margin-bottom: 0;
@@ -57,6 +69,10 @@
         }
     }
 
+    /**
+     * Copyright & Legal Section
+     * Positioned at the very bottom of the footer.
+     */
     .copyright {
         p {
             font-size: 14px;

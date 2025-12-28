@@ -4,7 +4,7 @@
    Version:       1.0.0
    Author:        Mahroof
    Website:       Prettycodes.com
-   Description:   Premium Bootstrap 5 Restaurant & Hospitality Template
+   Description:   Premium Bootstrap 5 Restaurant Template
    --------------------------------------------------------------------------
    Copyright © 2026 Mahroof. All rights reserved.
    ========================================================================== */
@@ -160,12 +160,50 @@ a {
 
 /* 3. LAYOUT
    Major structural elements present across all pages. */
+/**
+ * Main Navbar Container
+ * Standardizes the height and transition speed for sticky effects.
+ */
 .custom-navbar {
   transition: all 0.4s ease-in-out;
   padding: 20px 0;
+  /**
+   * Navigation Logo
+   * Responsive sizing to ensure branding looks perfect on all viewports.
+   */
+  /**
+  * Navigation Items
+  * Manages horizontal spacing between links.
+  */
+  /**
+   * Navigation Interaction Mixin
+   * Helper to synchronize Hover and Active states across all themes.
+   */
+  /**
+   * Mobile Collapse Background
+   * Ensures the mobile navigation drawer has a solid background and shadow
+   * when expanded on smaller screens (below 992px).
+   */
+  /**
+   * Theme: Light Mode
+   * Default state for headers on light backgrounds.
+   */
+  /**
+   * Theme: Dark Mode / Transparent
+   * Perfect for headers placed over dark hero images or carousels.
+   */
+  /**
+   * Navbar Scrolled State
+   * Triggered via JavaScript. Compresses height and changes background
+   * for improved readability as the user scrolls.
+   */
+  /**
+   * Navbar Dropdowns
+   * Polished, borderless dropdown menus with subtle shadows and hover fills.
+   */
 }
 .custom-navbar .nav-logo {
-  max-width: 180px;
+  max-width: 160px;
 }
 @media (max-width: 767px) {
   .custom-navbar .nav-logo {
@@ -237,11 +275,18 @@ a {
   color: #d32f2f;
 }
 
-/* Footer Styles  */
+/**
+ * Footer Style One
+ * Designed with a dark aesthetic for high contrast and modern appeal.
+ */
 .footer-one {
   background-color: #2D2926;
   padding: 60px 0 30px 0;
   color: #fff;
+  /**
+   * Copyright & Legal Section
+   * Positioned at the very bottom of the footer.
+   */
 }
 .footer-one h5 {
   font-family: "DM Sans", sans-serif;
@@ -250,6 +295,10 @@ a {
 .footer-one ul {
   list-style: none;
   padding: 0;
+  /**
+   * Timing List Variation
+   * Specifically for "Opening Hours" with a dotted-bottom separator.
+   */
 }
 .footer-one ul li {
   margin-bottom: 10px;
@@ -391,6 +440,10 @@ a {
   color: #b51616;
 }
 
+/**
+ * Global Input Styling
+ * Standardizes the appearance of all form-control elements (inputs, select, textarea).
+ */
 .form-control {
   margin-bottom: 32px;
   border-radius: 10px;
@@ -400,6 +453,11 @@ a {
   box-shadow: none;
 }
 
+/**
+ * Input Height Optimization
+ * Standardizes the height of single-line textboxes to 48px.
+ * The ':not(textarea)' ensures that multi-line text areas can still grow.
+ */
 .form-control:not(textarea) {
   height: 48px;
 }
@@ -415,6 +473,11 @@ a {
   color: #fff;
 }
 
+/**
+ * Loader Wrapper
+ * Creates a high-z-index, full-screen background to hide the page content
+ * until it is fully loaded.
+ */
 .loader-wrapper {
   position: fixed;
   top: 0;
@@ -425,6 +488,10 @@ a {
   background: #fff;
 }
 
+/**
+ * Loading Spinner
+ * The central animated square. Uses the theme's primary brand color.
+ */
 .spinner {
   width: 40px;
   height: 40px;
@@ -436,6 +503,11 @@ a {
   background: #d32f2f;
   animation: sk-rotateplane 1.2s infinite ease-in-out;
 }
+
+/**
+ * 3D Rotating Plane Animation
+ * Creates a sophisticated "flipping" effect using CSS 3D perspectives.
+ */
 @keyframes sk-rotateplane {
   0% {
     transform: perspective(120px) rotateX(0deg) rotateY(0deg);
@@ -450,7 +522,24 @@ a {
     -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
   }
 }
-/* Home Carousel */
+/**
+ * Main Carousel Container
+ * Controls the overall height and layout of the hero slider.
+ */
+.home-carousel {
+  /**
+   * Caption Wrapper & Positioning
+   * Uses Flexbox to perfectly center content both vertically and horizontally.
+   */
+  /**
+   * Dark Theme Overlay
+   * Adds a dark tint to the background image to ensure white text is readable.
+   */
+  /**
+   * Light Theme Overlay
+   * Adds a soft white tint for a clean, bright aesthetic with dark text.
+   */
+}
 .home-carousel .carousel-item {
   height: 100vh;
   max-height: 900px;
@@ -506,14 +595,20 @@ a {
   color: #1F2632;
 }
 
-/*  Next and Previous button styles */
+/**
+ * Carousel Arrows
+ * Custom styling for the Next and Previous navigation buttons.
+ */
 .carousel-control-prev,
 .carousel-control-next {
   width: 60px;
   opacity: 1;
 }
 
-/* Create the Button Red Background */
+/**
+ * Control Icons
+ * Decorative background for the arrow icons using the theme's primary color.
+ */
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
   background-color: #d32f2f;
@@ -524,18 +619,38 @@ a {
   transition: transform 0.2s ease, background-color 0.2s ease;
 }
 
-/* Hover effect */
+/**
+ * Interactive Hover States
+ * Adds a subtle scale effect to the controls when hovered.
+ */
 .carousel-control-prev:hover .carousel-control-prev-icon,
 .carousel-control-next:hover .carousel-control-next-icon {
   background-color: #d32f2f;
   transform: scale(1.1);
 }
 
+/**
+ * Image Collage Container
+ * Creates a relative coordinate system for the absolute-positioned images.
+ */
 .img-collage-wrap {
   position: relative;
   width: 100%;
   height: 600px;
   padding: 20px;
+  /**
+   * Shared Image Styles
+   * Standardizes the look of all images within the collage including 
+   * shadows and a clean "Polaroid" style border.
+   */
+  /**
+   * First Layer (Background)
+   * The largest anchor image of the composition.
+   */
+  /**
+   * Responsive Adjustments
+   * Resizes the collage and its elements for tablets and mobile devices.
+   */
 }
 .img-collage-wrap img {
   position: absolute;
@@ -592,7 +707,7 @@ a {
    Version:       1.0.0
    Author:        Mahroof
    Website:       Prettycodes.com
-   Description:   Premium Bootstrap 5 Restaurant & Hospitality Template
+   Description:   Premium Bootstrap 5 Restaurant Template
    --------------------------------------------------------------------------
    Copyright © 2026 Mahroof. All rights reserved.
    ========================================================================== */
@@ -610,6 +725,10 @@ a {
    ========================================================================== */
 /* 1. ABSTRACTS
    Global variables, color tokens, and mixins. */
+/**
+ * Universal Card Wrapper
+ * Shared base styles for Blog, Team, and Testimonial cards.
+ */
 .card-blog,
 .card-team,
 .card-testimonial {
@@ -618,6 +737,10 @@ a {
   background: #f4f1ee !important;
   border-radius: 10px;
   margin-bottom: 24px;
+  /**
+  * Card Image Wrapper
+  * Manages aspect ratios and triggers the hover animation mixins.
+  */
   overflow: hidden;
   position: relative;
   overflow: hidden;
@@ -733,6 +856,10 @@ a {
   opacity: 1;
 }
 
+/**
+ * Blog Item Card
+ * A secondary blog layout style with a focus on date and metadata.
+ */
 .card-blog-item {
   background-color: #f4f1ee !important;
   border-radius: 15px;
@@ -753,6 +880,11 @@ a {
   justify-content: space-between;
 }
 
+/**
+ * Menu Item - Style One
+ * A clean, flex-based layout for food and beverage listings.
+ * Features a dashed divider for a sophisticated restaurant feel.
+ */
 .menu-item-one {
   margin-bottom: 25px;
   padding-bottom: 10px;
@@ -800,6 +932,10 @@ a {
   margin-bottom: 0;
 }
 
+/**
+ * Testimonial Enhancements
+ * Adds quote icons and star ratings to the standard card structure.
+ */
 .card-testimonial .quote-icon {
   font-size: 62px !important;
   color: #d32f2f;
@@ -883,7 +1019,7 @@ a {
    Version:       1.0.0
    Author:        Mahroof
    Website:       Prettycodes.com
-   Description:   Premium Bootstrap 5 Restaurant & Hospitality Template
+   Description:   Premium Bootstrap 5 Restaurant Template
    --------------------------------------------------------------------------
    Copyright © 2026 Mahroof. All rights reserved.
    ========================================================================== */
@@ -901,11 +1037,19 @@ a {
    ========================================================================== */
 /* 1. ABSTRACTS
    Global variables, color tokens, and mixins. */
+/**
+ * Gallery Item Container
+ * Controls the dimensions and clipping of individual gallery thumbnails.
+ */
 .gallery-item {
   position: relative;
   overflow: hidden;
   border-radius: 15px;
   height: 250px;
+  /**
+   * Gallery Image Styling
+   * Ensures images fill the container perfectly without distortion.
+   */
   overflow: hidden;
   position: relative;
   overflow: hidden;
@@ -938,6 +1082,10 @@ a {
   opacity: 1;
 }
 
+/**
+ * Gallery Modal Overrides
+ * Customizes the Bootstrap Modal to act as a high-end image lightbox.
+ */
 #galleryModal .modal-content {
   background: transparent;
 }
@@ -1034,8 +1182,16 @@ a {
   color: #999;
 }
 
+/**
+ * Social Links Container
+ * Manages the layout and interactive states of social media anchor tags.
+ */
 .social-links a {
   margin-bottom: 10px;
+  /**
+   * Hover Interaction
+   * Switches the border and background to the primary brand color.
+   */
 }
 .social-links a:hover {
   border-color: #d32f2f;
@@ -1044,6 +1200,11 @@ a {
 
 /* 5. PAGE-SPECIFIC STYLES
    Styles unique to specific sections or individual templates. */
+/**
+ * Menu Page Full-Height Image
+ * A specialized utility for the Menu Page to ensure side-images align perfectly 
+ * with the height of the food/drink listings in the adjacent column.
+ */
 .h-100-img {
   width: 100%;
   border-radius: 15px;
@@ -1058,11 +1219,20 @@ a {
   }
 }
 
+/**
+ * Masonry Grid Wrapper
+ * Uses CSS column properties to create a fluid, staggered grid.
+ * This ensures that testimonial cards of different heights stack perfectly.
+ */
 .masonry-wrapper {
   -moz-column-count: 3;
        column-count: 3;
   -moz-column-gap: 1.5rem;
        column-gap: 1.5rem;
+  /**
+   * Testimonial Card Integration
+   * Optimizes the standard testimonial component for the masonry environment.
+   */
 }
 @media (max-width: 992px) {
   .masonry-wrapper {
@@ -1083,12 +1253,24 @@ a {
        break-inside: avoid;
 }
 
+/**
+ * Blog Details Wrapper
+ * The main container for article content, featuring a clean card-style layout.
+ */
 .blog-details-wrap {
   padding: 32px;
   border: 0px;
   background: #f4f1ee !important;
   border-radius: 10px;
   margin-bottom: 24px;
+  /**
+  * Article Header
+  * Contains the title and meta-information such as the author/writer section.
+  */
+  /**
+  * Featured & Content Images
+  * Standardizes all images within the blog body with smooth rounded corners.
+  */
 }
 .blog-details-wrap header .writer {
   display: flex;
@@ -1120,6 +1302,10 @@ a {
   margin-bottom: 15px;
 }
 
+/**
+ * Terms privacy Containers
+ * Standardizes the typography and layout for long-form legal documentation.
+ */
 .terms-section p,
 .privacy-section p {
   color: #527179;
@@ -1131,6 +1317,10 @@ a {
   opacity: 1;
 }
 
+/**
+ * Contact Block Wrapper
+ * A modern, rounded container designed to house contact-related CTAs or FAQ highlights.
+ */
 .contact-block {
   background: #f4f1ee !important;
   border-radius: 15px;
@@ -1141,6 +1331,10 @@ a {
   padding: 20px 0;
 }
 
+/**
+ * Contact Section List
+ * Manages the layout for address, phone, and email information.
+ */
 .contact-section ul {
   padding: 0px;
 }

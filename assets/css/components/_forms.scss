@@ -1,6 +1,14 @@
+// -----------------------------------------------------------------------------
+// Form Controls & Inputs
+// Custom overrides for Bootstrap's default input fields and textareas.
+// -----------------------------------------------------------------------------
+
 @use '../abstract/variables' as *;
 
-// Margin and border radius for textbox and text area 
+/**
+ * Global Input Styling
+ * Standardizes the appearance of all form-control elements (inputs, select, textarea).
+ */
 
 .form-control {
     margin-bottom: 32px;
@@ -13,7 +21,11 @@
     }
 }
 
-// To make the textbox height 48px
+/**
+ * Input Height Optimization
+ * Standardizes the height of single-line textboxes to 48px.
+ * The ':not(textarea)' ensures that multi-line text areas can still grow.
+ */
 
 .form-control:not(textarea) {
     height: 48px;

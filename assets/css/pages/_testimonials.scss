@@ -1,4 +1,13 @@
-// Testimoinial page styles 
+// -----------------------------------------------------------------------------
+// Page Styles: Testimonials (Masonry Layout)
+// Advanced column-based layout for displaying reviews of varying lengths.
+// -----------------------------------------------------------------------------
+
+/**
+ * Masonry Grid Wrapper
+ * Uses CSS column properties to create a fluid, staggered grid.
+ * This ensures that testimonial cards of different heights stack perfectly.
+ */
 
 .masonry-wrapper {
     column-count: 3;
@@ -12,6 +21,10 @@
         column-count: 1;
     }
 
+    /**
+     * Testimonial Card Integration
+     * Optimizes the standard testimonial component for the masonry environment.
+     */
     .card-testimonial {
         display: inline-block; // Important for some browser compatibility
         width: 100%;

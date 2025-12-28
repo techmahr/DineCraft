@@ -1,13 +1,21 @@
+// -----------------------------------------------------------------------------
+// Component: Home Hero Carousel
+// Full-screen responsive slider with animated captions and color themes.
+// -----------------------------------------------------------------------------
+
 @use '../abstract/variables' as *;
 
-/* Home Carousel */
+/**
+ * Main Carousel Container
+ * Controls the overall height and layout of the hero slider.
+ */
 
 .home-carousel {
 
-    // Shared styles for the item
+    // --- Slide Item Configuration ---
 
     .carousel-item {
-        height: 100vh;
+        height: 100vh; // Full viewport height
         max-height: 900px;
         min-height: 400px;
         background-size: cover;
@@ -15,7 +23,10 @@
         background-repeat: no-repeat;
     }
 
-    // Caption Wrapper 
+    /**
+     * Caption Wrapper & Positioning
+     * Uses Flexbox to perfectly center content both vertically and horizontally.
+     */
 
     .carousel-caption-wrap {
         display: flex;
@@ -33,6 +44,7 @@
         }
     }
 
+    // --- Hero Typography ---
     h1 {
         font-size: 75px;
         line-height: 1.1;
@@ -51,7 +63,12 @@
         margin-top: 20px;
     }
 
-    // Dark Background Version (Light Text)
+    // --- Theme Variations ---
+
+    /**
+     * Dark Theme Overlay
+     * Adds a dark tint to the background image to ensure white text is readable.
+     */
     &.carousel-dark {
         .carousel-caption-wrap {
             background: rgba(0, 0, 0, 0.4); // Darker overlay for readability
@@ -63,7 +80,10 @@
         }
     }
 
-    // Light Background Version (Dark Text)
+    /**
+     * Light Theme Overlay
+     * Adds a soft white tint for a clean, bright aesthetic with dark text.
+     */
     &.carousel-light {
         .carousel-caption-wrap {
             background: rgba(255, 255, 255, 0.3); // Lighter overlay
@@ -79,14 +99,22 @@
     }
 }
 
-/*  Next and Previous button styles */
+// --- Navigation Controls ---
+
+/**
+ * Carousel Arrows
+ * Custom styling for the Next and Previous navigation buttons.
+ */
 .carousel-control-prev,
 .carousel-control-next {
     width: 60px;
-    opacity: 1;
+    opacity: 1; // Overrides Bootstrap default transparency
 }
 
-/* Create the Button Red Background */
+/**
+ * Control Icons
+ * Decorative background for the arrow icons using the theme's primary color.
+ */
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
     background-color: $color-primary;
@@ -97,7 +125,10 @@
     transition: transform 0.2s ease, background-color 0.2s ease;
 }
 
-/* Hover effect */
+/**
+ * Interactive Hover States
+ * Adds a subtle scale effect to the controls when hovered.
+ */
 .carousel-control-prev:hover .carousel-control-prev-icon,
 .carousel-control-next:hover .carousel-control-next-icon {
     background-color: $color-primary;

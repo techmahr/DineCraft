@@ -1,5 +1,17 @@
+// -----------------------------------------------------------------------------
+// Component: Versatile Cards & Content Items
+// Includes styles for Blog, Team, Testimonials, and Restaurant Menu items.
+// -----------------------------------------------------------------------------
+
 @use '../abstract/variables' as *;
 @use '../abstract/mixins' as *;
+
+// --- Multi-Purpose Card Base ---
+
+/**
+ * Universal Card Wrapper
+ * Shared base styles for Blog, Team, and Testimonial cards.
+ */
 
 .card-blog,
 .card-team,
@@ -10,12 +22,17 @@
     border-radius: 10px;
     margin-bottom: 24px;
 
+    /**
+    * Card Image Wrapper
+    * Manages aspect ratios and triggers the hover animation mixins.
+    */
+
     .card-img-wrapper {
         overflow: hidden;
         border-radius: 10px;
         position: relative;
 
-        // Mixins for animatoins 
+        // Interactive hover effects from mixins.scss
         @include hover-zoom(1.15, $gallery-zoom-speed);
         @include hover-overlay(0.1);
 
@@ -47,6 +64,7 @@
         color: $color-text-tertiary;
     }
 
+    // Social Links (Used primarily in Card-Team)
     .social-links a {
         &:hover {
             background-color: transparent;
@@ -65,7 +83,12 @@
     @include hover-overlay(0.1);
 }
 
-// Card blog item 
+// --- Specific Content Variants ---
+
+/**
+ * Blog Item Card
+ * A secondary blog layout style with a focus on date and metadata.
+ */
 
 .card-blog-item {
     background-color: $color-bg-light;
@@ -91,10 +114,13 @@
 }
 
 
-// -----------------------------------------------------------------------------
-// Restaurant Menu Items
-// Styles for food/drink list items with/without images and pricing.
-// -----------------------------------------------------------------------------
+// --- Restaurant Menu Items ---
+
+/**
+ * Menu Item - Style One
+ * A clean, flex-based layout for food and beverage listings.
+ * Features a dashed divider for a sophisticated restaurant feel.
+ */
 
 .menu-item-one {
     margin-bottom: 25px;
@@ -138,6 +164,7 @@
         font-size: 0.95rem;
     }
 
+    // Removes the border from the last item in a grid to prevent visual gaps
     &:last-child {
         @media (min-width: 768px) {
             border-bottom: none;
@@ -151,12 +178,12 @@
     }
 }
 
-// Restaurant Menu Items End
+// --- Testimonial Specific Elements ---
 
-// -----------------------------------------------------------------------------
-// Testimonial Card 
-// Styles for testimonial card
-// -----------------------------------------------------------------------------
+/**
+ * Testimonial Enhancements
+ * Adds quote icons and star ratings to the standard card structure.
+ */
 
 .card-testimonial {
 
@@ -173,6 +200,7 @@
         }
     }
 
+    // User avatar/initials circle
     .testi-user {
         height: 45px;
         width: 45px;
