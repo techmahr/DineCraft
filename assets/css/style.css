@@ -611,6 +611,82 @@ a {
 }
 
 /**
+ * Main Carousel Container
+ * Controls the overall height and layout of the hero slider.
+ */
+.home-hero-video {
+  position: relative;
+  height: 100vh;
+  max-height: 900px;
+  min-height: 400px;
+  overflow: hidden;
+  /**
+  * Caption Wrapper & Positioning * Uses Flexbox to perfectly center content both vertically and horizontally.
+  */
+}
+.home-hero-video .video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.home-hero-video .video-container .bg-video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.home-hero-video .carousel-caption-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+.home-hero-video .carousel-caption-wrap .carousel-caption {
+  position: static;
+  text-align: center;
+  padding-top: 0;
+  padding-bottom: 0;
+  width: 90%;
+  max-width: 1000px;
+}
+.home-hero-video h1 {
+  font-size: 75px;
+  line-height: 1.1;
+  margin-bottom: 24px;
+}
+@media (max-width: 767px) {
+  .home-hero-video h1 {
+    font-size: 60px;
+  }
+}
+.home-hero-video p {
+  font-size: 20px;
+}
+.home-hero-video a {
+  margin-top: 20px;
+}
+.home-hero-video.carousel-dark .carousel-caption-wrap {
+  background: rgba(0, 0, 0, 0.4);
+}
+.home-hero-video.carousel-dark h1,
+.home-hero-video.carousel-dark p {
+  color: #ffffff;
+}
+.home-hero-video.carousel-light .carousel-caption-wrap {
+  background: rgba(255, 255, 255, 0.3);
+}
+.home-hero-video.carousel-light h1,
+.home-hero-video.carousel-light p {
+  color: #1F2632;
+}
+
+/**
  * Image Collage Container
  * Creates a relative coordinate system for the absolute-positioned images.
  */

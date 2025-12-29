@@ -1,0 +1,101 @@
+// -----------------------------------------------------------------------------
+// Component: Home Hero Video
+// Full-screen responsive video banner with animated captions and color themes.
+// -----------------------------------------------------------------------------
+
+@use '../abstract/variables' as *;
+
+/**
+ * Main Carousel Container
+ * Controls the overall height and layout of the hero slider.
+ */
+
+.home-hero-video {
+    position: relative;
+    height: 100vh;
+    max-height: 900px;
+    min-height: 400px;
+    overflow: hidden; // Ensures video doesn't bleed out
+
+    // --- Video Background Configuration ---
+
+    .video-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1; // Keeps video behind the text
+
+        .bg-video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; // Crucial: makes video act like 'background-size: cover'
+        }
+    }
+
+    /**
+  * Caption Wrapper & Positioning * Uses Flexbox to perfectly center content both vertically and horizontally.
+  */
+
+    .carousel-caption-wrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        position: relative;
+        z-index: 1;
+
+        .carousel-caption {
+            position: static;
+            text-align: center;
+            padding-top: 0;
+            padding-bottom: 0;
+            width: 90%;
+            max-width: 1000px;
+        }
+    }
+
+    // --- Typography ---
+    h1 {
+        font-size: 75px;
+        line-height: 1.1;
+        margin-bottom: 24px;
+
+        @media (max-width: 767px) {
+            font-size: 60px;
+        }
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    a {
+        margin-top: 20px;
+    }
+
+    // --- Theme Variations ---
+    &.carousel-dark {
+        .carousel-caption-wrap {
+            background: rgba(0, 0, 0, 0.4); // Darker overlay for readability
+        }
+
+        h1,
+        p {
+            color: #ffffff;
+        }
+    }
+
+    &.carousel-light {
+        .carousel-caption-wrap {
+            background: rgba(255, 255, 255, 0.3); // Lighter overlay for readablity 
+        }
+
+        h1,
+        p {
+            color: $color-text-dark-base;
+        }
+    }
+}
