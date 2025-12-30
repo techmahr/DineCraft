@@ -17,6 +17,10 @@
     border-radius: 10px;
     margin-bottom: 24px;
 
+    @media (max-width: 767px) {
+        padding: 16px;
+    }
+
     /**
     * Article Header
     * Contains the title and meta-information such as the author/writer section.

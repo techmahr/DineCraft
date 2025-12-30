@@ -61,8 +61,12 @@
         .hero-caption {
             text-align: center;
             max-width: 800px;
-            width: 90%;
             padding: 2rem;
+            width: 90%;
+
+            @media (max-width: 767px) {
+                width: 100%;
+            }
 
             // Fluid Typography for responsiveness
             h1 {

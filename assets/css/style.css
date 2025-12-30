@@ -600,8 +600,13 @@ a {
 .hero-section .hero-content-area .hero-caption {
   text-align: center;
   max-width: 800px;
-  width: 90%;
   padding: 2rem;
+  width: 90%;
+}
+@media (max-width: 767px) {
+  .hero-section .hero-content-area .hero-caption {
+    width: 100%;
+  }
 }
 .hero-section .hero-content-area .hero-caption h1 {
   font-size: clamp(2.5rem, 8vw, 4.5rem);
@@ -1258,6 +1263,11 @@ a {
   * Featured & Content Images
   * Standardizes all images within the blog body with smooth rounded corners.
   */
+}
+@media (max-width: 767px) {
+  .blog-details-wrap {
+    padding: 16px;
+  }
 }
 .blog-details-wrap header .writer {
   display: flex;
