@@ -169,6 +169,7 @@
 dinecraft/
 ├── assets/
 │   ├── scss/
+│   │   ├── abstract/
 │   │   ├── base/
 │   │   ├── components/
 │   │   ├── layouts/
@@ -180,7 +181,7 @@ dinecraft/
 │   └── vendors/
 ├── *.html
 └── documentation/
-            </pre>
+</pre>
 
                 <!-- Installation -->
                 <h2 id="install">5. Installation</h2>
@@ -199,6 +200,106 @@ dinecraft/
 &lt;/main&gt;
 &lt;footer&gt;&lt;/footer&gt;
             </pre>
+                <h2 id="html">6. HTML Structure</h2>
+
+                <p>
+                    All HTML files in <strong>DineCraft</strong> follow a clean, modular, and well-commented structure
+                    built with <strong>Bootstrap 5.3.8</strong>, <strong>HTML5</strong>, and modern best practices.
+                    Below is an overview of the standard page structure used across the template.
+                </p>
+
+                <pre>
+            &lt;!DOCTYPE html&gt;
+            &lt;html lang="en"&gt;
+            
+            &lt;head&gt;
+              &lt;meta charset="utf-8"&gt;
+              &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+            
+              &lt;!-- Page Title --&gt;
+              &lt;title&gt;DineCraft&lt;/title&gt;
+            
+              &lt;!-- Favicon --&gt;
+              &lt;link rel="shortcut icon" href="assets/images/favicon.png"&gt;
+            
+              &lt;!-- Bootstrap CSS --&gt;
+              &lt;link href="bootstrap.min.css" rel="stylesheet"&gt;
+            
+              &lt;!-- Icons & Animation CSS --&gt;
+              &lt;link href="bootstrap-icons.css" rel="stylesheet"&gt;
+              &lt;link href="aos.css" rel="stylesheet"&gt;
+            
+              &lt;!-- Main Stylesheet --&gt;
+              &lt;link href="assets/css/style.css" rel="stylesheet"&gt;
+            &lt;/head&gt;
+            
+            &lt;body&gt;
+            
+              &lt;!-- Page Loader --&gt;
+              &lt;div class="loader-wrapper"&gt;
+                &lt;div class="spinner"&gt;&lt;/div&gt;
+              &lt;/div&gt;
+            
+              &lt;!-- Navbar / Header --&gt;
+              &lt;nav class="navbar navbar-expand-lg fixed-top"&gt;
+                &lt;!-- Logo --&gt;
+                &lt;!-- Navigation Menu with Dropdowns --&gt;
+              &lt;/nav&gt;
+            
+              &lt;!-- Hero Section --&gt;
+              &lt;!-- Home Carousel / Image Background / Video Background --&gt;
+              &lt;div class="carousel hero-section"&gt;
+                &lt;!-- Slides --&gt;
+              &lt;/div&gt;
+            
+              &lt;!-- About Section --&gt;
+              &lt;section class="home-about"&gt;
+                &lt;!-- Image Collage + Content --&gt;
+              &lt;/section&gt;
+            
+              &lt;!-- Chefs Section --&gt;
+              &lt;section&gt;
+                &lt;!-- Chef Carousel --&gt;
+              &lt;/section&gt;
+            
+              &lt;!-- Menu Section --&gt;
+              &lt;section class="our-menu"&gt;
+                &lt;!-- Menu Items --&gt;
+              &lt;/section&gt;
+            
+              &lt;!-- Reservation / Booking Section --&gt;
+              &lt;section class="book-a-table-split"&gt;
+                &lt;!-- Booking Form --&gt;
+              &lt;/section&gt;
+            
+              &lt;!-- Blog Section --&gt;
+              &lt;section&gt;
+                &lt;!-- Blog Cards --&gt;
+              &lt;/section&gt;
+            
+              &lt;!-- Footer --&gt;
+              &lt;footer&gt;
+                &lt;!-- Quick Links --&gt;
+                &lt;!-- Opening Hours --&gt;
+                &lt;!-- Contact Info --&gt;
+                &lt;!-- Copyright --&gt;
+              &lt;/footer&gt;
+            
+              &lt;!-- JavaScript Files --&gt;
+              &lt;script src="bootstrap.bundle.min.js"&gt;&lt;/script&gt;
+              &lt;script src="aos.js"&gt;&lt;/script&gt;
+              &lt;script src="assets/js/app.js"&gt;&lt;/script&gt;
+            
+            &lt;/body&gt;
+            &lt;/html&gt;
+            </pre>
+
+                <p>
+                    Each section is clearly separated using HTML comments, making it easy to customize,
+                    remove, or extend individual sections. Animations are handled using the AOS library,
+                    and all interactive behavior is managed inside <code>assets/js/app.js</code>.
+                </p>
+
 
                 <!-- SCSS -->
                 <h2 id="scss">7. SCSS Customization</h2>
@@ -206,7 +307,7 @@ dinecraft/
                     All SCSS files are modular and located in <code>assets/scss/</code>.
                     To change colors or fonts, edit:
                 </p>
-                <pre>assets/scss/base/_variables.scss</pre>
+                <pre>assets/scss/abstract/_variables.scss</pre>
 
                 <!-- JS -->
                 <h2 id="js">8. JavaScript Files</h2>
@@ -234,7 +335,7 @@ dinecraft/
                 <h2 id="fonts">11. Fonts & Icons</h2>
                 <ul>
                     <li>Google Fonts</li>
-                    <li>Font Awesome Icons</li>
+                    <li>Bootstrap Icons</li>
                 </ul>
 
                 <!-- Credits -->
@@ -251,7 +352,7 @@ dinecraft/
                 <h2 id="support">13. Support</h2>
                 <p>
                     For support, please contact:<br>
-                    <strong>Email:</strong> support@yourdomain.com<br>
+                    <strong>Email:</strong> helloprettycodes@gmail.com<br>
                     <strong>Response Time:</strong> 24–48 hours (Mon–Fri)
                 </p>
 
