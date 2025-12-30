@@ -504,207 +504,29 @@ a {
   }
 }
 /**
- * Main Carousel Container
- * Controls the overall height and layout of the hero slider.
+ * .hero-section
+ * A generic, high-performance hero component for images, videos, or carousels.
  */
-.home-carousel {
-  /**
-   * Caption Wrapper & Positioning
-   * Uses Flexbox to perfectly center content both vertically and horizontally.
-   */
-  /**
-   * Dark Theme Overlay
-   * Adds a dark tint to the background image to ensure white text is readable.
-   */
-  /**
-   * Light Theme Overlay
-   * Adds a soft white tint for a clean, bright aesthetic with dark text.
-   */
-}
-.home-carousel .carousel-item {
-  height: 100vh;
-  max-height: 900px;
-  min-height: 400px;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.home-carousel .carousel-caption-wrap {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  width: 100%;
-}
-.home-carousel .carousel-caption-wrap .carousel-caption {
-  position: static;
-  padding-top: 0;
-  padding-bottom: 0;
-  width: 90%;
-  max-width: 1000px;
-}
-.home-carousel h1 {
-  font-size: 75px;
-  line-height: 1.1;
-  margin-bottom: 24px;
-}
-@media (max-width: 767px) {
-  .home-carousel h1 {
-    font-size: 60px;
-  }
-}
-.home-carousel p {
-  font-size: 20px;
-}
-.home-carousel a {
-  margin-top: 20px;
-}
-.home-carousel.carousel-dark .carousel-caption-wrap {
-  background: rgba(0, 0, 0, 0.4);
-}
-.home-carousel.carousel-dark h1,
-.home-carousel.carousel-dark p {
-  color: #ffffff;
-}
-.home-carousel.carousel-light .carousel-caption-wrap {
-  background: rgba(255, 255, 255, 0.3);
-}
-.home-carousel.carousel-light h1 {
-  color: #1F2632;
-}
-.home-carousel.carousel-light p {
-  color: #1F2632;
-}
-
-/**
- * Carousel Arrows
- * Custom styling for the Next and Previous navigation buttons.
- */
-.carousel-control-prev,
-.carousel-control-next {
-  width: 60px;
-  opacity: 1;
-}
-
-/**
- * Control Icons
- * Decorative background for the arrow icons using the theme's primary color.
- */
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  background-color: #d32f2f;
-  opacity: 0.7;
-  padding: 22px;
-  border-radius: 15%;
-  background-size: 50%;
-  transition: transform 0.2s ease, background-color 0.2s ease;
-}
-
-/**
- * Interactive Hover States
- * Adds a subtle scale effect to the controls when hovered.
- */
-.carousel-control-prev:hover .carousel-control-prev-icon,
-.carousel-control-next:hover .carousel-control-next-icon {
-  background-color: #d32f2f;
-  transform: scale(1.1);
-}
-
-/**
- * Main Carousel Container
- * Controls the overall height and layout of the hero slider.
- */
-.home-hero-video {
+.hero-section {
   position: relative;
   height: 100vh;
   max-height: 900px;
-  min-height: 400px;
+  min-height: 500px;
   overflow: hidden;
-  /**
-  * Caption Wrapper & Positioning * Uses Flexbox to perfectly center content both vertically and horizontally.
-  */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.home-hero-video .video-container {
+.hero-section .hero-media-container {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: -1;
+  z-index: 0;
 }
-.home-hero-video .video-container .bg-video {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.home-hero-video .carousel-caption-wrap {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  width: 100%;
-  position: relative;
-  z-index: 1;
-}
-.home-hero-video .carousel-caption-wrap .carousel-caption {
-  position: static;
-  text-align: center;
-  padding-top: 0;
-  padding-bottom: 0;
-  width: 90%;
-  max-width: 1000px;
-}
-.home-hero-video h1 {
-  font-size: 75px;
-  line-height: 1.1;
-  margin-bottom: 24px;
-}
-@media (max-width: 767px) {
-  .home-hero-video h1 {
-    font-size: 60px;
-  }
-}
-.home-hero-video p {
-  font-size: 20px;
-}
-.home-hero-video a {
-  margin-top: 20px;
-}
-.home-hero-video.carousel-dark .carousel-caption-wrap {
-  background: rgba(0, 0, 0, 0.4);
-}
-.home-hero-video.carousel-dark h1,
-.home-hero-video.carousel-dark p {
-  color: #ffffff;
-}
-.home-hero-video.carousel-light .carousel-caption-wrap {
-  background: rgba(255, 255, 255, 0.3);
-}
-.home-hero-video.carousel-light h1,
-.home-hero-video.carousel-light p {
-  color: #1F2632;
-}
-
-.home-hero-video {
-  position: relative;
-  height: 100vh;
-  max-height: 900px;
-  min-height: 400px;
-  overflow: hidden;
-  /**
-   * Caption Wrapper & Positioning
-   */
-}
-.home-hero-video .image-container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-}
-.home-hero-video .image-container .bg-image {
+.hero-section .hero-media-container img,
+.hero-section .hero-media-container video {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -712,52 +534,70 @@ a {
   -o-object-position: center;
      object-position: center;
 }
-.home-hero-video .carousel-caption-wrap {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  width: 100%;
+.hero-section .hero-content-area {
   position: relative;
-  z-index: 1;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s ease;
 }
-.home-hero-video .carousel-caption-wrap .carousel-caption {
-  position: static;
+.hero-section .hero-content-area .hero-caption {
   text-align: center;
-  padding-top: 0;
-  padding-bottom: 0;
+  max-width: 800px;
   width: 90%;
-  max-width: 1000px;
+  padding: 2rem;
 }
-.home-hero-video h1 {
-  font-size: 75px;
+.hero-section .hero-content-area .hero-caption h1 {
+  font-size: clamp(2.5rem, 8vw, 4.5rem);
   line-height: 1.1;
-  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
 }
-@media (max-width: 767px) {
-  .home-hero-video h1 {
-    font-size: 60px;
-  }
+.hero-section .hero-content-area .hero-caption p {
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  margin-bottom: 2rem;
 }
-.home-hero-video p {
-  font-size: 20px;
+.hero-section.theme-dark .hero-content-area {
+  background: rgba(0, 0, 0, 0.45);
 }
-.home-hero-video a {
-  margin-top: 20px;
-}
-.home-hero-video.carousel-dark .carousel-caption-wrap {
-  background: rgba(0, 0, 0, 0.4);
-}
-.home-hero-video.carousel-dark h1,
-.home-hero-video.carousel-dark p {
+.hero-section.theme-dark h1,
+.hero-section.theme-dark p {
   color: #ffffff;
 }
-.home-hero-video.carousel-light .carousel-caption-wrap {
+.hero-section.theme-light .hero-content-area {
   background: rgba(255, 255, 255, 0.3);
 }
-.home-hero-video.carousel-light h1,
-.home-hero-video.carousel-light p {
+.hero-section.theme-light h1,
+.hero-section.theme-light p {
   color: #1F2632;
+}
+.hero-section.carousel .carousel-inner,
+.hero-section.carousel .carousel-item {
+  height: 100%;
+}
+.hero-section.carousel .carousel-item {
+  background-size: cover;
+  background-position: center;
+}
+.hero-section.carousel .carousel-control-prev,
+.hero-section.carousel .carousel-control-next {
+  z-index: 3;
+  width: 5%;
+}
+.hero-section.carousel .carousel-control-prev-icon,
+.hero-section.carousel .carousel-control-next-icon {
+  background-color: #d32f2f;
+  padding: 1.5rem;
+  border-radius: 50%;
+  background-size: 50%;
+  transition: transform 0.3s ease;
+}
+.hero-section.carousel .carousel-control-prev:hover .carousel-control-prev-icon, .hero-section.carousel .carousel-control-prev:hover .carousel-control-next-icon,
+.hero-section.carousel .carousel-control-next:hover .carousel-control-prev-icon,
+.hero-section.carousel .carousel-control-next:hover .carousel-control-next-icon {
+  transform: scale(1.1);
 }
 
 /**
