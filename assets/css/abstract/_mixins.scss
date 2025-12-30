@@ -58,3 +58,21 @@
         opacity: 1;
     }
 }
+
+// This animation lifts up the element on hover and gives a box shadow
+
+.hover-lift {
+    // Defines the speed and "feel" of the movement
+    transition: transform 0.35s cubic-bezier(0.25, 1, 0.5, 1),
+        box-shadow 0.35s cubic-bezier(0.25, 1, 0.5, 1);
+
+    will-change: transform;
+
+    &:hover {
+        // Moves element up
+        transform: translateY(-5px);
+
+        // Soft deep shadow
+        box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1) !important;
+    }
+}
