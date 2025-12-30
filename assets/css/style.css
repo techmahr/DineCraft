@@ -504,6 +504,39 @@ a {
   }
 }
 /**
+ * Main Carousel Component
+ * Standardizes the height and layout of the internal slider elements.
+ */
+.carousel .carousel-inner,
+.carousel .carousel-item {
+  height: 100%;
+}
+.carousel .carousel-item {
+  background-size: cover;
+  background-position: center;
+}
+.carousel .carousel-control-prev,
+.carousel .carousel-control-next {
+  z-index: 3;
+  width: 5%;
+  margin: 0 10px;
+}
+.carousel .carousel-control-prev-icon,
+.carousel .carousel-control-next-icon {
+  background-color: #d32f2f;
+  opacity: 0.7;
+  padding: 22px;
+  border-radius: 15%;
+  background-size: 50%;
+  transition: transform 0.3s ease;
+}
+.carousel .carousel-control-prev:hover .carousel-control-prev-icon, .carousel .carousel-control-prev:hover .carousel-control-next-icon,
+.carousel .carousel-control-next:hover .carousel-control-prev-icon,
+.carousel .carousel-control-next:hover .carousel-control-next-icon {
+  transform: scale(1.1);
+}
+
+/**
  * Main Hero Container
  * Standardizes the viewport height and core layout for all hero types.
  */
@@ -1039,6 +1072,7 @@ a {
  */
 #galleryModal .modal-content {
   background: transparent;
+  overflow: hidden;
 }
 #galleryModal .btn-close {
   background-color: beige;

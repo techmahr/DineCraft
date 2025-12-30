@@ -1,136 +1,61 @@
 // -----------------------------------------------------------------------------
 // Component: Home Hero Carousel
-// Full-screen responsive slider with animated captions and color themes.
+// Refined Bootstrap carousel styles for smooth transitions and custom controls.
 // -----------------------------------------------------------------------------
 
 @use '../abstract/variables' as *;
 
 /**
- * Main Carousel Container
- * Controls the overall height and layout of the hero slider.
+ * Main Carousel Component
+ * Standardizes the height and layout of the internal slider elements.
  */
+.carousel {
 
-.home-carousel {
+    // --- Slide Container Configuration ---
 
-    // --- Slide Item Configuration ---
+    .carousel-inner,
+    .carousel-item {
+        height: 100%; // Ensures content fills the parent container height
+    }
+
+    // Individual Slide Item
+    // Manages background image positioning and scaling.
 
     .carousel-item {
-        height: 100vh; // Full viewport height
-        max-height: 900px;
-        min-height: 400px;
         background-size: cover;
         background-position: center;
-        background-repeat: no-repeat;
     }
 
-    /**
-     * Caption Wrapper & Positioning
-     * Uses Flexbox to perfectly center content both vertically and horizontally.
-     */
+    // --- Navigation Controls ---
 
-    .carousel-caption-wrap {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-        width: 100%;
 
-        .carousel-caption {
-            position: static;
-            padding-top: 0;
-            padding-bottom: 0;
-            width: 90%;
-            max-width: 1000px;
+    // Carousel Arrows
+    // Custom styling for the Next and Previous navigation click areas.
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        z-index: 3;
+        width: 5%;
+        margin: 0 10px; // Adds spacing from the edge of the viewport
+
+        // Control Icons
+        // Decorative background for the arrow icons using the theme's primary color.
+
+        &-icon {
+            background-color: $color-primary;
+            opacity: 0.7;
+            padding: 22px;
+            border-radius: 15%;
+            background-size: 50%;
+            transition: transform 0.3s ease;
+        }
+
+        // Interactive States
+        // Adds a subtle scale effect to the icons when the user hovers over the control area.
+
+        &:hover .carousel-control-prev-icon,
+        &:hover .carousel-control-next-icon {
+            transform: scale(1.1);
         }
     }
-
-    // --- Hero Typography ---
-    h1 {
-        font-size: 75px;
-        line-height: 1.1;
-        margin-bottom: 24px;
-
-        @media (max-width: 767px) {
-            font-size: 60px;
-        }
-    }
-
-    p {
-        font-size: 20px;
-    }
-
-    a {
-        margin-top: 20px;
-    }
-
-    // --- Theme Variations ---
-
-    /**
-     * Dark Theme Overlay
-     * Adds a dark tint to the background image to ensure white text is readable.
-     */
-    &.carousel-dark {
-        .carousel-caption-wrap {
-            background: rgba(0, 0, 0, 0.4); // Darker overlay for readability
-        }
-
-        h1,
-        p {
-            color: #ffffff;
-        }
-    }
-
-    /**
-     * Light Theme Overlay
-     * Adds a soft white tint for a clean, bright aesthetic with dark text.
-     */
-    &.carousel-light {
-        .carousel-caption-wrap {
-            background: rgba(255, 255, 255, 0.3); // Lighter overlay for readablity
-        }
-
-        h1 {
-            color: $color-text-dark-base;
-        }
-
-        p {
-            color: $color-text-dark-base;
-        }
-    }
-}
-
-// --- Navigation Controls ---
-
-/**
- * Carousel Arrows
- * Custom styling for the Next and Previous navigation buttons.
- */
-.carousel-control-prev,
-.carousel-control-next {
-    width: 60px;
-    opacity: 1; // Overrides Bootstrap default transparency
-}
-
-/**
- * Control Icons
- * Decorative background for the arrow icons using the theme's primary color.
- */
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    background-color: $color-primary;
-    opacity: 0.7;
-    padding: 22px;
-    border-radius: 15%;
-    background-size: 50%;
-    transition: transform 0.2s ease, background-color 0.2s ease;
-}
-
-/**
- * Interactive Hover States
- * Adds a subtle scale effect to the controls when hovered.
- */
-.carousel-control-prev:hover .carousel-control-prev-icon,
-.carousel-control-next:hover .carousel-control-next-icon {
-    background-color: $color-primary;
-    transform: scale(1.1);
 }
