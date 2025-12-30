@@ -504,8 +504,8 @@ a {
   }
 }
 /**
- * .hero-section
- * A generic, high-performance hero component for images, videos, or carousels.
+ * Main Hero Container
+ * Standardizes the viewport height and core layout for all hero types.
  */
 .hero-section {
   position: relative;
@@ -516,6 +516,26 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+  /**
+   * Hero Media Wrapper
+   * Ensures background video or images fill the container perfectly.
+   */
+  /**
+   * Hero Content Area
+   * Manages the text overlay, z-index layering, and flex alignment.
+   */
+  /**
+   * Dark Theme Variation
+   * Applies a darkened overlay for light-colored text readability.
+   */
+  /**
+   * Light Theme Variation
+   * Applies a bright, semi-transparent overlay for dark-colored text.
+   */
+  /**
+   * Carousel Logic
+   * Specific overrides for when the hero section uses Bootstrap Carousel.
+   */
 }
 .hero-section .hero-media-container {
   position: absolute;
@@ -585,12 +605,18 @@ a {
 .hero-section.carousel .carousel-control-next {
   z-index: 3;
   width: 5%;
+  margin: 0 10px;
+  /**
+   * Interactive States
+   * Hover effects for carousel navigation arrows.
+   */
 }
 .hero-section.carousel .carousel-control-prev-icon,
 .hero-section.carousel .carousel-control-next-icon {
   background-color: #d32f2f;
-  padding: 1.5rem;
-  border-radius: 50%;
+  opacity: 0.7;
+  padding: 22px;
+  border-radius: 15%;
   background-size: 50%;
   transition: transform 0.3s ease;
 }
