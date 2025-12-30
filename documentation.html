@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>DineCraft Documentation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8f9fa;
+            line-height: 1.7;
+        }
+
+        .sidebar {
+            position: sticky;
+            top: 0;
+            height: 100vh;
+            background: #111;
+            padding: 30px 20px;
+        }
+
+        .sidebar h4 {
+            color: #fff;
+            margin-bottom: 20px;
+        }
+
+        .sidebar a {
+            display: block;
+            color: #bbb;
+            text-decoration: none;
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+
+        .sidebar a:hover {
+            color: #fff;
+        }
+
+        .content {
+            padding: 40px;
+            background: #fff;
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-weight: 600;
+        }
+
+        h2 {
+            margin-top: 50px;
+        }
+
+        code {
+            background: #f1f1f1;
+            padding: 2px 6px;
+            border-radius: 4px;
+        }
+
+        pre {
+            background: #111;
+            color: #0f0;
+            padding: 20px;
+            border-radius: 8px;
+            overflow-x: auto;
+        }
+
+        .badge {
+            font-size: 12px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar -->
+            <div class="col-md-3 col-lg-2 sidebar">
+                <h4>DineCraft</h4>
+                <a href="#intro">Introduction</a>
+                <a href="#features">Key Features</a>
+                <a href="#pages">Pages Included</a>
+                <a href="#structure">Folder Structure</a>
+                <a href="#install">Installation</a>
+                <a href="#html">HTML Structure</a>
+                <a href="#scss">SCSS Customization</a>
+                <a href="#js">JavaScript</a>
+                <a href="#responsive">Responsive Design</a>
+                <a href="#browser">Browser Support</a>
+                <a href="#fonts">Fonts & Icons</a>
+                <a href="#credits">Images & Credits</a>
+                <a href="#support">Support</a>
+            </div>
+
+            <!-- Content -->
+            <div class="col-md-9 col-lg-10 content">
+
+                <h1 id="intro">DineCraft Documentation</h1>
+                <p class="text-muted">
+                    Restaurant & Café Bootstrap 5.3.8 HTML Template
+                </p>
+                <span class="badge bg-success">Bootstrap 5.3.8</span>
+                <span class="badge bg-primary">HTML5</span>
+                <span class="badge bg-warning text-dark">SCSS</span>
+
+                <hr>
+
+                <!-- Introduction -->
+                <h2>1. Introduction</h2>
+                <p>
+                    DineCraft is a modern, fully responsive Restaurant & Café HTML template built with
+                    <strong>Bootstrap 5.3.8</strong>, <strong>HTML5</strong>, <strong>CSS3</strong>, and <strong>SCSS</strong>.
+                    It is suitable for restaurants, cafés, bistros, food courts, and hospitality businesses.
+                </p>
+
+                <!-- Features -->
+                <h2 id="features">2. Key Features</h2>
+                <ul>
+                    <li>Built with Bootstrap 5.3.8 (Latest)</li>
+                    <li>Fully Responsive (Mobile, Tablet, Desktop & Laptop)</li>
+                    <li>3 Unique Homepage Layouts</li>
+                    <li>SCSS Architecture (Pages & Components)</li>
+                    <li>Modern & Clean UI Design</li>
+                    <li>Valid HTML5 & CSS3</li>
+                    <li>Cross-Browser Compatibility</li>
+                    <li>SEO-Friendly Markup</li>
+                    <li>Well-Documented Code</li>
+                    <li>Easy Customization</li>
+                </ul>
+
+                <!-- Pages -->
+                <h2 id="pages">3. Pages Included</h2>
+                <h5>Home Pages</h5>
+                <ul>
+                    <li>Home – Image Background</li>
+                    <li>Home – Video Background</li>
+                    <li>Home – Image Carousel</li>
+                </ul>
+
+                <h5>Inner Pages</h5>
+                <ul>
+                    <li>About Us</li>
+                    <li>Menu Classic</li>
+                    <li>Menu Showcase</li>
+                    <li>Gallery</li>
+                    <li>Chef</li>
+                    <li>Testimonials</li>
+                    <li>Reservation</li>
+                    <li>FAQ</li>
+                    <li>Blog</li>
+                    <li>Blog Details</li>
+                    <li>Contact</li>
+                    <li>Privacy Policy</li>
+                    <li>Terms & Conditions</li>
+                </ul>
+
+                <!-- Folder Structure -->
+                <h2 id="structure">4. Folder Structure</h2>
+                <pre>
+dinecraft/
+├── assets/
+│   ├── scss/
+│   │   ├── base/
+│   │   ├── components/
+│   │   ├── layouts/
+│   │   ├── pages/
+│   │   └── style.scss
+│   ├── css/
+│   ├── js/
+│   ├── images/
+│   └── vendors/
+├── *.html
+└── documentation/
+            </pre>
+
+                <!-- Installation -->
+                <h2 id="install">5. Installation</h2>
+                <ol>
+                    <li>Unzip the downloaded package.</li>
+                    <li>Open <code>index.html</code> in your browser.</li>
+                    <li>Upload all files to your server’s public directory.</li>
+                </ol>
+
+                <!-- HTML Structure -->
+                <h2 id="html">6. HTML Structure</h2>
+                <pre>
+&lt;header&gt;&lt;/header&gt;
+&lt;main&gt;
+  &lt;section&gt;...&lt;/section&gt;
+&lt;/main&gt;
+&lt;footer&gt;&lt;/footer&gt;
+            </pre>
+
+                <!-- SCSS -->
+                <h2 id="scss">7. SCSS Customization</h2>
+                <p>
+                    All SCSS files are modular and located in <code>assets/scss/</code>.
+                    To change colors or fonts, edit:
+                </p>
+                <pre>assets/scss/base/_variables.scss</pre>
+
+                <!-- JS -->
+                <h2 id="js">8. JavaScript Files</h2>
+                <p>
+                    JavaScript files are located in <code>assets/js/</code> and are well commented.
+                    Used for sliders, navigation, video background, and UI interactions.
+                </p>
+
+                <!-- Responsive -->
+                <h2 id="responsive">9. Responsive Design</h2>
+                <p>
+                    The template is fully responsive and tested on mobile, tablet, desktop, and laptop devices.
+                </p>
+
+                <!-- Browser -->
+                <h2 id="browser">10. Browser Compatibility</h2>
+                <ul>
+                    <li>Google Chrome</li>
+                    <li>Mozilla Firefox</li>
+                    <li>Safari</li>
+                    <li>Microsoft Edge</li>
+                </ul>
+
+                <!-- Fonts -->
+                <h2 id="fonts">11. Fonts & Icons</h2>
+                <ul>
+                    <li>Google Fonts</li>
+                    <li>Font Awesome Icons</li>
+                </ul>
+
+                <!-- Credits -->
+                <h2 id="credits">12. Images & Credits</h2>
+                <p>
+                    Images are used for demo purposes only and are not included in the download.
+                </p>
+                <ul>
+                    <li>Unsplash</li>
+                    <li>Pexels</li>
+                </ul>
+
+                <!-- Support -->
+                <h2 id="support">13. Support</h2>
+                <p>
+                    For support, please contact:<br>
+                    <strong>Email:</strong> support@yourdomain.com<br>
+                    <strong>Response Time:</strong> 24–48 hours (Mon–Fri)
+                </p>
+
+                <hr>
+                <p class="text-muted text-center">
+                    © DineCraft – Restaurant Bootstrap 5 HTML Template
+                </p>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
