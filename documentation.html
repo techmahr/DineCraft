@@ -93,6 +93,7 @@
                 <a href="#install">Installation</a>
                 <a href="#html">HTML Structure</a>
                 <a href="#scss">SCSS Customization</a>
+                <a href="#aos">AOS Animattion (Scroll Animation)</a>
                 <a href="#js">JavaScript</a>
                 <a href="#responsive">Responsive Design</a>
                 <a href="#browser">Browser Support</a>
@@ -303,27 +304,239 @@ dinecraft/
 
                 <!-- SCSS -->
                 <h2 id="scss">7. SCSS Customization</h2>
+
                 <p>
-                    All SCSS files are modular and located in <code>assets/scss/</code>.
-                    To change colors or fonts, edit:
+                    DineCraft uses a modular <strong>SCSS</strong> architecture to keep styles clean, reusable, and
+                    easy to maintain. SCSS files are organized by abstracts, base styles, components, layouts,
+                    and page-specific styles.
                 </p>
+
+                <h5>SCSS Folder Structure</h5>
+                <pre>
+assets/scss/
+├── abstract/      (variables, mixins, functions)
+├── base/          (reset, typography, global styles)
+├── components/    (buttons, cards, forms, sliders)
+├── layouts/       (header, footer, navigation)
+├── pages/         (page-specific styles)
+└── style.scss     (main SCSS file)
+</pre>
+
+                <hr>
+
+                <h5>Changing Colors, Fonts & Global Styles</h5>
+                <p>
+                    To customize colors, fonts, or other global styles, edit the variables file:
+                </p>
+
                 <pre>assets/scss/abstract/_variables.scss</pre>
 
+                <p>
+                    After making changes, you must recompile the SCSS files to generate the updated CSS.
+                </p>
+
+                <hr>
+
+                <h5>How to Compile SCSS to CSS</h5>
+
+                <p>
+                    You can compile SCSS using any SCSS compiler. Below are the most common methods:
+                </p>
+
+                <h6>Option 1: Using Node.js (Recommended)</h6>
+                <pre>
+npm install -g sass
+sass assets/scss/style.scss assets/css/style.css --watch
+</pre>
+
+                <h6>Option 2: Using VS Code Extension</h6>
+                <ul>
+                    <li>Install <strong>Live Sass Compiler</strong> extension</li>
+                    <li>Set input file to <code>assets/scss/style.scss</code></li>
+                    <li>Set output file to <code>assets/css/style.css</code></li>
+                    <li>Click “Watch Sass”</li>
+                </ul>
+
+                <h6>Option 3: Using GUI Tools</h6>
+                <p>
+                    You can also use tools like:
+                </p>
+                <ul>
+                    <li>Koala</li>
+                    <li>Prepros</li>
+                    <li>Scout App</li>
+                </ul>
+
+                <hr>
+
+                <h5>For Users Who Do NOT Use SCSS</h5>
+
+                <p>
+                    If you do not want to work with SCSS, you can directly edit the compiled CSS file:
+                </p>
+
+                <pre>assets/css/style.css</pre>
+
+                <p>
+                    All SCSS is already compiled and included in the template.
+                    <strong>No SCSS compilation is required</strong> if you only edit the CSS file.
+                </p>
+
+                <p class="alert alert-warning">
+                    <strong>Important:</strong> If you edit the CSS file directly, your changes may be overwritten
+                    if you recompile SCSS in the future.
+                </p>
+
+                <hr>
+
+                <h5>Which Method Should You Use?</h5>
+                <ul>
+                    <li><strong>Developers:</strong> Use SCSS for clean, scalable customization</li>
+                    <li><strong>Beginners / Non-SCSS Users:</strong> Edit <code>style.css</code> directly</li>
+                </ul>
+
+
+                <h2 id="aos">8. AOS Animation (Animate On Scroll)</h2>
+
+                <p>
+                    DineCraft uses the <strong>AOS (Animate On Scroll)</strong> library to create smooth and modern
+                    scroll-based animations across the template. Animations are initialized globally and
+                    trigger automatically when elements enter the viewport.
+                </p>
+
+                <hr>
+
+                <h5>How AOS Is Initialized</h5>
+
+                <p>
+                    AOS is initialized inside the main JavaScript file:
+                </p>
+
+                <pre>assets/js/app.js</pre>
+
+                <p>
+                    Animations are loaded automatically on page load and apply to all pages.
+                    No additional setup is required.
+                </p>
+
+                <div class="alert alert-info">
+                    <strong>Note:</strong> AOS is initialized once globally. You do not need to initialize it on
+                    individual pages.
+                </div>
+
+                <hr>
+
+                <h5>Basic Usage in HTML</h5>
+
+                <p>
+                    To apply animation to any element, add the <code>data-aos</code> attribute:
+                </p>
+
+                <pre>
+                &lt;div data-aos="fade-up" ata-aos-delay="0">&gt;
+                  Animated content
+                &lt;/div&gt;
+                </pre>
+
+                <hr>
+
+                <h5>Common AOS Attributes</h5>
+
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Attribute</th>
+                            <th>Description</th>
+                            <th>Example</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><code>data-aos</code></td>
+                            <td>Animation type</td>
+                            <td><code>fade-up</code>, <code>fade-left</code>, <code>zoom-in</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>data-aos-delay</code></td>
+                            <td>Delay before animation (ms)</td>
+                            <td><code>200</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>data-aos-duration</code></td>
+                            <td>Animation duration (ms)</td>
+                            <td><code>800</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>data-aos-offset</code></td>
+                            <td>Offset from trigger point</td>
+                            <td><code>120</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>data-aos-easing</code></td>
+                            <td>Animation easing</td>
+                            <td><code>ease-in-out</code></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <hr>
+
+                <h5>Changing Global AOS Settings</h5>
+
+                <p>
+                    You can modify global animation settings inside <code>assets/js/app.js</code>:
+                </p>
+
+                <pre>
+                AOS.init({
+                  duration: 800,
+                  easing: 'ease-in-out',
+                  once: true,
+                  offset: 100
+                });
+                </pre>
+
+                <p>
+                    Changes here will affect all animations throughout the template.
+                </p>
+
+                <hr>
+
+                <h5>Disable AOS Animations</h5>
+
+                <p>
+                    To disable animations:
+                </p>
+                <ul>
+                    <li>Remove or comment out <code>AOS.init()</code> inside <code>app.js</code></li>
+                    <li>OR remove <code>data-aos</code> attributes from HTML elements</li>
+                </ul>
+
+                <hr>
+
+                <h5>Recommended Usage Tips</h5>
+                <ul>
+                    <li>Use small delays (100–300ms) for smooth animations</li>
+                    <li>Avoid excessive animations on mobile devices</li>
+                    <li>Keep animation styles consistent across pages</li>
+                </ul>
+
+
                 <!-- JS -->
-                <h2 id="js">8. JavaScript Files</h2>
+                <h2 id="js">9. JavaScript Files</h2>
                 <p>
                     JavaScript files are located in <code>assets/js/</code> and are well commented.
                     Used for sliders, navigation, video background, and UI interactions.
                 </p>
 
                 <!-- Responsive -->
-                <h2 id="responsive">9. Responsive Design</h2>
+                <h2 id="responsive">10. Responsive Design</h2>
                 <p>
                     The template is fully responsive and tested on mobile, tablet, desktop, and laptop devices.
                 </p>
 
                 <!-- Browser -->
-                <h2 id="browser">10. Browser Compatibility</h2>
+                <h2 id="browser">11. Browser Compatibility</h2>
                 <ul>
                     <li>Google Chrome</li>
                     <li>Mozilla Firefox</li>
@@ -332,14 +545,14 @@ dinecraft/
                 </ul>
 
                 <!-- Fonts -->
-                <h2 id="fonts">11. Fonts & Icons</h2>
+                <h2 id="fonts">12. Fonts & Icons</h2>
                 <ul>
                     <li>Google Fonts</li>
                     <li>Bootstrap Icons</li>
                 </ul>
 
                 <!-- Credits -->
-                <h2 id="credits">12. Images & Credits</h2>
+                <h2 id="credits">13. Images & Credits</h2>
                 <p>
                     Images are used for demo purposes only and are not included in the download.
                 </p>
@@ -349,7 +562,7 @@ dinecraft/
                 </ul>
 
                 <!-- Support -->
-                <h2 id="support">13. Support</h2>
+                <h2 id="support">14. Support</h2>
                 <p>
                     For support, please contact:<br>
                     <strong>Email:</strong> helloprettycodes@gmail.com<br>

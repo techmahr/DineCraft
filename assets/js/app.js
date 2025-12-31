@@ -52,7 +52,7 @@ if (spinnerWrapperEl) {
     });
 }
 
-// Initialize AOS
+// Initialize AOS Animation
 AOS.init({
   // Global settings:
   duration: 800, // values from 0 to 3000, with step 50ms
