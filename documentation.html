@@ -92,6 +92,7 @@
                 <a href="#structure">Folder Structure</a>
                 <a href="#install">Installation</a>
                 <a href="#html">HTML Structure</a>
+                <a href="#seo">SEO Settings</a>
                 <a href="#scss">SCSS Customization</a>
                 <a href="#aos">AOS Animattion (Scroll Animation)</a>
                 <a href="#js">JavaScript</a>
@@ -302,8 +303,95 @@ dinecraft/
                 </p>
 
 
+
+                <!-- ================= SEO SECTION START ================= -->
+
+                <h2 id="seo">7. SEO Settings</h2>
+
+                <p>
+                    DineCraft includes a <strong>basic SEO-ready setup</strong> in every HTML page.
+                    These settings help search engines understand your website content and improve
+                    visibility when your site is published online.
+                </p>
+
+                <h5>Where SEO Is Defined</h5>
+                <p>
+                    All SEO-related settings are located inside the <code>&lt;head&gt;</code> section
+                    of each HTML file.
+                </p>
+
+                <h5>Included SEO Meta Tags</h5>
+                <p>
+                    By default, the template includes the following SEO elements:
+                </p>
+
+                <ul>
+                    <li>Page title (<code>&lt;title&gt;</code>)</li>
+                    <li>Meta description</li>
+                    <li>Robots meta tag</li>
+                    <li>Canonical URL</li>
+                    <li>Open Graph (Facebook / LinkedIn sharing)</li>
+                </ul>
+
+                <h5>Example SEO Head Section</h5>
+                <p>
+                    Below is an example of the SEO markup included in the template.
+                    Users should customize the values based on their own website and content.
+                </p>
+
+                <pre>
+&lt;head&gt;
+  &lt;meta charset="utf-8"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+
+  &lt;!-- SEO --&gt;
+  &lt;title&gt;Your Page Title Here&lt;/title&gt;
+  &lt;meta name="description" content="Write a short description about this page"&gt;
+  &lt;meta name="robots" content="index, follow"&gt;
+  &lt;meta name="author" content="Your Brand Name"&gt;
+
+  &lt;!-- Canonical URL --&gt;
+  &lt;link rel="canonical" href="https://yourdomain.com/page-url"&gt;
+
+  &lt;!-- Open Graph --&gt;
+  &lt;meta property="og:title" content="Page title for social sharing"&gt;
+  &lt;meta property="og:description" content="Description for social sharing"&gt;
+  &lt;meta property="og:image" content="assets/images/preview.jpg"&gt;
+  &lt;meta property="og:type" content="website"&gt;
+&lt;/head&gt;
+</pre>
+
+                <h5>How to Edit SEO Content</h5>
+                <ul>
+                    <li>Edit the <code>&lt;title&gt;</code> tag to match each page topic</li>
+                    <li>Update the <code>meta description</code> with relevant keywords</li>
+                    <li>Replace the canonical URL with your live page URL</li>
+                    <li>Update Open Graph values for better social media sharing</li>
+                </ul>
+
+                <h5>Image SEO</h5>
+                <p>
+                    All images in the template support <code>alt</code> attributes and lazy loading.
+                    Users should update image alt text to describe image content accurately.
+                </p>
+
+                <pre>
+&lt;img src="assets/images/image.webp"
+     alt="Describe the image here"
+     loading="lazy"&gt;
+</pre>
+
+                <div class="alert alert-info">
+                    <strong>Important:</strong> SEO values included in the template are placeholders.
+                    They must be customized before publishing a live website.
+                </div>
+
+                <!-- ================= SEO SECTION END ================= -->
+
+
+
                 <!-- SCSS -->
-                <h2 id="scss">7. SCSS Customization</h2>
+                <h2 id="scss">8. SCSS Customization</h2>
 
                 <p>
                     DineCraft uses a modular <strong>SCSS</strong> architecture to keep styles clean, reusable, and
@@ -396,7 +484,7 @@ sass assets/scss/style.scss assets/css/style.css --watch
                 </ul>
 
 
-                <h2 id="aos">8. AOS Animation (Animate On Scroll)</h2>
+                <h2 id="aos">9. AOS Animation (Animate On Scroll)</h2>
 
                 <p>
                     DineCraft uses the <strong>AOS (Animate On Scroll)</strong> library to create smooth and modern
@@ -523,20 +611,20 @@ sass assets/scss/style.scss assets/css/style.css --watch
 
 
                 <!-- JS -->
-                <h2 id="js">9. JavaScript Files</h2>
+                <h2 id="js">10. JavaScript Files</h2>
                 <p>
                     JavaScript files are located in <code>assets/js/</code> and are well commented.
                     Used for sliders, navigation, video background, and UI interactions.
                 </p>
 
                 <!-- Responsive -->
-                <h2 id="responsive">10. Responsive Design</h2>
+                <h2 id="responsive">11. Responsive Design</h2>
                 <p>
                     The template is fully responsive and tested on mobile, tablet, desktop, and laptop devices.
                 </p>
 
                 <!-- Browser -->
-                <h2 id="browser">11. Browser Compatibility</h2>
+                <h2 id="browser">12. Browser Compatibility</h2>
                 <ul>
                     <li>Google Chrome</li>
                     <li>Mozilla Firefox</li>
@@ -545,14 +633,14 @@ sass assets/scss/style.scss assets/css/style.css --watch
                 </ul>
 
                 <!-- Fonts -->
-                <h2 id="fonts">12. Fonts & Icons</h2>
+                <h2 id="fonts">13. Fonts & Icons</h2>
                 <ul>
                     <li>Google Fonts</li>
                     <li>Bootstrap Icons</li>
                 </ul>
 
                 <!-- Credits -->
-                <h2 id="credits">13. Images & Credits</h2>
+                <h2 id="credits">14. Images & Credits</h2>
                 <p>
                     Images are used for demo purposes only and are not included in the download.
                 </p>
@@ -562,7 +650,7 @@ sass assets/scss/style.scss assets/css/style.css --watch
                 </ul>
 
                 <!-- Support -->
-                <h2 id="support">14. Support</h2>
+                <h2 id="support">15. Support</h2>
                 <p>
                     For support, please contact:<br>
                     <strong>Email:</strong> helloprettycodes@gmail.com<br>
