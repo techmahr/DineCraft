@@ -1,7 +1,11 @@
 // -----------------------------------------------------------------------------
-// Component: Main Footer (Style One)
-// A comprehensive footer featuring multi-column layouts and schedule listings.
+// Component: Custom Navigation Bar
+// Advanced header with transparent-to-solid transitions and multi-theme support.
 // -----------------------------------------------------------------------------
+
+// Add classes navbar-theme-dark navbar-dark for dark theme 
+// Add classes navbar-theme-light navbar-light for light theme 
+
 @use '../abstract/variables' as *;
 
 .custom-navbar {
