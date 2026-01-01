@@ -135,47 +135,8 @@ a {
    3. LAYOUT
    Shared structural elements
    ========================================================================== */
-/**
- * Main Navbar Container
- * Standardizes the height and transition speed for sticky effects.
- */
 .custom-navbar {
-  transition: all 0.4s ease-in-out;
-  padding: 20px 0;
-  /**
-   * Navigation Logo
-   * Responsive sizing to ensure branding looks perfect on all viewports.
-   */
-  /**
-  * Navigation Items
-  * Manages horizontal spacing between links.
-  */
-  /**
-   * Navigation Interaction Mixin
-   * Helper to synchronize Hover and Active states across all themes.
-   */
-  /**
-   * Mobile Collapse Background
-   * Ensures the mobile navigation drawer has a solid background and shadow
-   * when expanded on smaller screens (below 992px).
-   */
-  /**
-   * Theme: Light Mode
-   * Default state for headers on light backgrounds.
-   */
-  /**
-   * Theme: Dark Mode / Transparent
-   * Perfect for headers placed over dark hero images or carousels.
-   */
-  /**
-   * Navbar Scrolled State
-   * Triggered via JavaScript. Compresses height and changes background
-   * for improved readability as the user scrolls.
-   */
-  /**
-   * Navbar Dropdowns
-   * Polished, borderless dropdown menus with subtle shadows and hover fills.
-   */
+  transition: background-color 0.4s ease, box-shadow 0.4s ease;
 }
 .custom-navbar .nav-logo {
   max-width: 160px;
@@ -191,68 +152,97 @@ a {
 .custom-navbar .nav-item:last-child {
   padding-right: 0;
 }
-@media (max-width: 991.98px) {
-  .custom-navbar .navbar-collapse {
-    background-color: #fff;
-    padding: 20px;
-    margin-top: 15px;
-    border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  }
-  .custom-navbar .navbar-collapse .nav-link {
-    color: #1F2632 !important;
-  }
-}
-.custom-navbar.navbar-light-mode:not(.navbar-scrolled) .navbar-brand,
-.custom-navbar.navbar-light-mode:not(.navbar-scrolled) .nav-link {
-  color: #1F2632;
-}
-.custom-navbar.navbar-light-mode:not(.navbar-scrolled) .navbar-brand.active, .custom-navbar.navbar-light-mode:not(.navbar-scrolled) .navbar-brand:hover,
-.custom-navbar.navbar-light-mode:not(.navbar-scrolled) .nav-link.active,
-.custom-navbar.navbar-light-mode:not(.navbar-scrolled) .nav-link:hover {
-  color: #d32f2f !important;
-}
-.custom-navbar.navbar-light-mode:not(.navbar-scrolled) .navbar-toggler {
-  filter: invert(1);
-}
-.custom-navbar.navbar-dark-mode:not(.navbar-scrolled) .navbar-brand,
-.custom-navbar.navbar-dark-mode:not(.navbar-scrolled) .nav-link {
-  color: #fff;
-}
-.custom-navbar.navbar-dark-mode:not(.navbar-scrolled) .navbar-brand.active, .custom-navbar.navbar-dark-mode:not(.navbar-scrolled) .navbar-brand:hover,
-.custom-navbar.navbar-dark-mode:not(.navbar-scrolled) .nav-link.active,
-.custom-navbar.navbar-dark-mode:not(.navbar-scrolled) .nav-link:hover {
-  color: #d32f2f !important;
-}
-.custom-navbar.navbar-scrolled {
-  background-color: #fff;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  padding: 10px 0;
-}
-.custom-navbar.navbar-scrolled .navbar-brand,
-.custom-navbar.navbar-scrolled .nav-link {
-  color: #1F2632;
-}
-.custom-navbar.navbar-scrolled .navbar-brand.active, .custom-navbar.navbar-scrolled .navbar-brand:hover,
-.custom-navbar.navbar-scrolled .nav-link.active,
-.custom-navbar.navbar-scrolled .nav-link:hover {
-  color: #d32f2f !important;
-}
-.custom-navbar.navbar-scrolled .navbar-toggler {
-  filter: invert(1);
-}
 .custom-navbar .dropdown-menu {
   border: none;
   padding: 10px 0;
-  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 .custom-navbar .dropdown-menu .dropdown-item {
   padding: 8px 20px;
+  transition: background-color 0.3s, color 0.3s;
 }
 .custom-navbar .dropdown-menu .dropdown-item:hover, .custom-navbar .dropdown-menu .dropdown-item:active {
   background-color: #f4f1ee !important;
   color: #d32f2f;
+}
+.custom-navbar .navbar-toggler {
+  border: none;
+}
+.custom-navbar .navbar-toggler:focus {
+  box-shadow: none;
+}
+.custom-navbar.navbar-theme-light {
+  background-color: transparent;
+}
+.custom-navbar.navbar-theme-light.navbar-light .nav-link {
+  color: #1F2632;
+}
+.custom-navbar.navbar-theme-light.navbar-light .navbar-toggler-icon {
+  filter: brightness(0);
+}
+.custom-navbar.navbar-theme-light.navbar-scrolled {
+  background-color: #fff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+.custom-navbar.navbar-theme-light.navbar-scrolled .nav-link {
+  color: #1F2632;
+}
+.custom-navbar.navbar-theme-light.navbar-scrolled .nav-link:hover, .custom-navbar.navbar-theme-light.navbar-scrolled .nav-link.active {
+  color: #d32f2f;
+}
+.custom-navbar.navbar-theme-light.navbar-scrolled .navbar-toggler-icon {
+  filter: brightness(0);
+}
+@media (max-width: 991px) {
+  .custom-navbar.navbar-theme-light .navbar-collapse {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 15px;
+    border-radius: 10px;
+  }
+  .custom-navbar.navbar-theme-light .navbar-collapse .nav-link {
+    color: #1F2632;
+  }
+  .custom-navbar.navbar-theme-light .navbar-collapse .nav-link:hover, .custom-navbar.navbar-theme-light .navbar-collapse .nav-link.active {
+    color: #d32f2f;
+  }
+}
+.custom-navbar.navbar-theme-dark {
+  background-color: transparent;
+}
+.custom-navbar.navbar-theme-dark.navbar-dark .nav-link {
+  color: #fff;
+}
+.custom-navbar.navbar-theme-dark.navbar-dark .navbar-toggler-icon {
+  filter: brightness(1);
+}
+.custom-navbar.navbar-theme-dark.navbar-scrolled {
+  background-color: #1F2632;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+.custom-navbar.navbar-theme-dark.navbar-scrolled .nav-link {
+  color: #fff;
+}
+.custom-navbar.navbar-theme-dark.navbar-scrolled .nav-link:hover, .custom-navbar.navbar-theme-dark.navbar-scrolled .nav-link.active {
+  color: #d32f2f;
+}
+.custom-navbar.navbar-theme-dark.navbar-scrolled .navbar-toggler-icon {
+  filter: brightness(1);
+}
+@media (max-width: 991px) {
+  .custom-navbar.navbar-theme-dark .navbar-collapse {
+    background-color: #1F2632;
+    padding: 20px;
+    margin-top: 15px;
+    border-radius: 10px;
+  }
+  .custom-navbar.navbar-theme-dark .navbar-collapse .nav-link {
+    color: #fff;
+  }
+  .custom-navbar.navbar-theme-dark .navbar-collapse .nav-link:hover, .custom-navbar.navbar-theme-dark .navbar-collapse .nav-link.active {
+    color: #d32f2f;
+  }
 }
 
 /**

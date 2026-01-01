@@ -1,14 +1,13 @@
 // 1. Navbar Logic
+
 const navbar = document.querySelector('.custom-navbar');
+
 if (navbar) {
-    window.addEventListener('scroll', () => {
-        if (window.scrollY > 50) {
-            navbar.classList.add('navbar-scrolled');
-        } else {
-            navbar.classList.remove('navbar-scrolled');
-        }
-    });
+  window.addEventListener('scroll', () => {
+    navbar.classList.toggle('navbar-scrolled', window.scrollY > 50);
+  });
 }
+
 
 // 2. Carousel Logic 
 const galleryItems = document.querySelectorAll('.gallery-item img');
