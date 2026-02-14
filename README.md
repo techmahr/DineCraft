@@ -12,10 +12,10 @@ The template is **SCSS-based**, well-documented, and developer-friendly, making 
 🚀 **[View Live Demo](https://techmahr.github.io/DineCraft/)**
 
 ### 🏠 Home Page
-![DineCraft Home Page](https://techmahr.github.io/DineCraft/index.html)
+(https://techmahr.github.io/DineCraft/index.html)
 
 ### 📋 Menu Page
-![DineCraft Menu Page](screenshots/menu.png)
+https://techmahr.github.io/DineCraft/about.html
 
 ### 📞 Contact Page
 ![DineCraft Contact Page](screenshots/contact.png)
