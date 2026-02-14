@@ -9,50 +9,17 @@ The template is **SCSS-based**, well-documented, and developer-friendly, making 
 
 ## 🔗 Live Demo
 
-🚀 <a href="https://techmahr.github.io/DineCraft/" target="_blank" rel="noopener">
-View Live Demo
-</a>
-
-<a href="https://techmahr.github.io/DineCraft/index.html" target="_blank" rel="noopener">
-DineCraft Home Carousel Page
-</a>
-
-<a href="https://techmahr.github.io/DineCraft/home-image.html" target="_blank" rel="noopener">
-DineCraft Home Image Page
-</a>
-
-<a href="https://techmahr.github.io/DineCraft/home-video.html" target="_blank" rel="noopener">
-DineCraft Home Video Page
-</a>
-
-<a href="https://techmahr.github.io/DineCraft/about.html" target="_blank" rel="noopener">
-DineCraft About Page
-</a>
-
-<a href="https://techmahr.github.io/DineCraft/menu-classic.html" target="_blank" rel="noopener">
-DineCraft Menu Classic Page
-</a>
-
-<a href="https://techmahr.github.io/DineCraft/menu-showcase.html" target="_blank" rel="noopener">
-DineCraft Menu Showcase
-</a>
-
-<a href="https://techmahr.github.io/DineCraft/reservation.html" target="_blank" rel="noopener">
-DineCraft Reservation Page
-</a>
-
-<a href="https://techmahr.github.io/DineCraft/blog.html" target="_blank" rel="noopener">
-DineCraft Blog Page
-</a>
-
-<a href="https://techmahr.github.io/DineCraft/blog-details.html" target="_blank" rel="noopener">
-DineCraft Blog Details Page
-</a>
-
-<a href="https://techmahr.github.io/DineCraft/contact.html" target="_blank" rel="noopener">
-DineCraft Contact Page
-</a>
-
+- 🚀 <a href="https://techmahr.github.io/DineCraft/" target="_blank" rel="noopener">View Live Demo</a>
+- <a href="https://techmahr.github.io/DineCraft/index.html" target="_blank" rel="noopener">Home Carousel Page</a>
+- <a href="https://techmahr.github.io/DineCraft/home-image.html" target="_blank" rel="noopener">Home Image Page</a>
+- <a href="https://techmahr.github.io/DineCraft/home-video.html" target="_blank" rel="noopener">Home Video Page</a>
+- <a href="https://techmahr.github.io/DineCraft/about.html" target="_blank" rel="noopener">About Page</a>
+- <a href="https://techmahr.github.io/DineCraft/menu-classic.html" target="_blank" rel="noopener">Menu Classic</a>
+- <a href="https://techmahr.github.io/DineCraft/menu-showcase.html" target="_blank" rel="noopener">Menu Showcase</a>
+- <a href="https://techmahr.github.io/DineCraft/reservation.html" target="_blank" rel="noopener">Reservation</a>
+- <a href="https://techmahr.github.io/DineCraft/blog.html" target="_blank" rel="noopener">Blog</a>
+- <a href="https://techmahr.github.io/DineCraft/blog-details.html" target="_blank" rel="noopener">Blog Details</a>
+- <a href="https://techmahr.github.io/DineCraft/contact.html" target="_blank" rel="noopener">Contact</a>
 
 ---
 
