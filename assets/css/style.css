@@ -2,8 +2,7 @@
 /* ==========================================================================
    Template Name: DineCraft by Mahroof K
    Version:       1.0.0
-   Licence:       MIT
-   Author:        Mahroof K
+   Author:        Mahroof
    Description:   Premium Bootstrap 5 Restaurant Template
    Contact        techmahr@gmail.com
    --------------------------------------------------------------------------
@@ -175,10 +174,10 @@ a {
 .custom-navbar.navbar-theme-light {
   background-color: transparent;
 }
-.custom-navbar.navbar-theme-light.navbar-light .nav-link {
+.custom-navbar.navbar-theme-light.navbar-light-mode .nav-link {
   color: #1F2632;
 }
-.custom-navbar.navbar-theme-light.navbar-light .navbar-toggler-icon {
+.custom-navbar.navbar-theme-light.navbar-light-mode .navbar-toggler-icon {
   filter: brightness(0);
 }
 .custom-navbar.navbar-theme-light.navbar-scrolled {
@@ -748,10 +747,16 @@ a {
 }
 
 /* ==========================================================================
+<<<<<<< HEAD
    Template Name: DineCraft by Mahroof K
    Version:       1.0.0
    Licence:       MIT
    Author:        Mahroof K
+=======
+   Template Name: DineCraft by Mahroof
+   Version:       1.0.0
+   Author:        Mahroof
+>>>>>>> develop
    Description:   Premium Bootstrap 5 Restaurant Template
    Contact        techmahr@gmail.com
    --------------------------------------------------------------------------
@@ -1079,10 +1084,16 @@ a {
 }
 
 /* ==========================================================================
+<<<<<<< HEAD
    Template Name: DineCraft by Mahroof K
    Version:       1.0.0
    Licence:       MIT
    Author:        Mahroof K
+=======
+   Template Name: DineCraft by Mahroof
+   Version:       1.0.0
+   Author:        Mahroof
+>>>>>>> develop
    Description:   Premium Bootstrap 5 Restaurant Template
    Contact        techmahr@gmail.com
    --------------------------------------------------------------------------
