@@ -7,6 +7,12 @@ The template is **SCSS-based**, well-documented, and developer-friendly, making 
 
 ---
 
+## 🔗 Live Demo
+
+🚀 **[View Live Demo](https://techmahr.github.io/DineCraft/)**
+
+---
+
 ## ✨ Features & Pages Included
 
 - **Home Page** – Eye-catching layout to showcase your brand and specials  
