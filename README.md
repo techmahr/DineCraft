@@ -18,7 +18,7 @@ The template is **SCSS-based**, well-documented, and developer-friendly, making 
 https://techmahr.github.io/DineCraft/about.html
 
 ### 📞 Contact Page
-![DineCraft Contact Page](screenshots/contact.png)
+[DineCraft Contact Page](screenshots/contact.png)
 
 ---
 
