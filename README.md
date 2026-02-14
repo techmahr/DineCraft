@@ -13,12 +13,12 @@ The template is **SCSS-based**, well-documented, and developer-friendly, making 
 View Live Demo
 </a>
 
-### 🏠 Home Page
+## 🏠 Home Page
 <a href="https://techmahr.github.io/DineCraft/index.html" target="_blank" rel="noopener">
 DineCraft Home Page
 </a>
 
-### 📋 About Page
+## 📋 About Page
 <a href="https://techmahr.github.io/DineCraft/about.html" target="_blank" rel="noopener">
 DineCraft About Page
 </a>
