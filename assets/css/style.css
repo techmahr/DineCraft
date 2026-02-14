@@ -1,11 +1,10 @@
 @charset "UTF-8";
 /* ==========================================================================
-   Template Name: DineCraft by PrettyCodes.com
+   Template Name: DineCraft by Mahroof
    Version:       1.0.0
-   Author:        Mahr
-   Website:       Prettycodes.com
+   Author:        Mahroof
    Description:   Premium Bootstrap 5 Restaurant Template
-   Contact        helloprettycodes@gmail.com
+   Contact        techmahr@gmail.com
    --------------------------------------------------------------------------
    Copyright © 2026 Mahroof. All rights reserved.
    ========================================================================== */
@@ -175,10 +174,10 @@ a {
 .custom-navbar.navbar-theme-light {
   background-color: transparent;
 }
-.custom-navbar.navbar-theme-light.navbar-light .nav-link {
+.custom-navbar.navbar-theme-light.navbar-light-mode .nav-link {
   color: #1F2632;
 }
-.custom-navbar.navbar-theme-light.navbar-light .navbar-toggler-icon {
+.custom-navbar.navbar-theme-light.navbar-light-mode .navbar-toggler-icon {
   filter: brightness(0);
 }
 .custom-navbar.navbar-theme-light.navbar-scrolled {
@@ -253,10 +252,6 @@ a {
   background-color: #2D2926;
   padding: 60px 0 30px 0;
   color: #fff;
-  /**
-   * Copyright & Legal Section
-   * Positioned at the very bottom of the footer.
-   */
 }
 .footer-one h5 {
   font-family: "DM Sans", sans-serif;
@@ -265,10 +260,6 @@ a {
 .footer-one ul {
   list-style: none;
   padding: 0;
-  /**
-   * Timing List Variation
-   * Specifically for "Opening Hours" with a dotted-bottom separator.
-   */
 }
 .footer-one ul li {
   margin-bottom: 10px;
@@ -281,6 +272,12 @@ a {
 }
 .footer-one ul li a:hover {
   color: #d32f2f;
+}
+.footer-one ul {
+  /**
+   * Timing List Variation
+   * Specifically for "Opening Hours" with a dotted-bottom separator.
+   */
 }
 .footer-one ul.timing-list li {
   display: flex;
@@ -298,6 +295,12 @@ a {
 .footer-one ul.timing-list li:last-child {
   border-bottom: none;
   margin-bottom: 0;
+}
+.footer-one {
+  /**
+   * Copyright & Legal Section
+   * Positioned at the very bottom of the footer.
+   */
 }
 .footer-one .copyright p {
   font-size: 14px;
@@ -544,22 +547,6 @@ a {
    * Hero Media Wrapper
    * Ensures background video or images fill the container perfectly.
    */
-  /**
-   * Hero Content Area
-   * Manages the text overlay, z-index layering, and flex alignment.
-   */
-  /**
-   * Dark Theme Variation
-   * Applies a darkened overlay for light-colored text readability.
-   */
-  /**
-   * Light Theme Variation
-   * Applies a bright, semi-transparent overlay for dark-colored text.
-   */
-  /**
-   * Carousel Logic
-   * Specific overrides for when the hero section uses Bootstrap Carousel.
-   */
 }
 .hero-section .hero-media-container {
   position: absolute;
@@ -577,6 +564,12 @@ a {
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
+}
+.hero-section {
+  /**
+   * Hero Content Area
+   * Manages the text overlay, z-index layering, and flex alignment.
+   */
 }
 .hero-section .hero-content-area {
   position: relative;
@@ -608,6 +601,12 @@ a {
   font-size: clamp(1rem, 2vw, 1.25rem);
   margin-bottom: 2rem;
 }
+.hero-section {
+  /**
+   * Dark Theme Variation
+   * Applies a darkened overlay for light-colored text readability.
+   */
+}
 .hero-section.theme-dark .hero-content-area {
   background: rgba(0, 0, 0, 0.45);
 }
@@ -615,12 +614,24 @@ a {
 .hero-section.theme-dark p {
   color: #ffffff;
 }
+.hero-section {
+  /**
+   * Light Theme Variation
+   * Applies a bright, semi-transparent overlay for dark-colored text.
+   */
+}
 .hero-section.theme-light .hero-content-area {
   background: rgba(255, 255, 255, 0.3);
 }
 .hero-section.theme-light h1,
 .hero-section.theme-light p {
   color: #1F2632;
+}
+.hero-section {
+  /**
+   * Carousel Logic
+   * Specific overrides for when the hero section uses Bootstrap Carousel.
+   */
 }
 .hero-section.carousel .carousel-inner,
 .hero-section.carousel .carousel-item {
@@ -635,10 +646,6 @@ a {
   z-index: 3;
   width: 5%;
   margin: 0 10px;
-  /**
-   * Interactive States
-   * Hover effects for carousel navigation arrows.
-   */
 }
 .hero-section.carousel .carousel-control-prev-icon,
 .hero-section.carousel .carousel-control-next-icon {
@@ -648,6 +655,13 @@ a {
   border-radius: 15%;
   background-size: 50%;
   transition: transform 0.3s ease;
+}
+.hero-section.carousel .carousel-control-prev,
+.hero-section.carousel .carousel-control-next {
+  /**
+   * Interactive States
+   * Hover effects for carousel navigation arrows.
+   */
 }
 .hero-section.carousel .carousel-control-prev:hover .carousel-control-prev-icon, .hero-section.carousel .carousel-control-prev:hover .carousel-control-next-icon,
 .hero-section.carousel .carousel-control-next:hover .carousel-control-prev-icon,
@@ -669,14 +683,6 @@ a {
    * Standardizes the look of all images within the collage including 
    * shadows and a clean "Polaroid" style border.
    */
-  /**
-   * First Layer (Background)
-   * The largest anchor image of the composition.
-   */
-  /**
-   * Responsive Adjustments
-   * Resizes the collage and its elements for tablets and mobile devices.
-   */
 }
 .img-collage-wrap img {
   position: absolute;
@@ -685,6 +691,12 @@ a {
   border-radius: 15px;
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
   border: 4px solid white;
+}
+.img-collage-wrap {
+  /**
+   * First Layer (Background)
+   * The largest anchor image of the composition.
+   */
 }
 .img-collage-wrap .first {
   width: 70%;
@@ -706,6 +718,12 @@ a {
   bottom: 18%;
   right: 20%;
   z-index: 3;
+}
+.img-collage-wrap {
+  /**
+   * Responsive Adjustments
+   * Resizes the collage and its elements for tablets and mobile devices.
+   */
 }
 @media (max-width: 768px) {
   .img-collage-wrap {
@@ -729,12 +747,11 @@ a {
 }
 
 /* ==========================================================================
-   Template Name: DineCraft by PrettyCodes.com
+   Template Name: DineCraft by Mahroof
    Version:       1.0.0
-   Author:        Mahr
-   Website:       Prettycodes.com
+   Author:        Mahroof
    Description:   Premium Bootstrap 5 Restaurant Template
-   Contact        helloprettycodes@gmail.com
+   Contact        techmahr@gmail.com
    --------------------------------------------------------------------------
    Copyright © 2026 Mahroof. All rights reserved.
    ========================================================================== */
@@ -770,17 +787,12 @@ a {
   * Card Image Wrapper
   * Manages aspect ratios and triggers the hover animation mixins.
   */
-  overflow: hidden;
-  position: relative;
-  overflow: hidden;
 }
 .card-blog .card-img-wrapper,
 .card-team .card-img-wrapper,
 .card-testimonial .card-img-wrapper {
   overflow: hidden;
   border-radius: 10px;
-  position: relative;
-  overflow: hidden;
   position: relative;
   overflow: hidden;
 }
@@ -793,6 +805,12 @@ a {
 .card-team .card-img-wrapper:hover img,
 .card-testimonial .card-img-wrapper:hover img {
   transform: scale(1.15);
+}
+.card-blog .card-img-wrapper,
+.card-team .card-img-wrapper,
+.card-testimonial .card-img-wrapper {
+  position: relative;
+  overflow: hidden;
 }
 .card-blog .card-img-wrapper::after,
 .card-team .card-img-wrapper::after,
@@ -856,6 +874,11 @@ a {
   color: #d32f2f;
   background-color: transparent;
 }
+.card-blog,
+.card-team,
+.card-testimonial {
+  overflow: hidden;
+}
 .card-blog img,
 .card-team img,
 .card-testimonial img {
@@ -865,6 +888,12 @@ a {
 .card-team:hover img,
 .card-testimonial:hover img {
   transform: scale(1.15);
+}
+.card-blog,
+.card-team,
+.card-testimonial {
+  position: relative;
+  overflow: hidden;
 }
 .card-blog::after,
 .card-team::after,
@@ -992,14 +1021,6 @@ a {
   * Accordion Item Wrapper
   * Features a modern card-like design with rounded corners and smooth transitions.
   */
-  /**
-  * Accordion Trigger Button
-  * Handles the interactive header of each FAQ item.
-  */
-  /**
-   * Accordion Content Body
-   * Styles the internal text area of the expanded item.
-   */
 }
 .accordion#faqAccordion .accordion-item {
   margin-bottom: 30px;
@@ -1015,6 +1036,12 @@ a {
 }
 .accordion#faqAccordion .accordion-item:hover {
   border-color: rgba(211, 47, 47, 0.4) !important;
+}
+.accordion#faqAccordion {
+  /**
+  * Accordion Trigger Button
+  * Handles the interactive header of each FAQ item.
+  */
 }
 .accordion#faqAccordion .accordion-button {
   font-weight: 700;
@@ -1035,6 +1062,12 @@ a {
 .accordion#faqAccordion .accordion-button:not(.collapsed)::after {
   filter: sepia(100%) saturate(2000%) hue-rotate(340deg);
 }
+.accordion#faqAccordion {
+  /**
+   * Accordion Content Body
+   * Styles the internal text area of the expanded item.
+   */
+}
 .accordion#faqAccordion .accordion-body {
   padding: 0 20px 25px 20px;
   color: #527179;
@@ -1044,12 +1077,11 @@ a {
 }
 
 /* ==========================================================================
-   Template Name: DineCraft by PrettyCodes.com
+   Template Name: DineCraft by Mahroof
    Version:       1.0.0
-   Author:        Mahr
-   Website:       Prettycodes.com
+   Author:        Mahroof
    Description:   Premium Bootstrap 5 Restaurant Template
-   Contact        helloprettycodes@gmail.com
+   Contact        techmahr@gmail.com
    --------------------------------------------------------------------------
    Copyright © 2026 Mahroof. All rights reserved.
    ========================================================================== */
@@ -1082,9 +1114,6 @@ a {
    * Gallery Image Styling
    * Ensures images fill the container perfectly without distortion.
    */
-  overflow: hidden;
-  position: relative;
-  overflow: hidden;
 }
 .gallery-item img {
   width: 100%;
@@ -1093,11 +1122,18 @@ a {
      object-fit: cover;
   transition: transform 0.4s ease-in-out;
 }
+.gallery-item {
+  overflow: hidden;
+}
 .gallery-item img {
   transition: transform 0.4s ease-in-out;
 }
 .gallery-item:hover img {
   transform: scale(1.15);
+}
+.gallery-item {
+  position: relative;
+  overflow: hidden;
 }
 .gallery-item::after {
   content: "";
@@ -1155,14 +1191,6 @@ a {
    * Image Container
    * Ensures the image takes up full height and handles responsive rounding.
    */
-  /**
-   * Image Styling
-   * Optimized to fill the container without distortion.
-   */
-  /**
-   * Booking Form Container
-   * The colored side of the split component.
-   */
 }
 .book-a-table-split .book-table-img-wrap {
   height: 100%;
@@ -1175,6 +1203,12 @@ a {
     border-radius: 15px 15px 0px 0px;
   }
 }
+.book-a-table-split {
+  /**
+   * Image Styling
+   * Optimized to fill the container without distortion.
+   */
+}
 .book-a-table-split .book-table-img {
   width: 100%;
   height: 100%;
@@ -1182,15 +1216,17 @@ a {
      object-fit: cover;
   display: block;
 }
+.book-a-table-split {
+  /**
+   * Booking Form Container
+   * The colored side of the split component.
+   */
+}
 .book-a-table-split .booking-form-wrap {
   background-color: #d32f2f;
   padding: 50px;
   height: 100%;
   border-radius: 0 15px 15px 0;
-  /**
-   * Form Inputs
-   * Custom overrides for Bootstrap's .form-control within this specific section.
-   */
 }
 @media (max-width: 991px) {
   .book-a-table-split .booking-form-wrap {
@@ -1202,6 +1238,12 @@ a {
   color: #fff;
   margin-bottom: 30px;
   font-weight: 700;
+}
+.book-a-table-split .booking-form-wrap {
+  /**
+   * Form Inputs
+   * Custom overrides for Bootstrap's .form-control within this specific section.
+   */
 }
 .book-a-table-split .booking-form-wrap .form-control {
   margin-bottom: 20px;
@@ -1264,10 +1306,6 @@ a {
        column-count: 3;
   -moz-column-gap: 1.5rem;
        column-gap: 1.5rem;
-  /**
-   * Testimonial Card Integration
-   * Optimizes the standard testimonial component for the masonry environment.
-   */
 }
 @media (max-width: 992px) {
   .masonry-wrapper {
@@ -1280,6 +1318,12 @@ a {
     -moz-column-count: 1;
          column-count: 1;
   }
+}
+.masonry-wrapper {
+  /**
+   * Testimonial Card Integration
+   * Optimizes the standard testimonial component for the masonry environment.
+   */
 }
 .masonry-wrapper .card-testimonial {
   display: inline-block;
@@ -1298,19 +1342,17 @@ a {
   background: #f4f1ee !important;
   border-radius: 10px;
   margin-bottom: 24px;
-  /**
-  * Article Header
-  * Contains the title and meta-information such as the author/writer section.
-  */
-  /**
-  * Featured & Content Images
-  * Standardizes all images within the blog body with smooth rounded corners.
-  */
 }
 @media (max-width: 767px) {
   .blog-details-wrap {
     padding: 16px;
   }
+}
+.blog-details-wrap {
+  /**
+  * Article Header
+  * Contains the title and meta-information such as the author/writer section.
+  */
 }
 .blog-details-wrap header .writer {
   display: flex;
@@ -1324,6 +1366,12 @@ a {
 .blog-details-wrap header .writer i {
   color: #d32f2f;
   font-size: 20px;
+}
+.blog-details-wrap {
+  /**
+  * Featured & Content Images
+  * Standardizes all images within the blog body with smooth rounded corners.
+  */
 }
 .blog-details-wrap img {
   border-radius: 10px;
