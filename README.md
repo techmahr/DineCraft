@@ -13,29 +13,21 @@ The template is **SCSS-based**, well-documented, and developer-friendly, making 
 View Live Demo
 </a>
 
-🏠 <a href="https://techmahr.github.io/DineCraft/index.html" target="_blank" rel="noopener">
-Home Page
-</a>
-
-📋 <a href="https://techmahr.github.io/DineCraft/about.html" target="_blank" rel="noopener">
-About Page
-</a>
-
-📞 <a href="https://techmahr.github.io/DineCraft/contact.html" target="_blank" rel="noopener">
-Contact Page
-</a>
-
-
-🚀 **[View Live Demo](https://techmahr.github.io/DineCraft/)**
-
 ### 🏠 Home Page
-[DineCraft Home Page](https://techmahr.github.io/DineCraft/index.html)
+<a href="https://techmahr.github.io/DineCraft/index.html" target="_blank" rel="noopener">
+DineCraft Home Page
+</a>
 
-### 📋 Menu Page
-[DineCraft About Page](https://techmahr.github.io/DineCraft/about.html)
+### 📋 About Page
+<a href="https://techmahr.github.io/DineCraft/about.html" target="_blank" rel="noopener">
+DineCraft About Page
+</a>
 
 ### 📞 Contact Page
-[DineCraft Contact Page](https://techmahr.github.io/DineCraft/contact.html)
+<a href="https://techmahr.github.io/DineCraft/contact.html" target="_blank" rel="noopener">
+DineCraft Contact Page
+</a>
+
 
 ---
 
