@@ -5,8 +5,6 @@ DineCraft is a **free, modern, and responsive Bootstrap restaurant website templ
 
 The template is **SCSS-based**, well-documented, and developer-friendly, making customization simple and efficient. With a complete set of ready-to-use pages, you can launch a professional restaurant website in minutes—no heavy setup required.
 
----
-
 ![Banner](https://github.com/techmahr/DineCraft/blob/ceef04413950469877ac61a570df1e7efbc4621f/DineCraft-Poster-Small.jpg)
 
 
