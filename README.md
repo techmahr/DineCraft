@@ -7,7 +7,8 @@ The template is **SCSS-based**, well-documented, and developer-friendly, making 
 
 ---
 
-![Banner](https://github.com/techmahr/DineCraft/blob/f4ec50ba96fa4c90e164eab807fec22a283a7438/DineCraft-Poster-Small.jpg)
+![Banner](https://github.com/techmahr/DineCraft/blob/ceef04413950469877ac61a570df1e7efbc4621f/DineCraft-Poster-Small.jpg)
+
 
 ## 🔗 Live Demo
 
